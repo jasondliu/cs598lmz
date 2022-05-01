@@ -2,6 +2,7 @@ import json
 import numpy as np
 import random
 from transformers import AutoModelForCausalLM, AutoTokenizer
+import timeit
 import torch
 from torch.utils.data import SequentialSampler, DataLoader
 
@@ -81,13 +82,18 @@ def eval_line_completion(model, tokenizer):
 def line_completion(tokenizer, model):
     eval_line_completion(model, tokenizer)
 
+def print_alert(s):
+    print("[93m", s, "[0m", sep="")
+
 def text_generation(tokenizer, model):
     #string = """def add(a, b):
     #    x = a + b"""
     #tokens = tokenizer.encode(string, return_tensors="pt")
 
+    times = []
     for i in range(30):
         print(f"=== seed {i} {'=' * 20}")
+        start = timeit.default_timer()
         set_seed(i)
         with open("data/generation.json", "r") as f:
             for line in f:
@@ -102,6 +108,15 @@ def text_generation(tokenizer, model):
                 )
                 results = tokenizer.decode(output[0])
                 print(results)
+        end = timeit.default_timer()
+        t = end - start
+        times.append(t)
+        print_alert(f"time elapsed: {t} s")
+
+    print_alert(f"    mean: {np.mean(times)} s")
+    print_alert(f"std. dev: {np.std(times)} s")
+    print_alert(f"     min: {np.min(times)} s")
+    print_alert(f"     max: {np.max(times)} s")
 
 def load_model(adapted=False):
     ptmodel = "../CodeGPT-small-py"
@@ -116,7 +131,7 @@ def main():
     #tokenizer, model = load_model(adapted=True)
     #line_completion(tokenizer, model)
 
-    tokenizer, model = load_model(adapted=False)
+    tokenizer, model = load_model(adapted=True)
     text_generation(tokenizer, model)
 
 if __name__ == "__main__":
