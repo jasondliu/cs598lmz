@@ -1,0 +1,14 @@
+import select
+
+def test_select_mutated():
+    a = []
+
+    class F:
+        def fileno(self):
+            test_select_mutated()
+            return 5
+
+    a.append(F())
+
+    r = select.select([], a, [], 0)
+    assert r == ([], [], [])

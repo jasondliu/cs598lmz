@@ -1,0 +1,8 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [1])
+print(a==b)
+print(a is b)
+
+print(isinstance(a,FunctionType))
+print(isinstance(b,FunctionType))

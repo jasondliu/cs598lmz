@@ -1,0 +1,36 @@
+from types import FunctionType
+list(FunctionType(lambda: None, globals(), 'foo'))
+
+# Test that the repr of a function is not affected by the presence of a
+# __qualname__ attribute.
+def f():
+    pass
+f.__qualname__ = 'foo'
+repr(f)
+
+# Test that the repr of a function is not affected by the presence of a
+# __module__ attribute.
+def f():
+    pass
+f.__module__ = 'foo'
+repr(f)
+
+# Test that the repr of a function is not affected by the presence of a
+# __defaults__ attribute.
+def f():
+    pass
+f.__defaults__ = (1,)
+repr(f)
+
+# Test that the repr of a function is not affected by the presence of a
+# __kwdefaults__ attribute.
+def f():
+    pass
+f.__kwdefaults__ = {'foo': 1}
+repr(f)
+
+# Test that the repr of a function is not affected by the presence of a
+# __closure__ attribute.
+def f():
+    pass
+f.__closure__ = (1

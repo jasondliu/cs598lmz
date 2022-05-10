@@ -1,0 +1,27 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+gc.collect()
+
+# Test gc.get_referrers()
+gc.get_referrers([])
+gc.get_referrers({})
+gc.get_referrers(())
+gc.get_referrers('')
+gc.get_referrers(0)
+gc.get_referrers(0.0)
+gc.get_referrers(None)
+gc.get_referrers(gc)
+gc.get_referrers(gc.get_referrers)
+gc.get_referrers(gc.get_referrers)
+gc.get_referrers(gc.get_referrers)
+
+# Test gc.get_referents()
+gc.get_referents([])
+gc.get_referents({})
+gc.get_referents(())
+gc.get_referents('')
+gc.get_referents(0)
+gc.get_referents(0.0)
+gc.get_referents(None)
+gc.get_referents(

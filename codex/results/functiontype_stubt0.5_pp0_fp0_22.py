@@ -1,0 +1,26 @@
+from types import FunctionType
+a = (x for x in [1])
+print(type(a))
+print(type(abs))
+print(type(lambda x: x * x))
+print(type((x for x in [1])))
+print(type([1, 2]))
+print(type({1, 2}))
+print(type('abc'))
+print(type(b'abc'))
+print(type(123))
+print(type(None))
+print(type(abs) == FunctionType)
+print(type(lambda x: x * x) == FunctionType)
+print(isinstance(b'a', bytes))
+print(isinstance('a', str))
+print(isinstance(123, int))
+print(isinstance(b'a', str))
+print(isinstance([1, 2, 3], (list, tuple)))
+print(isinstance((1, 2, 3), (list, tuple)))
+print(isinstance([1, 2, 3], (list, tuple)))
+
+# 获取对象信息
+print(type(123) == type(456))
+print(type(123) == int)
+print

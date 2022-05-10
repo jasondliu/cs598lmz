@@ -1,0 +1,4 @@
+from bz2 import BZ2Decompressor
+BZ2Decompressor().decompress(b'BZh91AY&SY\xc4\x98\x00\x00\x00\x01\x01\x80\x02\xc0')
+
+import bz2

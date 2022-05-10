@@ -1,0 +1,21 @@
+fn = lambda: None
+# Test fn.__code__.co_argcount
+# Test fn.__code__.co_firstlineno
+# Test fn.__code__.co_flags
+# Test fn.__code__.co_lnotab
+# Test fn.__code__.co_name
+# Test fn.__code__.co_names
+# Test fn.__code__.co_nlocals
+# Test fn.__code__.co_stacksize
+# Test fn.__code__.co_varnames
+# Test fn.__code__.replace
+# Test fn.__code__.to_code
+# Test fn.__code__.to_pycode
+# Test fn.__code__.to_rawcode
+# Test fn.__code__.to_rawcode_opt
+# Test fn.__code__.to_string
+# Test fn.__code__.to_string_opt
+# Test fn.__code__.to_typedcode
+# Test fn.__code__.to_typedcode_opt
+# Test fn.__code__.to_untypedcode
+# Test fn.__code__.to

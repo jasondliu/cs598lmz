@@ -1,0 +1,35 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepalive.append(a)
+del a
+lst[0]=weakref.ref(a,callback)
+print lst
+
+#查看弱引用的状态
+print lst[0]()
+
+#查看弱引用的状态
+print lst[0]()
+
+#查看弱引用的状态
+print lst[0]()
+
+#查看弱引用的状态
+print lst[0]()
+
+#查看弱引用的状态
+print lst[0]()
+
+#查看弱引用的状态
+print lst[0]()
+
+#查看弱引用的状态
+print lst[0]()
+
+#查看弱引用的状态
+print lst[0]()

@@ -1,0 +1,57 @@
+import _struct
+import _thread
+import _threading
+import _time
+import _traceback
+import _types
+import _warnings
+import _weakref
+
+import _abc
+import _codecs
+import _collections
+import _functools
+import _io
+import _locale
+import _operator
+import _signal
+import _stat
+import _string
+import _symtable
+import _weakref
+
+import _bisect
+import _heapq
+import _random
+import _sre
+import _ssl
+import _symtable
+import _threading_local
+import _weakref
+
+import _ast
+import _asyncio
+import _bz2
+import _codecs
+import _collections
+import _contextvars
+import _csv
+import _datetime
+import _functools
+import _hashlib
+import _heapq
+import _imp
+import _io
+import _json
+import _locale
+import _lzma
+import _operator
+import _pickle
+import _random
+import _socket
+import _sre
+import _ssl
+import _stat
+import _string
+import _symtable
+

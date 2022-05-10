@@ -1,0 +1,6 @@
+from _struct import Struct
+s = Struct.__new__(Struct)
+s.__init__('=BHl', bytearray(b'\x00\x01\x00\x04\x00\x00\x00\x00\x00\x00\x00\x01'))
+s.unpack(bytearray(b'\x00\x01\x00\x04\x00\x00\x00\x00\x00\x00\x00\x01'))
+</code>
+

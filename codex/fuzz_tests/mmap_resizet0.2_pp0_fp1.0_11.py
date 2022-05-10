@@ -1,0 +1,25 @@
+import mmap
+
+with open('test', 'wb') as f:
+    f.write(bytes(1))
+
+with open('test', 'r+b') as f:
+    m = mmap.mmap(f.fileno(), 0)
+    f.truncate()
+    a = m[:]
+</code>
+I get the following error:
+<code>Traceback (most recent call last):
+  File "test.py", line 9, in &lt;module&gt;
+    a = m[:]
+ValueError: mmap offset is greater than file size
+</code>
+I'm using Python 3.4.2 on Windows 7.
+I've also tried using <code>mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_WRITE)</code> but that doesn't help.
+What am I doing wrong?
+
+
+A:
+
+The problem is that the <code>mmap</code> object is still pointing to the old file size.  You can fix this by calling <code>m.resize(0)</code> after <code>f.truncate()</code>.
+

@@ -1,0 +1,15 @@
+import mmap
+# Test mmap.mmap(0, 1, "shared")
+# Test mmap.mmap(0, 1, "copy")
+# Test mmap.mmap(0, 1, "private")
+# Test mmap.mmap(0, 1, "exec")
+# Test mmap.mmap(0, 1, "readonly")
+# Test mmap.mmap(0, 1, "writeonly")
+# Test mmap.mmap(0, 1, "rnd")
+# Test mmap.mmap(0, 1, "cached")
+# Test mmap.mmap(0, 1, "noaccess")
+# Test mmap.mmap(0, 1, "shared", mmap.ACCESS_READ)
+# Test mmap.mmap(0, 1, "copy", mmap.ACCESS_READ)
+# Test mmap.mmap(0, 1, "private", mmap.ACCESS_READ)
+# Test mmap.mmap(0, 1, "exec", mmap.ACCESS_READ)
+# Test mmap.mmap(0, 1, "readonly", mm

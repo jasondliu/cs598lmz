@@ -1,0 +1,34 @@
+import ctypes
+import ctypes.util
+import threading
+import sqlite3
+
+my_threading_local = threading.local()
+
+class deleting_conn(sqlite3.Connection):
+    def __del__(self):
+        self.close()
+
+DB_URI = "file:test?mode=memory"
+
+def my_cb(p):
+    a = sqlite3.connect(DB_URI, uri=True, factory=deleting_conn)
+
+    def test_fn(a, b):
+        return a
+
+    a.create_function("test", 2, test_fn)
+
+    my_threading_local.a = a
+
+    return 1
+
+SQLITE_OPEN_URI = 256
+sqlite3.sqlite3_enable_load_extension(True)
+sqlite3.sqlite3_open_v2(DB_URI, ctypes.byref(my_threading_local.db), SQLITE_OPEN_URI, None)
+sqlite3.sqlite3_create_collation(my_threading_local.db, b"NOCASE", 999, my_cb)
+sqlite3.sqlite3_extension_init(my_threading_local.db, None, None)
+my_threading_local.db.close()
+</code>
+Note that closing the database connection object in <code>__del__</code> is generally a bad idea, but I believe the reason the authors of SQLite3-Python did this is because Python destructs the local variables (<code>a</code> in this case) after the <code>test_fn</code> C callback ends, which means SQLite can no longer access the <code>context</code> parameter in the callback, which could make things unsafe.
+

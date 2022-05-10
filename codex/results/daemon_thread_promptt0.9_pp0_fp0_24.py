@@ -1,0 +1,35 @@
+import threading
+# Test threading daemon
+def func():
+    print 'thread %s is running...' % threading.current_thread().name
+    n = 0
+    while n < 5:
+        n = n + 1
+        print 'thread %s >>> %s' % (threading.current_thread().name, n)
+        time.sleep(1)
+    print 'thread %s ended.' % threading.current_thread().name
+
+print 'thread %s is running...' % threading.current_thread().name
+t = threading.Thread(target=func, name='LoopThread')
+t.start()
+t.join()
+print 'thread %s ended.' % threading.current_thread().name
+
+# ----------------------
+# Multithreading
+import time, threading
+# Multithreading Lock
+balance = 0
+lock = threading.Lock()
+
+def change_it(n):
+    # first get lock
+    lock.acquire()
+    global balance
+    balance = balance + n
+    balance = balance - n
+    # release lock
+    lock.release()
+
+def run_thread(n):
+    for i in

@@ -1,0 +1,24 @@
+import socket
+import sys
+import argparse
+import threading
+import os
+import logging
+import subprocess
+import platform
+import time
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
+METRICS_COLLECTOR_PORT = 8092
+METRICS_COLLECTOR_KEEP_ALIVE_PERIOD = 0.5
+METRICS_COLLECTOR_BACKLOG = 10
+METRICS_COLLECTOR_BUFFER_SIZE = 4096
+METRICS_COLLECTOR_TIMEOUT = 1
+METRICS_COLLECTOR_MAX_ERRORS = 4
+METRICS_COLLECTOR_ACCEPT_TIMEOUT = 1
+METRICS_COLLECTOR_MAX_CONNECTIONS = 2
+METRICS_COLLECTOR_RETRY_PERIOD = 5
+METRICS_COLLECTOR_POLL_PERIOD = 1
+METRICS_COLLECTOR_RETRY_COUNT = 3
+METRICS_COLLECTOR_SER

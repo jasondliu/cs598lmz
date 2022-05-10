@@ -1,0 +1,19 @@
+import io
+
+class File(io.RawIOBase):
+    def readinto(self, buf):
+        global view
+        view = buf
+    def readable(self):
+        return True
+
+f = io.BufferedReader(File())
+f.read(1)
+del f
+
+try:
+    view[0] = 1
+except TypeError:
+    print("TypeError")
+except ValueError:
+    print("ValueError")

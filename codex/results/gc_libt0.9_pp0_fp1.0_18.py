@@ -1,0 +1,22 @@
+import gc, weakref
+-from pkgutil import extend_path
+-import struct, types
+-import urllib, re
+-from xml.dom import minidom
+-from xml.dom.minidom import Node
+-import xml.dom.minidom
+-from xml.dom.minidom import getDOMImplementation
+-from xml.parsers.expat import ExpatError
+-from xml.sax import parse
+-from xml.sax.expatreader import ExpatParser
+-from xml.sax.handler import ContentHandler
+-from xml.sax.handler import DTDHandler
+-from xml.sax.handler import EntityResolver
+-from xml.sax.handler import ErrorHandler
+-from xml.sax.handler import feature_namespaces
+-from xml.sax.handler import feature_namespace_prefixes
+-from xml.sax.handler import feature_validation
+-from xml.sax.handler import feature_external_pes
+-from xml.sax.handler import feature_external_ges
+-from xml.sax.handler import feature_string_interning
+-from xml

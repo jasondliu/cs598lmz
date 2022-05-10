@@ -1,0 +1,16 @@
+import lzma
+lzma.open
+
+import os
+os.path.join
+
+import sys
+sys.path
+
+import time
+time.time
+
+import zlib
+zlib.compress
+
+import _abc

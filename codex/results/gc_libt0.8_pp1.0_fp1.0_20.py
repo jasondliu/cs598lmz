@@ -1,0 +1,25 @@
+import gc, weakref
+-
+-class Coloured:
+-    def __init__(self, colour):
+-        self.colour = colour
+-
+-    def __repr__(self):
+-        return 'Coloured(%r)' % self.colour
+-
+-class Point(Coloured):
+-    def __init__(self, x, y, colour):
+-        super().__init__(colour)
+-        self.x = x
+-        self.y = y
+-
+-    def __repr__(self):
+-        return '%s(%r, %r, %r)' % (self.__class__.__name__, self.x, self.y, self.colour)
+-
+-# the id() of an object is the location of the object in memory
+-# this is likely to change between program runs
+-# use the ref() to get a ref() object that identifies the object
+-# within the garbage collector
+-class PointWithRef(Point):
+-    # __init__ - as Point.__init__
+-    # __repr__ - as Point.__repr

@@ -1,0 +1,20 @@
+import io
+
+class File(io.RawIOBase):
+    def readinto(self, buf):
+        global view
+        view = buf
+    def readable(self):
+        return True
+
+f = io.BufferedReader(File())
+f.read(1)
+del f
+
+def f():
+    return view[0]
+
+def g():
+    return view[1]
+
+print(f(), g())

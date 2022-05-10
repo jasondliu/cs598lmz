@@ -1,0 +1,31 @@
+import mmap
+# Test mmap.mmap()
+f = open('test.txt', 'r+')
+m = mmap.mmap(f.fileno(), 0)
+print(m.readline())
+print(m.readline())
+
+m.seek(0)
+m.write('0123456789abcdef')
+m.seek(0)
+print(m.readline())
+m.close()
+f.close()
+
+# Test mmap.mmap(fileno, length)
+f = open('test.txt', 'r+')
+m = mmap.mmap(f.fileno(), 16)
+print(m.readline())
+m.seek(0)
+m.write('0123456789abcdef')
+m.seek(0)
+print(m.readline())
+m.close()
+f.close()
+
+# Test mmap.mmap(fileno, length, tagname)
+f = open('test.txt', 'r+')
+m = mmap.mmap(f.fileno(), 16, 'test')
+print(m.readline())
+m.seek(0)
+

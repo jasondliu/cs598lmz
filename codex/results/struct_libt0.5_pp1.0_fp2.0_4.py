@@ -1,0 +1,47 @@
+import _struct
+import _sys
+import _thread
+import _threading
+import _time
+import _traceback
+import _types
+import _warnings
+import _weakref
+
+# import _xxsubinterpreters
+
+import _blake2
+import _codecs_cn
+import _codecs_hk
+import _codecs_iso2022
+import _codecs_jp
+import _codecs_kr
+import _codecs_tw
+import _csv
+import _ctypes
+import _ctypes_test
+import _decimal
+import _elementtree
+import _gdbm
+import _hashlib
+import _heapq
+import _json
+import _lsprof
+import _lzma
+import _markupbase
+import _multibytecodec
+import _multiprocessing
+import _opcode
+import _pickle
+import _posixsubprocess
+import _random
+import _socket
+import _sqlite3
+import _ssl
+import _stat
+import _string
+import _struct
+import _testcapi
+import _testbuffer
+import _testimportmultiple
+import _testinternalcap

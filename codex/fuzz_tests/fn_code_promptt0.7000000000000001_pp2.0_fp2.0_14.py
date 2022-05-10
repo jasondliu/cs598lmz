@@ -1,0 +1,25 @@
+fn = lambda: None
+# Test fn.__code__
+fn.__code__.co_argcount = None
+fn.__code__.co_code = None
+fn.__code__.co_consts = None
+fn.__code__.co_filename = None
+fn.__code__.co_firstlineno = None
+fn.__code__.co_flags = None
+fn.__code__.co_freevars = None
+fn.__code__.co_kwonlyargcount = None
+fn.__code__.co_lnotab = None
+fn.__code__.co_name = None
+fn.__code__.co_names = None
+fn.__code__.co_nlocals = None
+fn.__code__.co_stacksize = None
+fn.__code__.co_varnames = None
+# Test fn.__closure__
+fn.__closure__ = None
+# Test fn.__dict__
+fn.__dict__ = None
+# Test fn.__defaults__
+fn.__defaults__ = None
+# Test fn.__get__
+fn.__get__ = None
+# Test fn

@@ -1,0 +1,37 @@
+import io
+# Test io.RawIOBase
+buffer = io.BytesIO(b'abcdefgh')
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+
+# Test io.BufferedIOBase
+buffer = io.BytesIO(b'abcdefgh')
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+
+# Test io.TextIOBase
+buffer = io.StringIO('abcdefgh')
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())
+print(buffer.read())

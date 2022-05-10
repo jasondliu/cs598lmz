@@ -1,0 +1,12 @@
+from types import FunctionType
+a = (x for x in [1])
+print(a)
+b = (x for x in range(10))
+print(b)
+c = next(b)
+print(c)
+d = list(b)
+print(d)
+print(type(a))
+print(type(b))
+print(FunctionType)

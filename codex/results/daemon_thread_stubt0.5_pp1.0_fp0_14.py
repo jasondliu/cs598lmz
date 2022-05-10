@@ -1,0 +1,25 @@
+import sys, threading
+
+def run():
+	#print("run")
+	#print(sys.argv)
+	#print(sys.argv[1])
+	#print(sys.argv[2])
+	#print(sys.argv[3])
+	#print(sys.argv[4])
+	#print(sys.argv[5])
+	#print(sys.argv[6])
+	#print(sys.argv[7])
+	#print(sys.argv[8])
+	#print(sys.argv[9])
+	#print(sys.argv[10])
+	#print(sys.argv[11])
+	#print(sys.argv[12])
+	#print(sys.argv[13])
+	#print(sys.argv[14])
+	#print(sys.argv[15])
+	#print(sys.argv[16])
+	#print(sys.argv[17])
+	#print(sys.argv[18])
+	#print(sys.argv[19])
+	#print(sys.argv[20

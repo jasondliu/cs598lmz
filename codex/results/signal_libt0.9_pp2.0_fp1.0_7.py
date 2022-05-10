@@ -1,0 +1,26 @@
+import signal
+signal.signal(signal.SIGINT, handler)
+
+# obtenemos el puerto de entrada del stacker
+port = int(os.environ['PORT'])
+
+if __name__ == '__main__':
+
+
+	# lanza el juego
+	game = Game("Snack", 480, 640)
+	pygame.display.set_caption("Snack")
+
+	player = Player("Mario")
+	socketio.emit("data",player.to_json(), namespace='/test')
+	game.start()
+	# emitimos los socket de registrarse y loguearse
+
+	@app.route('/login', methods=['GET', 'POST'])
+	@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
+	def login():
+
+		try:
+			c = request.get_json()
+			usuario = usuario_db.get_usuario(c['dni'])
+			if usuario is not None and usuario.verificar_password(

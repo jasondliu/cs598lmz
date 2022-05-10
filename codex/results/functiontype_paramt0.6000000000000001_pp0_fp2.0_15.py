@@ -1,0 +1,45 @@
+from types import FunctionType
+list(FunctionType(lambda y: y, globals(), 'x'))
+
+# for __new__
+
+def f(x):
+    return x
+
+f(None)
+f('a')
+f(1)
+f(1.0)
+f(1j)
+f(())
+f([])
+f({})
+f(set())
+f(frozenset())
+f(Ellipsis)
+f(slice(1, 2))
+f(object())
+f(object)
+f(type)
+f(FunctionType)
+f(Exception())
+f(Exception)
+f(ArithmeticError())
+f(ArithmeticError)
+f(KeyError())
+f(KeyError)
+f(ImportError())
+f(ImportError)
+f(IndexError())
+f(IndexError)
+f(KeyboardInterrupt())
+f(KeyboardInterrupt)
+f(MemoryError())
+f(MemoryError)
+f(NameError())
+f(NameError)
+f(NotImplementedError())
+f(NotImplementedError)
+f(OSError())
+f(OSError)
+f(Over

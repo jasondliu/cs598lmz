@@ -1,0 +1,34 @@
+import mmap
+# Test mmap.mmap
+# https://docs.python.org/3/library/mmap.html
+
+# Open a file
+f = open('/tmp/test.txt', 'r+b')
+
+# Create a memory-map to the file, size 0 means whole file
+m = mmap.mmap(f.fileno(), 0)
+
+# Read content via standard file methods
+print(m.readline())  # prints "Hello Python!\n"
+
+# Update content using slice notation;
+# note that new content must have same size
+m[6:] = b'world'
+
+# ... and read again using standard file methods
+m.seek(0)  # rewind
+print(m.readline())  # prints "Hello world!"
+
+# close the map
+m.close()
+
+# close the file
+f.close()
+
+# Test mmap.mmap
+# https://docs.python.org/3/library/mmap.html
+
+# Open a file
+f = open('/tmp/test.txt', 'r+b')
+
+# Create a memory-map to the file, size 0 means whole

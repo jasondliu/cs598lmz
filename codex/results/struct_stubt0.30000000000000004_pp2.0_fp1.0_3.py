@@ -1,0 +1,63 @@
+from _struct import Struct
+s = Struct.__new__(Struct)
+s.__init__('i')
+s.size
+
+s = Struct('i')
+s.size
+
+s = Struct('i')
+s.pack(1)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s = Struct('i')
+s.pack(1)
+
+s.pack(2)
+
+s.pack(3)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)
+
+s.unpack(_)

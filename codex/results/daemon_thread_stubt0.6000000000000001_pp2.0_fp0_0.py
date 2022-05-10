@@ -1,0 +1,25 @@
+import sys, threading
+
+def run():
+	#gdb.execute("target remote localhost:4242")
+	#gdb.execute("target remote localhost:4242")
+	gdb.execute("file /home/kapil/Desktop/vm/vm")
+	gdb.execute("set disassembly-flavor intel")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+	gdb.execute("b *main")
+

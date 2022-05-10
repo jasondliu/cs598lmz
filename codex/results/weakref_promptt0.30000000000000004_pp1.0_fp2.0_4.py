@@ -1,0 +1,27 @@
+import weakref
+# Test weakref.ref()
+# Test weakref.proxy()
+# Test weakref.getweakrefcount()
+# Test weakref.getweakrefs()
+# Test weakref.WeakKeyDictionary()
+# Test weakref.WeakValueDictionary()
+# Test weakref.WeakSet()
+# Test weakref.finalize()
+# Test weakref.ReferenceType
+# Test weakref.ProxyType
+# Test weakref.CallableProxyType
+# Test weakref.ProxyTypes
+# Test weakref.WeakMethod
+# Test weakref.WeakMethodProxy
+# Test weakref.WeakMethodProxyType
+# Test weakref.WeakMethodProxyTypes
+# Test weakref.WeakMethodCallableProxyType
+# Test weakref.WeakMethodCallableProxyTypes
+# Test weakref.WeakMethodRef
+# Test weakref.WeakMethodRefType
+# Test weakref.WeakMethodRefTypes
+# Test weakref.WeakMethodRefCallableProxyType
+# Test weakref.WeakMethodRefCallableProxyTypes
+# Test weakref.WeakMethodRefProxyType
+# Test weakref.WeakMethodRefProxyTypes
+# Test weakref.WeakMethodRefProxyCallable

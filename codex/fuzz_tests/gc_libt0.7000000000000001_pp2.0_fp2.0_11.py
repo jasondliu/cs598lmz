@@ -1,0 +1,24 @@
+import gc, weakref, sys
+
+from few import FEW
+from gamma import Gamma
+from lexicon import Lexicon
+from word_class_inventory import WordClassInventory
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+from word_class_lexicon import WordClassLexicon
+

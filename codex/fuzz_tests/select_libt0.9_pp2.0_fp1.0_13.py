@@ -1,0 +1,35 @@
+import select
+-
+-PORT = 8087
+-HOST = '127.0.0.1'
+-
+-if __name__ == "__main__":
+-
+-    print 'I am the client, listening on port %d' % PORT
+-
+-    clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+-    clientsocket.connect(('localhost', 8088))
+-
+-    while 1:
+-        data = clientsocket.recv(1024)
+-        print 'Receiving:' + data
+-        
+-        cmd = raw_input()
+-        clientsocket.sendall(cmd)
+-        if cmd == "KILL":
+-        	break
+-        #time.sleep(1)
+-
+-    clientsocket.close()
+-
+-
+-tock = 0
+-tick = 0
+-
+-while 1:
+-	read = raw_input()
+-	if read == "p":
+-		print "Thank you!"
+-		break
+-	if read == "k":
+-		

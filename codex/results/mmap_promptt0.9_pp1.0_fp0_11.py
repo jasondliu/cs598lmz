@@ -1,0 +1,12 @@
+import mmap
+# Test mmap.mmap()
+# Test mmap.mmap(1)
+# Test mmap.mmap(1, 2)
+# Test mmap.mmap(1, 2, 3)
+# Test mmap.mmap(fileno=1)
+# Test mmap.mmap(fileno=1, length=2)
+# Test mmap.mmap(fileno=1, length=2, access=3)
+# Test mmap.mmap(fileno=1, length=2, flags=3, prot=4, access=5)
+# Test mmap(1, 2, 3, 4, 5)
+# Test mmap(1, 2, 3, 4, 5, 6)
+# Test mmap(fileno=1, access=2)

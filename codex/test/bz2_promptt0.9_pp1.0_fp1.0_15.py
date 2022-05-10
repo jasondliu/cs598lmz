@@ -1,0 +1,3 @@
+import bz2
+# Test BZ2Decompressor
+ct = b'BZh91AY&SY.\xd9\xa5\x80F\x1c\x00\xe0\xe8\x00\x00\x00\x00'

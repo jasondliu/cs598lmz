@@ -1,0 +1,12 @@
+import _struct
+import sys
+
+def hb_struct(code, msg):
+    return _struct.pack('!i' + str(len(msg)) + 's', code, msg)
+
+def hb_unpack(data):
+    s = _struct.Struct('!i')
+    return s.unpack(data[:4])[0]
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.connect(('localhost',8888))

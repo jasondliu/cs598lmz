@@ -1,0 +1,47 @@
+import _struct
+import _sys
+import _time
+import _thread
+import _threading
+import _warnings
+import _weakref
+import _weakrefset
+import _winreg
+import _winxptheme
+import _xmlplus
+import _xmlrpclib
+import _zipimport
+import _zlib
+
+# Standard library modules.
+import __future__
+import __main__
+import _abcoll
+import _ast
+import _bisect
+import _bytesio
+import _codecs
+import _codecs_cn
+import _codecs_hk
+import _codecs_iso2022
+import _codecs_jp
+import _codecs_kr
+import _codecs_tw
+import _collections
+import _csv
+import _ctypes
+import _datetime
+import _elementtree
+import _fileio
+import _functools
+import _heapq
+import _hotshot
+import _io
+import _json
+import _locale
+import _lsprof
+import _markupbase
+import _md5
+import _multibytecodec
+import _multiprocessing
+

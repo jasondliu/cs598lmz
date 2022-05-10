@@ -1,0 +1,30 @@
+import _struct
+-from argparse import ArgumentParser
+-
+-
+-def float_to_hex(value):
+-    """This is shortcut to get hexadecimal representation of float.
+-    """
+-    return hex(_struct.unpack('I', _struct.pack('f', value))[0])
+-
+-
+-def hex_to_float(value):
+-    """This is shortcut to get float representation of hexadecimal value.
+-    """
+-    return _struct.unpack('I', _struct.pack('f', value))
+-
+-
+-def main(args):
+-    """The main function is the program entry point.
+-    """
+-    if args.len:
+-        print len(repr(args.num))
+-    if args.float:
+-        print hex_to_float(args.num)[0]
+-    if args.hex:
+-        print float_to_hex(args.num)
+-
+-
+-if __name__ == '__main__':
+-    parser = ArgumentParser()
+-    parser.add_argument('

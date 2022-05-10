@@ -1,0 +1,19 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi
+gi.gi_code = fn
+gi.gi_frame = fn
+gi.gi_running = fn
+gi.gi_frame.f_code = gi
+gi.gi_frame.f_trace = fn
+gi.gi_frame.f_back = fn
+gi.gi_frame.f_back.f_code = gi
+gi.gi_frame.f_back.f_trace = fn
+gi.gi_frame.f_back.f_back = fn
+gi.gi_frame.f_back.f_back.f_code = gi
+gi.gi_frame.f_back.f_back.f_trace = fn
+gi.gi_frame.f_back.f_back.f_back = fn
+gi.gi_frame.f_back.f_back.f_back.f_code = gi
+gi.gi_frame.f_back.f_back.f_back.f_trace = fn
+gi.gi_frame.f_back.f_back.f_back.f_back = fn
+gi.gi_frame.f_

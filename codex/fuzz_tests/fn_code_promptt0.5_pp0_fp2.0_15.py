@@ -1,0 +1,22 @@
+fn = lambda: None
+# Test fn.__code__.co_filename
+# Test fn.__code__.co_firstlineno
+# Test fn.__code__.co_flags
+# Test fn.__code__.co_lnotab
+# Test fn.__code__.co_name
+# Test fn.__code__.co_names
+# Test fn.__code__.co_nlocals
+# Test fn.__code__.co_stacksize
+# Test fn.__code__.co_varnames
+# Test fn.__code__.__class__
+# Test fn.__code__.__cmp__
+# Test fn.__code__.__delattr__
+# Test fn.__code__.__doc__
+# Test fn.__code__.__format__
+# Test fn.__code__.__getattribute__
+# Test fn.__code__.__hash__
+# Test fn.__code__.__init__
+# Test fn.__code__.__new__
+# Test fn.__code__.__reduce__
+# Test fn.__code__.__reduce_ex__
+# Test fn.__code

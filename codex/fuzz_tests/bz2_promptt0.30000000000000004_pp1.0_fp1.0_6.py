@@ -1,0 +1,26 @@
+import bz2
+# Test BZ2Decompressor
+
+data = b'BZh91AY&SYA\xaf\x82\r\x00\x00\x01\x01\x80\x02\xc0\x02\x00 \x00!\x9ah3M\x07<]\xc9\x14\xe1BA\x06\xbe\x084'
+
+decompressor = bz2.BZ2Decompressor()
+
+decompressor.decompress(data)
+
+# decompressor.unused_data
+
+decompressor.decompress(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+
+# decompressor.unused_data
+
+# decompressor.decompress(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+
+# decompressor.unused_data
+
+# decompressor.flush()
+
+# decompressor.unused_data
+
+# Test BZ2Compressor
+
+compressor =

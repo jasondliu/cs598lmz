@@ -1,0 +1,22 @@
+from types import FunctionType
+a = (x for x in [1])
+print(type(a))
+print(type(a.__next__))
+print(type(a.__next__) == FunctionType)
+print(a.__next__())
+print(type(a.__next__))
+print(type(a.__next__) == FunctionType)
+print(a.__next__())
+print(type(a.__next__))
+print(type(a.__next__) == FunctionType)
+
+b = [x for x in [1]]
+print(type(b))
+print(type(b.__getitem__))
+print(type(b.__getitem__) == FunctionType)
+print(b[0])
+print(type(b.__getitem__))
+print(type(b.__getitem__) == FunctionType)
+print(b[0])
+print(type(b.__getitem__))
+print(type(b.__getitem__) == FunctionType)

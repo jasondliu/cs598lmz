@@ -1,0 +1,11 @@
+import select
+# Test select.select()
+print "select.select():", select.select([], [], [], 0.1)
+# Test select.epoll()
+print "select.epoll():", select.epoll()
+# Test select.poll()
+print "select.poll():", select.poll()
+# Test select.kqueue()
+print "select.kqueue():", select.kqueue()
+# Test select.devpoll()
+print "select.devpoll():", select.devpoll()

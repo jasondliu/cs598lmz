@@ -1,0 +1,36 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(a)
+keepali0e.append(a.c)
+keepali0e.append(lst)
+del keepali0e
+lst[0]="foo"
+sys.getrefcount(a)
+lst[0]="foo"
+a.c=None
+del a
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"
+lst[0]="foo"

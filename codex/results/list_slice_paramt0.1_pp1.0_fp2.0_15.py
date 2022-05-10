@@ -1,0 +1,18 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+del a
+print lst
+
+#结果：
+#['<__main__.A object at 0x0000000003C8E7F0>']
+
+#结论：
+#当一个对象的弱引用被删除时，回调函数被调用，回调函数的参数是弱引用对象，而不是被引用的对象。
+#回调函数可以访问弱引用对象的key属性，但是不能访问弱引用对象的value属性。
+#回调函数可以访问弱引用

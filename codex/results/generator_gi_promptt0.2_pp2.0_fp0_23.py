@@ -1,0 +1,17 @@
+gi = (i for i in ())
+# Test gi.gi_code.co_flags
+print(gi.gi_code.co_flags & 0x20)
+print(gi.gi_code.co_flags & 0x40)
+print(gi.gi_code.co_flags & 0x80)
+print(gi.gi_code.co_flags & 0x100)
+print(gi.gi_code.co_flags & 0x200)
+print(gi.gi_code.co_flags & 0x400)
+print(gi.gi_code.co_flags & 0x800)
+print(gi.gi_code.co_flags & 0x1000)
+print(gi.gi_code.co_flags & 0x2000)
+print(gi.gi_code.co_flags & 0x4000)
+print(gi.gi_code.co_flags & 0x8000)
+print(gi.gi_code.co_flags & 0x10000)
+print(gi.gi_code.co_flags & 0x20000)
+print(gi.gi_code.co_flags & 0x40000)
+print(gi.gi_code.co_

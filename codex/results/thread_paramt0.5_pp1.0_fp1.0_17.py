@@ -1,0 +1,15 @@
+import sys, threading
+threading.Thread(target=lambda: sys.stdout.write('1'))
+#threading.Thread(target=lambda: sys.stdout.write('2'))
+threading.Thread(target=lambda: sys.stdout.write('3'))
+threading.Thread(target=lambda: sys.stdout.write('4'))
+threading.Thread(target=lambda: sys.stdout.write('5'))
+threading.Thread(target=lambda: sys.stdout.write('6'))
+threading.Thread(target=lambda: sys.stdout.write('7'))
+threading.Thread(target=lambda: sys.stdout.write('8'))
+threading.Thread(target=lambda: sys.stdout.write('9'))
+threading.Thread(target=lambda: sys.stdout.write('0'))
+threading.Thread(target=lambda: sys.stdout.write('.'))
+threading.Thread(target=lambda: sys.stdout.write(' '))
+threading.Thread(target=lambda: sys.stdout.write('a'))
+threading.Thread(

@@ -1,0 +1,20 @@
+import io
+# Test io.RawIOBase
+import pickle
+import sre_parse
+import sre_constants
+import _markupbase
+import collections
+import keyword
+import operator
+import os
+import posixpath
+import re
+import shlex
+import stat
+import threading
+import time
+import unicodedata
+import functools
+import ntpath
+import _bisect

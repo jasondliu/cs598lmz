@@ -1,0 +1,15 @@
+import mmap
+# Test mmap.mmap()
+mm = mmap.mmap(0,1,prot=mmap.PROT_READ)
+# Test mmap.mmap()
+mm = mmap.mmap(0,1,prot=mmap.PROT_WRITE)
+# Test mmap.mmap()
+mm = mmap.mmap(0,1,prot=mmap.PROT_EXEC)
+# Test mmap.mmap()
+mm = mmap.mmap(0,1,prot=mmap.PROT_NONE)
+# Test mmap.mmap()
+mm = mmap.mmap(0,1,prot=mmap.PROT_READ|mmap.PROT_WRITE)
+# Test mmap.mmap()
+mm = mmap.mmap(0,1,prot=mmap.PROT_READ|mmap.PROT_WRITE|mmap.PROT_EXEC)
+# Test mmap.mmap()
+mm = mmap.mmap(0,1,prot=mmap.PROT_READ|mmap.PROT_WRITE|

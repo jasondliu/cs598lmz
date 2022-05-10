@@ -1,0 +1,26 @@
+import io
+# Test io.RawIOBase
+# Test io.RawIOBase.read
+# Test io.RawIOBase.readall
+# Test io.RawIOBase.readinto
+# Test io.RawIOBase.readinto1
+# Test io.RawIOBase.readline
+# Test io.RawIOBase.readlines
+# Test io.RawIOBase.seek
+# Test io.RawIOBase.tell
+# Test io.RawIOBase.truncate
+# Test io.RawIOBase.write
+# Test io.RawIOBase.writelines
+# Test io.RawIOBase.__init__
+# Test io.RawIOBase.__repr__
+# Test io.RawIOBase.close
+# Test io.RawIOBase.fileno
+# Test io.RawIOBase.flush
+# Test io.RawIOBase.isatty
+# Test io.RawIOBase.readable
+# Test io.RawIOBase.readinto
+# Test io.RawIOBase.seekable
+# Test io.RawIOBase.seek
+# Test io.RawIOBase.tell
+# Test io.RawIOBase.truncate
+# Test io

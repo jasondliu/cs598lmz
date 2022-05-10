@@ -1,0 +1,20 @@
+import select
+# Test select.select(rlist, wlist, xlist[, timeout])
+rlist = select.select([], [], [])
+rlist = select.select([], [], [], None)
+rlist = select.select([], [], [], 0)
+rlist = select.select([], [], [], 1)
+#
+# Test select.poll()
+po = select.poll()
+po.register(1)
+po.register(1, select.POLLIN)
+po.register(1, select.POLLIN | select.POLLOUT)
+po.register(1, select.POLLIN | select.POLLOUT | select.POLLPRI)
+po.register(1, select.POLLINOUT)
+po.register(1, select.POLLPRI)
+po.register(1, select.POLLPRI | select.POLLOUT)
+po.register(1, select.POLLERR)
+po.register(1, select.POLLHUP)
+po.register(1, select.POLLNVAL)
+po.modify(1, select.POLLIN

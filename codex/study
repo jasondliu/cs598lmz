@@ -1,0 +1,29 @@
+benign
+======
+SIGALRM
+5
+
+false positive
+==============
+improper API
+69
+
+invalid dereference
+12
+
+replicated report
+=================
+ctypes
+1
+
+io
+42
+
+slice
+1
+
+select
+35
+
+tp_clear
+6

@@ -1,0 +1,18 @@
+import threading
+threading.Thread(target=s.close).start()
+time.sleep(0.01)
+s.send(bytes("2",encoding="utf-8"))
+s.send(bytes("3",encoding="utf-8"))
+s.send(bytes("4",encoding="utf-8"))
+s.send(bytes("5",encoding="utf-8"))
+s.send(bytes("6",encoding="utf-8"))
+s.send(bytes("7",encoding="utf-8"))
+s.send(bytes("8",encoding="utf-8"))
+s.send(bytes("9",encoding="utf-8"))
+s.send(bytes("10",encoding="utf-8"))
+s.send(bytes("11",encoding="utf-8"))
+s.send(bytes("12",encoding="utf-8"))
+s.send(bytes("13",encoding="utf-8"))
+s.send(bytes("14",encoding="utf-8"))
+s.send(bytes("15",encoding="utf-8"))
+s.send(bytes("16",encoding

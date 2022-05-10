@@ -1,0 +1,55 @@
+import io
+# Test io.RawIOBase
+
+import unittest
+import io
+import os
+import sys
+import tempfile
+import errno
+import warnings
+import weakref
+import functools
+import contextlib
+import select
+import socket
+import time
+import threading
+import subprocess
+import struct
+import array
+import gc
+import shutil
+import stat
+import mmap
+import pickle
+import atexit
+import random
+import itertools
+import collections
+import platform
+import locale
+import re
+import textwrap
+import abc
+import inspect
+import numbers
+import collections.abc
+import _testcapi
+import _thread
+import _collections
+import _pyio
+import _pyio as pyio
+import _io
+import _io as io
+import _locale
+import _multibytecodec
+import _multiprocessing
+import _signal
+import _socket
+import _testbuffer
+import _testcapi
+import _testmultiphase
+import _thread
+import _warnings
+import _weakref

@@ -1,0 +1,24 @@
+import codecs
+# Test codecs.register_error()
+
+import codecs
+
+def my_error_handler(exception):
+    print "my_error_handler:", exception
+    return (u'', exception.start + 1)
+
+codecs.register_error('test.my_error_handler', my_error_handler)
+
+def test(encoding):
+    print "ENCODING:", encoding
+    s = u'\u3042\u3044\u3046\u3048\u304a'
+    print "INPUT:", s.encode(encoding, 'backslashreplace')
+    print "CODEC:", encoding
+    try:
+        print "ENCODED:", s.encode(encoding, 'test.my_error_handler')
+    except UnicodeEncodeError, err:
+        print "ERROR:", err
+    print
+
+for encoding in ['ascii', 'latin-1', 'utf-8']:
+    test(encoding)

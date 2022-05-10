@@ -1,0 +1,18 @@
+import mmap
+# Test mmap.mmap()
+m = mmap.mmap(-1, 1024, access=mmap.ACCESS_READ)
+# Test mmap.mmap()
+m = mmap.mmap(0, 1024, access=mmap.ACCESS_READ)
+# Test mmap.mmap()
+m = mmap.mmap(1, 1024, access=mmap.ACCESS_READ)
+# Test mmap.mmap()
+m = mmap.mmap(2, 1024, access=mmap.ACCESS_READ)
+# Test mmap.mmap()
+m = mmap.mmap(3, 1024, access=mmap.ACCESS_READ)
+# Test mmap.mmap()
+m = mmap.mmap(4, 1024, access=mmap.ACCESS_READ)
+# Test mmap.mmap()
+m = mmap.mmap(5, 1024, access=mmap.ACCESS_READ)
+# Test mmap.mmap()
+m = mmap.mmap(6, 1024, access=mmap.ACCESS_READ)
+# Test mmap.mm

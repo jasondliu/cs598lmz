@@ -1,0 +1,42 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+del a
+while lst:keepali0e.append(lst[:])
+
+#CHALLENGE #3 - MEMORY LEAKS
+#PYTHON 3
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepalive=[]
+lst=[str()]
+a=A()
+a.c=a
+keepalive.append(weakref.ref(a,callback))
+del a
+while lst:keepalive.append(lst[:])
+
+#CHALLENGE #4 - MEMORY LEAKS
+#PYTHON 2
+class A(object):pass
+def callback(x):del lst[0]
+keepalive=[]
+lst=[str()]
+a=A()
+a.c=a
+keepalive.append(weakref.ref(a,callback))
+del a
+while lst:keepalive.append(lst[:])
+
+#CHALLENGE #4 - MEMORY LEAKS
+#PYTHON 3
+class A(object):pass
+def callback(x):del lst[0]
+keepalive=[]
+lst=[

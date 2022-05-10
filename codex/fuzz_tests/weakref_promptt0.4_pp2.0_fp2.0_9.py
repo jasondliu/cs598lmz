@@ -1,0 +1,50 @@
+import weakref
+# Test weakref.ref()
+
+class C:
+    pass
+
+o = C()
+r = weakref.ref(o)
+
+print(r())
+print(r() is o)
+print(r() is None)
+
+del o
+
+print(r() is None)
+
+# Test weakref.proxy()
+
+o = C()
+p = weakref.proxy(o)
+
+print(p is o)
+print(p.__class__)
+
+del o
+
+try:
+    print(p)
+except ReferenceError:
+    print('ReferenceError')
+
+# Test weakref.getweakrefcount()
+
+o = C()
+print(weakref.getweakrefcount(o))
+
+r1 = weakref.ref(o)
+print(weakref.getweakrefcount(o))
+
+r2 = weakref.ref(o)
+print(weakref.getweakrefcount(o))
+
+del r1
+print(weakref.getweakrefcount(o))
+
+del r2
+print(weakref.getweakrefcount(o))
+
+# Test weakref.getweakref

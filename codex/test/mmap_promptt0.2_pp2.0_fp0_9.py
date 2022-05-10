@@ -1,0 +1,27 @@
+import mmap
+# Test mmap.mmap(0, 1, "shared", mmap.MAP_SHARED)
+
+import os
+# Test os.getcwd()
+# Test os.getpid()
+# Test os.getppid()
+# Test os.getuid()
+# Test os.getgid()
+# Test os.geteuid()
+# Test os.getegid()
+# Test os.getgroups()
+# Test os.getlogin()
+# Test os.getenv("HOME")
+# Test os.getenv("SHELL")
+# Test os.getenv("USER")
+# Test os.getenv("PATH")
+# Test os.getenv("PWD")
+# Test os.getenv("OLDPWD")
+# Test os.getenv("TERM")
+# Test os.getenv("LANG")
+# Test os.getenv("LC_ALL")
+# Test os.getenv("LC_CTYPE")
+# Test os.getenv("LC_COLLATE")
+# Test os.getenv("LC_MESSAGES")
+# Test os.getenv("LC_MONETARY")
+#

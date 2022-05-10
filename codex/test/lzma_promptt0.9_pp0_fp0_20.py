@@ -1,0 +1,3 @@
+import lzma
+# Test LZMADecompressor with an LZMA file created with outside the stdlib
+# with e.g. 7za ...

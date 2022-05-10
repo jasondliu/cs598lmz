@@ -1,0 +1,4 @@
+import gc, weakref
+
+from ..utils import is_sequence, is_iterable, is_string, is_integer, is_float, is_integer_sequence, is_float_sequence, is_number, is_sequence_of_numbers, is_integer_sequence_of_numbers, is_float_sequence_of_numbers, is_number_sequence, is_integer_number_sequence, is_float_number_sequence, is_sequence_of_strings, is_string_sequence, is_sequence_of_tuples, is_tuple_sequence, is_sequence_of_lists, is_list_sequence
+from ..utils import is_sequence_of_sequences, is_sequence_sequence, is_sequence_of_iterables, is_iterable_sequence, is_sequence_of_objects, is_object_sequence, is_sequence_of_dictionaries, is_dictionary_sequence, is_sequence_of_instances, is_instance_sequence, is_sequence_of_subclasses, is_subclass_sequence, is_sequence_of_functions, is_function_sequence, is_sequence

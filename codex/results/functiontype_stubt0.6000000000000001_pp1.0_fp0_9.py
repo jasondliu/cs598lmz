@@ -1,0 +1,25 @@
+from types import FunctionType
+a = (x for x in [1])
+b = map(lambda x: x, [1])
+c = map(lambda x: x, [1])
+print(a)
+print(b)
+print(c)
+print(a.__next__())
+print(next(b))
+print(next(c))
+print(type(a))
+print(type(b))
+print(type(c))
+
+print(isinstance(a, FunctionType))
+print(isinstance(b, FunctionType))
+print(isinstance(c, FunctionType))
+
+print(a.__next__())
+print(next(b))
+print(next(c))
+
+print(isinstance(a, FunctionType))
+print(isinstance(b, FunctionType))
+print(isinstance(c, FunctionType))

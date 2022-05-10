@@ -1,0 +1,14 @@
+import io.github.cottonmc.component.data.BooleanField;
+import io.github.cottonmc.component.data.api.DataElement;
+import io.github.cottonmc.component.energy.impl.EnergyContainer;
+import io.github.cottonmc.component.energy.impl.EnergySide;
+import io.github.cottonmc.component.energy.type.EnergyType;
+import io.github.cottonmc.component.fluid.CapabilityFluidComponent;
+import io.github.cottonmc.component.fluid.FluidComponent;
+import io.github.cottonmc.component.fluid.impl.SimpleFluidComponent;
+import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.container.ContainerProviderRegistry;
+import net.fabricmc.fabric.api.data.v1.mutable.Value;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.block.Block;
+import net

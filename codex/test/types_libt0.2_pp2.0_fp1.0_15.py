@@ -1,0 +1,13 @@
+import types
+types.MethodType(f, None, Student)
+
+# 给实例绑定一个方法
+s.set_age = MethodType(f, s)
+s.set_age(25)
+s.age
+
+# 给一个实例绑定的方法，对另一个实例是不起作用的
+s2 = Student('Bob', 20)
+s2.set_age(25)
+
+# 为了给所有实例都绑定方法，可以给class绑定方法

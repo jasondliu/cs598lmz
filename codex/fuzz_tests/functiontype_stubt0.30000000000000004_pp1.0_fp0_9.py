@@ -1,0 +1,28 @@
+from types import FunctionType
+a = (x for x in [1])
+print(type(a))
+print(type(a.__iter__))
+print(type(a.__next__))
+print(type(a.send))
+print(type(a.throw))
+print(type(a.close))
+print(type(a.gi_frame))
+print(type(a.gi_running))
+print(type(a.gi_code))
+print(type(a.gi_yieldfrom))
+print(type(a.gi_weakreflist))
+
+#print(a.__iter__())
+#print(a.__next__())
+#print(a.send(None))
+#print(a.throw(StopIteration))
+#print(a.close())
+#print(a.gi_frame)
+#print(a.gi_running)
+#print(a.gi_code)
+#print(a.gi_yieldfrom)
+#print(a.gi_weakreflist)
+
+#print(a.__iter__.__self__)
+#print(a.__next__.__self__)
+#print(

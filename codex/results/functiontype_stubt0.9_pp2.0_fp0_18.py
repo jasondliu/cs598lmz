@@ -1,0 +1,11 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [1])
+print(a is b)
+print(type(a) is FunctionType)
+print(type(a.__next__) is FunctionType)
+print(type(a.__iter__) is FunctionType)
+print(dir(a))
+print(dir(dir(a)))
+print(dir(dir(dir(a))))
+print(dir(dir(dir(dir(a)))))

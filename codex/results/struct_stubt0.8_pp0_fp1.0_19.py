@@ -1,0 +1,4 @@
+from _struct import Struct
+s = Struct.__new__(Struct)
+s.size = 52
+s.format = "<3s3s2s3s3s2s2s2s3s3s2s2s2s3s3s2s2s2s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4

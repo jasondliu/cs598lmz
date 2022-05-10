@@ -1,0 +1,31 @@
+import io
+# Test io.RawIOBase
+# Test io.BytesIO
+# Test io.BufferedIOBase
+# Test io.FileIO
+# Test io.BufferedReader
+# Test io.BufferedRWPair
+# Test io.BufferedWriter
+# Test io.TextIOBase
+# Test io.StringIO
+# Test io.TextIOWrapper
+# Test io.UnsupportedOperation
+# Test io.SEEK_SET
+# Test io.SEEK_CUR
+# Test io.SEEK_END
+# Test io.DEFAULT_BUFFER_SIZE
+# Test io.open
+# Test io.StringIO.write
+# Test io.StringIO.read
+# Test io.StringIO.getvalue
+# Test io.StringIO.getbuffer
+# Test io.StringIO.read1
+# Test io.StringIO.readinto
+# Test io.StringIO.readline
+# Test io.StringIO.readlines
+# Test io.StringIO.writelines
+# Test io.StringIO.seek
+# Test io.StringIO.tell
+# Test io.StringIO.write
+# Test io.StringIO.truncate
+

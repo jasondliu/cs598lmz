@@ -1,0 +1,2 @@
+import codecs
+# Test codecs.register_error('strict', strict_errors)

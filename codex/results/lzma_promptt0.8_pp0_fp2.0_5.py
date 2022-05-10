@@ -1,0 +1,19 @@
+import lzma
+# Test LZMADecompressor
+cdata = b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\xe5\xa3\x01\x00\x00\x04(Z\xe5\xa3\x01B\x00\x012\x00\x00\x00\x11\x00r\x00\x00\x00\x00'
+
+decomp = lzma.LZMADecompressor()
+
+ds = decomp.decompress(cdata)
+print(ds)
+
+comp = lzma.LZMACompressor(format=lzma.FORMAT_ALONE)
+cs = comp.compress(ds)
+print(cs)
+
+decomp = lzma.LZMADecompressor()
+
+ds = decomp.decompress(cs)
+print(ds)
+
+comp = lzma.LZMACompressor(format=lzma.FORMAT_XZ

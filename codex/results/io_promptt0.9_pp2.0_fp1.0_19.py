@@ -1,0 +1,18 @@
+import io
+# Test io.RawIOBase
+fp = io.BytesIO(b"hi")
+fp.readinto1(bytearray(2))
+fp.readinto1(bytearray(2))
+fp.readinto1(bytearray(1))
+fp.readinto1(bytearray(0))
+fp.readinto1(bytearray(2))
+fp.readinto1(bytearray(2**31-1))
+fp.readinto1(bytearray(2**31))
+fp = io.BytesIO(b"hi")
+fp.write(bytes(1))
+fp.write(bytearray(2))
+fp.write(bytes(2**31-1))
+fp.write(bytes(2**31))
+fp.write(bytearray(1))
+fp.write(bytearray(2**31-1))
+fp.write(bytearray(2**31))

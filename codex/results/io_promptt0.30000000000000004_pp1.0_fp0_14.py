@@ -1,0 +1,37 @@
+import io
+# Test io.RawIOBase
+# Test io.BufferedIOBase
+# Test io.TextIOBase
+# Test io.BytesIO
+# Test io.StringIO
+# Test io.FileIO
+# Test io.BufferedReader
+# Test io.BufferedWriter
+# Test io.BufferedRWPair
+# Test io.BufferedRandom
+# Test io.TextIOWrapper
+# Test io.open
+
+# Test os.PathLike
+# Test os.DirEntry
+# Test os.scandir
+# Test os.fwalk
+# Test os.walk
+# Test os.fsencode
+# Test os.fsdecode
+# Test os.fspath
+# Test os.PathLike
+# Test os.DirEntry
+# Test os.scandir
+# Test os.fwalk
+# Test os.walk
+# Test os.fsencode
+# Test os.fsdecode
+# Test os.fspath
+# Test os.PathLike
+# Test os.DirEntry
+# Test os.scandir
+# Test os.fwalk
+# Test os.walk
+# Test os.fsencode
+# Test os.

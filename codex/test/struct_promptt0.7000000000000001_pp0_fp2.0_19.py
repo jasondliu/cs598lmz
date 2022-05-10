@@ -1,0 +1,16 @@
+import _struct
+# Test _struct.Struct and .unpack()
+s = _struct.Struct('<I')
+data = s.pack(123)
+assert s.unpack(data) == (123,)
+# Test _struct.Struct and .iter_unpack()
+assert list(s.iter_unpack(data)) == [123]
+# Test _struct.Struct and ._unpack_from()
+data = bytearray(s.size * 3)
+s._unpack_from(data, 0, 1) == (0,)
+s._unpack_from(data, 0, 2) == (0, 0)
+s._unpack_from(data, 0, 3) == (0, 0, 0)
+s._unpack_from(data, 0, 4) == (0, 0, 0, 0)
+s._unpack_from(data, s.size, 1) == (0,)
+s._unpack_from(data, s.size, 2) == (0, 0)
+s._unpack_from(data, s.size, 3) == (0, 0, 0)

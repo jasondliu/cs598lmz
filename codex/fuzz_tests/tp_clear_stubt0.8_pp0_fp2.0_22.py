@@ -1,0 +1,39 @@
+import gc, weakref
+
+class LateFin:
+    __slots__ = ('ref',)
+    def __del__(self):
+        global func
+        func = self.ref()
+
+class Cyclic(tuple):
+    __slots__ = ()
+    def __del__(self):
+        self[1].ref = weakref.ref(self[0])
+        global latefin
+        del latefin
+
+latefin = LateFin()
+func = lambda: None
+cyc = tuple.__new__(Cyclic, (func, latefin))
+
+func.__module__ = cyc
+del func, cyc, LateFin, Cyclic
+gc.collect()
+
+def testdel(x):
+    if hasattr(x, '__del__'):
+        sys.stdout.write('Yes')
+    else:
+        sys.stdout.write('No')
+    sys.stdout.write('\n')
+
+testdel(func)
+testdel('abc')
+testdel(1)
+testdel((1,))
+latefin.ref = weakref.ref(func)
+testdel(func)
+latefin.ref = weakref.ref('abc')
+testdel('abc')
+del latefin

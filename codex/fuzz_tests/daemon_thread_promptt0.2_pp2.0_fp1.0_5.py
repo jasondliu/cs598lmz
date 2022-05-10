@@ -1,0 +1,35 @@
+import threading
+# Test threading daemon
+def daemon():
+    print('Starting:')
+    time.sleep(2)
+    print('Exiting')
+d = threading.Thread(name='daemon', target=daemon)
+d.setDaemon(True)
+def non_daemon():
+    print('Starting:')
+    print('Exiting')
+t = threading.Thread(name='non-daemon', target=non_daemon)
+t.setDaemon(False)
+d.start()
+t.start()
+d.join()
+t.join()
+
+# Test threading lock
+lock = threading.Lock()
+def do_with_lock(lock):
+    with lock:
+        print('Lock is held')
+lock.acquire()
+print('Lock is held')
+lock.release()
+print('Lock is released')
+t1 = threading.Thread(target=do_with_lock, args=(lock,))
+t1.start()
+t1.join()
+
+# Test threading rlock
+rlock = threading.RLock()
+def do_with_rlock(lock):
+    with lock:

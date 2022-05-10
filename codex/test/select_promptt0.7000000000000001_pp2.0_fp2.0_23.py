@@ -1,0 +1,15 @@
+import select
+# Test select.select
+assert select.select([],[],[],0.0)  == ([],[],[])
+assert select.select([],[],[],0.1)  == ([],[],[])
+assert select.select([],[],[],0.01) == ([],[],[])
+assert select.select([],[],[],0.001) == ([],[],[])
+assert select.select([],[],[],0.0001) == ([],[],[])
+assert select.select([],[],[],0.00001) == ([],[],[])
+assert select.select([],[],[],0.000001) == ([],[],[])
+assert select.select([],[],[],0.0000001) == ([],[],[])
+assert select.select([],[],[],0.00000001) == ([],[],[])
+assert select.select([],[],[],0.000000001) == ([],[],[])
+assert select.select([],[],[],0.0000000001) == ([],[],[])
+assert select.select([],[],[],0.00000000001) == ([],[],[])
+assert select.select([],[],[],0.000000000001) == ([],[],[])

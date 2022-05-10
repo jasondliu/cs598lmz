@@ -1,0 +1,27 @@
+import lzma
+lzma.LZMAError
+
+# Replicating functionality of zipfile
+import zipfile
+zipfile.error
+zipfile.BadZipfile
+zipfile.LargeZipFile
+
+# Replicating functionality of urllib2
+import urllib2
+urllib2.URLError
+urllib2.HTTPError
+urllib2.ContentTooShortError
+
+# Replicating functionality of HTMLParser
+import HTMLParser
+HTMLParser.HTMLParseError
+HTMLParser.HTMLParseError(None, None, None, -1)
+
+# Replicating functionality of BaseHTTPServer
+import BaseHTTPServer
+BaseHTTPServer.BaseHTTPRequestHandler.BaseHTTPRequestHandler.BaseHTTPRequestHandler.version_string
+BaseHTTPServer.BaseHTTPRequestHandler.BaseHTTPRequestHandler.BaseHTTPRequestHandler.protocol_version
+BaseHTTPServer.BaseHTTPRequestHandler.BaseHTTPRequestHandler.BaseHTTPRequestHandler.handle
+BaseHTTPServer.BaseHTTPRequestHandler.BaseHTTPRequestHandler.BaseHTTPRequestHandler.setup
+BaseHTTPServer.BaseHTTPRequestHandler.BaseHTTPRequestHandler.BaseHTTPRequestHandler.finish

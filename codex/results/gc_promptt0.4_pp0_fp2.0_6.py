@@ -1,0 +1,42 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+class A:
+    pass
+def f():
+    a = A()
+    a.b = A()
+    a.b.a = a
+    return a
+a = f()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+print gc.collect()
+

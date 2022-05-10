@@ -1,0 +1,53 @@
+import bz2
+bz2.BZ2File(filename)
+
+# gzip
+import gzip
+gzip.open(filename)
+
+# lzma
+import lzma
+lzma.open(filename)
+
+# tar
+import tarfile
+tarfile.open(filename)
+
+# zip
+import zipfile
+zipfile.ZipFile(filename)
+
+# csv
+import csv
+csv.reader(open(filename))
+
+# json
+import json
+json.load(open(filename))
+
+# xml
+import xml.etree.ElementTree as etree
+etree.parse(filename)
+
+# html
+from bs4 import BeautifulSoup
+BeautifulSoup(open(filename))
+
+# sqlite
+import sqlite3
+conn = sqlite3.connect(filename)
+
+# mongodb
+import pymongo
+conn = pymongo.MongoClient()
+
+# redis
+import redis
+conn = redis.Redis()
+
+# elasticsearch
+from elasticsearch import Elasticsearch
+conn = Elasticsearch()
+
+# neo4j
+from neo4j.v1 import Graph

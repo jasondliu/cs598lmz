@@ -1,0 +1,21 @@
+from types import FunctionType
+a = (x for x in [1])
+b = [x for x in [1]]
+c = (x for x in [1])
+d = (x for x in [1])
+print(a.__class__)
+print(b.__class__)
+print(c.__class__)
+print(d.__class__)
+print(a.__class__ == b.__class__)
+print(c.__class__ == d.__class__)
+print(a.__class__ == c.__class__)
+print(isinstance(a,FunctionType))
+print(isinstance(a.__class__,type))
+print(isinstance(b.__class__,type))
+print(isinstance(b,FunctionType))
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))

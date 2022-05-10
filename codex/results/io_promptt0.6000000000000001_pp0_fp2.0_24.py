@@ -1,0 +1,21 @@
+import io
+# Test io.RawIOBase
+# io.RawIOBase.readinto(self, b)
+# io.RawIOBase.readinto1(self, b)
+# io.RawIOBase.readall(self)
+# io.RawIOBase.read(self, n)
+# io.RawIOBase.read1(self, n)
+# io.RawIOBase.write(self, b)
+# io.RawIOBase.seek(self, pos, whence=0)
+# io.RawIOBase.tell(self)
+# io.RawIOBase.fileno(self)
+# io.RawIOBase.isatty(self)
+# io.RawIOBase.readable(self)
+# io.RawIOBase.writable(self)
+# io.RawIOBase.seekable(self)
+# io.RawIOBase.close(self)
+# io.RawIOBase.detach(self)
+# io.RawIOBase.truncate(self, pos=None)
+# io.RawIOBase.flush(self)
+# io.RawIOBase.readinto(self, b)
+# io

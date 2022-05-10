@@ -1,0 +1,40 @@
+import socket
+socket.if_indextoname(3)
+
+# socket.if_indextoname(3)
+# 'en0'
+
+# socket.if_indextoname(4)
+# 'en1'
+
+# socket.if_indextoname(5)
+# 'en2'
+
+# socket.if_indextoname(6)
+# 'en3'
+
+# socket.if_indextoname(7)
+# 'en4'
+
+# socket.if_indextoname(8)
+# 'en5'
+
+# socket.if_indextoname(9)
+# 'en6'
+
+# socket.if_indextoname(10)
+# 'en7'
+
+# socket.if_indextoname(11)
+# 'en8'
+
+# socket.if_indextoname(12)
+# 'en9'
+
+# socket.if_indextoname(13)
+# 'bridge0'
+
+# socket.if_indextoname(14)
+# 'bridge100'
+
+# socket.if_indextoname(15

@@ -1,0 +1,14 @@
+import mmap
+
+with open('test', 'wb') as f:
+    f.write(bytes(1))
+
+with open('test', 'r+b') as f:
+    m = mmap.mmap(f.fileno(), 0)
+    f.truncate()
+    a = m[:]
+</code>
+This code raises <code>ValueError: mmap offset is greater than file size</code>.
+I think that the problem is that <code>mmap</code> doesn't know that the file has been truncated.
+Is there a way to tell <code>mmap</code> that the file has been truncated?
+

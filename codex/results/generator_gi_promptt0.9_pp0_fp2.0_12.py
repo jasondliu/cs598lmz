@@ -1,0 +1,15 @@
+gi = (i for i in ())
+# Test gi.gi_code as well
+tp = type(gi)
+print(tp.__name__)
+print(tp.__repr__)
+print(tp.__doc__)
+print(tp.__dict__)
+# Test complex
+c = complex(1, 2)
+print(c)
+print(complex(0, 1))
+print(type(c))
+print(c.real)
+print(c.imag)
+print(c.conjugate())

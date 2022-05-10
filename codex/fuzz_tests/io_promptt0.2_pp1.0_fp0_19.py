@@ -1,0 +1,27 @@
+import io
+# Test io.RawIOBase
+
+import io
+import unittest
+import weakref
+
+from test import support
+
+class RawIOTest(unittest.TestCase):
+
+    def test_attributes(self):
+        self.assertTrue(hasattr(io.RawIOBase, 'mode'))
+        self.assertTrue(hasattr(io.RawIOBase, 'name'))
+
+    def test_abc(self):
+        self.assertTrue(io.RawIOBase.close)
+        self.assertTrue(io.RawIOBase.closed)
+        self.assertTrue(io.RawIOBase.fileno)
+        self.assertTrue(io.RawIOBase.flush)
+        self.assertTrue(io.RawIOBase.isatty)
+        self.assertTrue(io.RawIOBase.read)
+        self.assertTrue(io.RawIOBase.readable)
+        self.assertTrue(io.RawIOBase.readinto)
+        self.assertTrue(io.RawIOBase.readline)
+        self.assertTrue(io.RawIOBase.seek)
+        self.assertTrue(

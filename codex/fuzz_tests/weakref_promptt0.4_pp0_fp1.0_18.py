@@ -1,0 +1,23 @@
+import weakref
+# Test weakref.ref(obj)
+# Test weakref.ref(obj, callback)
+# Test weakref.proxy(obj)
+# Test weakref.getweakrefcount(obj)
+# Test weakref.getweakrefs(obj)
+# Test weakref.WeakValueDictionary(dict)
+# Test weakref.WeakKeyDictionary(dict)
+# Test weakref.WeakSet(set)
+
+# Test weakref.WeakSet.add(item)
+# Test weakref.WeakSet.clear()
+# Test weakref.WeakSet.copy()
+# Test weakref.WeakSet.discard(item)
+# Test weakref.WeakSet.pop()
+# Test weakref.WeakSet.remove(item)
+# Test weakref.WeakSet.update(iterable)
+# Test weakref.WeakSet.__contains__(item)
+# Test weakref.WeakSet.__iter__()
+# Test weakref.WeakSet.__len__()
+# Test weakref.WeakSet.__or__(other)
+# Test weakref.WeakSet.__and__(other)
+# Test weakref.Weak

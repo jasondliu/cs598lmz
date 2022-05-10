@@ -1,0 +1,31 @@
+import selectors
+import socket
+import traceback
+import sys
+
+mysel = selectors.DefaultSelector()
+
+
+def accept_wrapper(sock):
+    conn, addr = sock.accept()
+    print('accepted connection from', addr)
+    conn.setblocking(False)
+    data = types.SimpleNamespace(addr=addr, inb=b'', outb=b'')
+    events = selectors.EVENT_READ | selectors.EVENT_WRITE
+    mysel.register(conn, events, data=data)
+
+
+def service_connection(key, mask):
+    sock = key.fileobj
+    data = key.data
+    if mask & selectors.EVENT_READ:
+        recv_data = sock.recv(1024)
+        if recv_data:
+            data.outb += recv_data
+        else:
+            print('closing connection to', data.addr)
+            mysel.unregister(sock)
+            sock.close()
+    if mask & selectors.EVENT_WRITE:
+        if data.outb:
+            print

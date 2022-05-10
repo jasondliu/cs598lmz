@@ -1,0 +1,10 @@
+import ctypes
+
+class S(ctypes.Structure):
+    x = ctypes.c_char
+    y = ctypes.c_char
+    _fields_ = [("x", ctypes.c_char), ("y", ctypes.c_char)]
+
+s = S()
+print s.x
+print s.y

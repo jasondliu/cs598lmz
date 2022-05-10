@@ -1,0 +1,22 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [1])
+print(a is b)
+print(type(a))
+print(type(b))
+print(type(a) is type(b))
+print(type(a) is FunctionType)
+print(type(b) is FunctionType)
+print(a.__class__ is b.__class__)
+print(type(a.__class__))
+print(type(b.__class__))
+print(type(a.__class__) is type(b.__class__))
+print(type(a.__class__) is FunctionType)
+print(type(b.__class__) is FunctionType)
+
+print(a.__class__.__name__)
+print(b.__class__.__name__)
+print(a.__class__.__name__ is b.__class__.__name__)
+print(a.__class__.__name__ is 'generator')
+print(b.__class__.__name__ is 'generator')
+print(a.__class__.__name__ == b.__class__

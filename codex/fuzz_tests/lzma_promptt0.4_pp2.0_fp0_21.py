@@ -1,0 +1,32 @@
+import lzma
+# Test LZMADecompressor
+
+data = b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\x00\x00\x00\x04\x00\x00\x00\x00\x00'
+
+decompressor = lzma.LZMADecompressor()
+
+print(decompressor.decompress(data))
+
+print(decompressor.unused_data)
+
+print(decompressor.eof)
+
+print(decompressor.needs_input)
+
+print(decompressor.needs_input())
+
+print(decompressor.decompress(b''))
+
+print(decompressor.eof)
+
+print(decompressor.needs_input)
+
+print(decompressor.needs_input())
+
+print(decompressor.decompress(b''))
+
+print(decompressor.eof)
+
+print(decompressor.needs_input)
+
+print(

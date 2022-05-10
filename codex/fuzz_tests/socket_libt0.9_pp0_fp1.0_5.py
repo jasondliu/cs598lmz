@@ -1,0 +1,36 @@
+import socket
+-    if isinstance(port, str):
+-        port = socket.getservbyname(port, 'tcp')
+-    return port
+-
+-
+-if __name__ == '__main__':
+-    main()
+-
+-
+-
+-
+-
+-
+-# import reactor
+-# # import twisted.internet.reactor
+-#
+-# host = 'localhost'
+-# port = 1234
+-#
+-# server = reactor.listenTCP(port, factory)
+-# reactor.run()
+-#
+-# server = twisted.internet.reactor.listenTCP(port, factory)
+-# twisted.internet.reactor.run()
+-
+-
+-# from twisted.internet import reactor
+-# from twisted.web import server
+-#
+-# # create a resource for serving the grand-child page
+-# grandchild = static.File('support/child.html')
+-#
+-# # create a resource for serving the child page, with the
+-# # grand-child resource as a child
+-# child = static.File

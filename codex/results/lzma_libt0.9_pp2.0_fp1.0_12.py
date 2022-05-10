@@ -1,0 +1,22 @@
+import lzma
+lzma.LZMACompressor.compress
+lzma.LZMACompressor.compressobj
+lzma.LZMACompressor.flush
+lzma.LZMAFile.fileno
+lzma.LZMAFile.tell
+lzma.LZMAFile.writable
+lzma.LZMAFile.write
+lzma.LZMAFile.__exit__
+lzma.LZMAFile.__enter__
+lzma.LZMAFile.__iter__
+lzma.LZMAFileIO.fileno
+lzma.LZMAFileIO.readable
+lzma.LZMAFileIO.seek
+lzma.LZMAFileIO.tell
+lzma.LZMAFileIO.writable
+lzma.LZMAFileIO.write
+lzma.LZMAFileIO.__exit__
+lzma.LZMAFileIO.__enter__
+lzma.LZMAFileIO.__iter__
+lzma.LZMAFileIO.__new__
+lzma

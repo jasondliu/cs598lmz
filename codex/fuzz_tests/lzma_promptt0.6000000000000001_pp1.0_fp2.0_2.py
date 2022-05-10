@@ -1,0 +1,17 @@
+import lzma
+# Test LZMADecompressor
+import lzma
+import io
+
+src = io.BytesIO(b'x\x9c+\xce\xcfM-\xc8,\x04\x00\x1b\xaa\x04]\x85\x85\xc8,\x04\x00\x1b\xaa\x04]\x85\x85\xc8,\x04\x00\x1b\xaa\x04]\x85\x85\xc8,\x04\x00\x1b\xaa\x04]\x85\x85\xc8,\x04\x00\x1b\xaa\x04]\x85\x85')
+dst = io.BytesIO()
+
+decomp = lzma.LZMADecompressor()
+while True:
+    chunk = src.read(1024)
+    if not chunk:
+        break
+    dst.write(decomp.decompress(chunk))
+dst.write(decomp.flush())
+
+print(dst.getvalue())

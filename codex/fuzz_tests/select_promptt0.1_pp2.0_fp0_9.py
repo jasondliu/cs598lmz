@@ -1,0 +1,33 @@
+import select
+# Test select.select()
+
+# select.select(rlist, wlist, xlist[, timeout])
+# rlist: wait until ready for reading
+# wlist: wait until ready for writing
+# xlist: wait for an “exceptional condition” (see the manual page for what your system considers such a condition)
+# timeout: if not specified, will block until a monitored file descriptor becomes ready
+
+# Return value: three lists of objects that are ready: subsets of the first three arguments
+
+# select.select() is a useful way to multiplex input and output, for example, when you have a server that handles input from multiple clients at the same time.
+
+# Example:
+# The following example shows how to use select() to monitor two sockets at the same time, and exit as soon as one of them becomes readable or writable.
+
+import socket
+import select
+
+s = socket.socket()
+
+# get local machine name
+host = socket.gethostname()
+
+port = 12345
+
+# bind to the port
+s.bind((host, port))
+
+# queue up to 5 requests
+s.listen(5)
+
+input

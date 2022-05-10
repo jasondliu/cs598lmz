@@ -1,0 +1,10 @@
+import io.frinx.unitopo.unit.xr6.cli.ToStringListReader
+import org.hamcrest.CoreMatchers
+import org.hamcrest.Matcher
+import org.junit.Assert
+import org.junit.Test
+import org.opendaylight.yang.gen.v1.http.frinx.openconfig.net.yang.interfaces.ip.rev161222.ipv6.top.ipv6.Config
+import org.opendaylight.yang.gen.v1.http.frinx.openconfig.net.yang.interfaces.ip.rev161222.ipv6.top.ipv6.ConfigBuilder
+import org.opendaylight.yang.gen.v1.http.frinx.openconfig.net.yang.interfaces.rev161222.interfaces.top.interfaces.Interface
+import org.opendaylight.yang.gen.v1.http.frinx.openconfig.net.yang.interfaces.rev161222.subinterfaces.top.subinterfaces.Subinterface
+import org.op

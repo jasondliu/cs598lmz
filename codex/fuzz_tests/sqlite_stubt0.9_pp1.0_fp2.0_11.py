@@ -1,0 +1,38 @@
+import ctypes
+import ctypes.util
+import threading
+import sqlite3
+
+my_threading_local = threading.local()
+
+class deleting_conn(sqlite3.Connection):
+    def __del__(self):
+        self.close()
+
+DB_URI = "file:test?mode=memory"
+
+def my_cb(p):
+    a = sqlite3.connect(DB_URI, uri=True, factory=deleting_conn)
+
+    def test_fn(a, b):
+        return a
+
+    a.create_function("test", 2, test_fn)
+
+    my_threading_local.a = a
+
+    return 123
+
+def main():
+    p = sqlite3.sqlite3_progress_handler(my_cb, 10000, 127)
+    ctypes.pythonapi.PyThreadState_SetAsyncExc(ctypes.c_long(0), ctypes.py_object(p))
+
+if __name__ == '__main__':
+    main()
+""")
+
+    def test_make_thread_transient_sqlite_connection_segfaults(self):
+        p = multiprocessing.Process(target=target)
+        p.daemon = True
+        p.start()
+        self.assertRaises(SystemExit, p.join, 1)

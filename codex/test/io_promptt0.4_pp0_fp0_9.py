@@ -1,0 +1,56 @@
+import io
+# Test io.RawIOBase
+
+# Test io.BufferedIOBase
+
+# Test io.TextIOBase
+
+# Test io.BytesIO
+
+# Test io.StringIO
+
+# Test io.FileIO
+
+# Test io.BufferedReader
+
+# Test io.BufferedWriter
+
+# Test io.BufferedRWPair
+
+# Test io.BufferedRandom
+
+# Test io.TextIOWrapper
+
+# Test io.BytesIO
+
+# Test io.StringIO
+
+# Test io.IncrementalNewlineDecoder
+
+# Test io.FileIO
+
+# Test io.BufferedReader
+
+# Test io.BufferedWriter
+
+# Test io.BufferedRWPair
+
+# Test io.BufferedRandom
+
+# Test io.TextIOWrapper
+
+# Test io.IncrementalNewlineDecoder
+
+# Test io.BufferedReader
+
+# Test io.BufferedWriter
+
+# Test io.BufferedRWPair
+
+# Test io.BufferedRandom
+
+# Test io.TextIOWrapper
+
+# Test io.IncrementalNewlineDecoder
+
+# Test io

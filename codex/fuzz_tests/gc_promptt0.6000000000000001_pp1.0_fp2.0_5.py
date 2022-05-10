@@ -1,0 +1,50 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collectable()
+
+class X:
+    pass
+
+class Y:
+    pass
+
+x1 = X()
+x2 = X()
+x3 = X()
+x4 = X()
+x5 = X()
+x6 = X()
+x7 = X()
+x8 = X()
+x9 = X()
+x10 = X()
+x11 = X()
+x12 = X()
+x13 = X()
+x14 = X()
+x15 = X()
+x16 = X()
+x17 = X()
+x18 = X()
+x19 = X()
+x20 = X()
+x21 = X()
+x22 = X()
+x23 = X()
+x24 = X()
+x25 = X()
+x26 = X()
+x27 = X()
+x28 = X()
+x29 = X()
+x30 = X()
+x31 = X()
+x32 = X()
+x33 = X()
+x34 = X()
+x35 = X()
+x36 = X()
+x37 = X()
+x38 = X()
+x39 = X()
+x

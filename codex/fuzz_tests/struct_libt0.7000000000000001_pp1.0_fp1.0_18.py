@@ -1,0 +1,30 @@
+import _struct
+-
+-class Struct(_struct.Struct):
+-    def __setitem__(self, field, value):
+-        if field not in self._field_names:
+-            raise KeyError(field)
+-
+-        if value is not None:
+-            value = self._field_types[field](value)
+-
+-        self.__setattr__(field, value)
+-
+-    def __getitem__(self, field):
+-        if field not in self._field_names:
+-            raise KeyError(field)
+-
+-        return self.__getattr__(field)
+-
+-    def __repr__(self):
+-        return '%s(%s)' % (self.__class__.__name__, self.pack())
+-
+-
+-def StructType(format):
+-    return type('Struct', (Struct,), dict(format=format))
+-
+-
+-Byte = StructType('<B')
+-Int16 = StructType('<H')
+-Int32 = StructType('<L')
+-Int64 = StructType

@@ -1,0 +1,30 @@
+import mmap
+# Test mmap.mmap()
+mm = mmap.mmap(-1, 1024)
+mm.write("Hello".encode('ascii'))
+mm.seek(0)
+print(mm.readline())
+mm.close()
+
+# Test mmap.mmap(file_obj)
+f = open("test_mmap", "w+")
+f.write("Hello Python!\n")
+f.flush()
+m = mmap.mmap(f.fileno(), 0)
+m.seek(0)
+print(m.readline())
+m.close()
+
+# Test mmap.mmap(file_obj, length)
+f = open("test_mmap", "w+")
+f.write("Hello Python!\n")
+f.flush()
+m = mmap.mmap(f.fileno(), 8)
+m.seek(0)
+print(m.readline())
+m.close()
+
+# Test mmap.mmap(file_obj, length, flags)
+f = open("test_mmap", "w+")
+f.write("Hello Python!\n")
+

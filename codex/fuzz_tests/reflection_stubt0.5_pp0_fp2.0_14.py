@@ -1,0 +1,21 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__code__.co_argcount = 1
+fn.__code__.co_varnames = ('a',)
+fn.__code__.co_cellvars = ()
+fn.__code__.co_freevars = ()
+fn.__code__.co_cell2arg = {}
+fn.__code__.co_cellvars = ()
+fn.__code__.co_freevars = ()
+fn.__code__.co_cell2arg = {}
+fn.__code__.co_cellvars = ()
+fn.__code__.co_freevars = ()
+fn.__code__.co_cell2arg = {}
+fn.__code__.co_cellvars = ()
+fn.__code__.co_freevars = ()
+fn.__code__.co_cell2arg = {}
+fn.__code__.co_cellvars = ()
+fn.__code__.co_freevars = ()
+fn.__code__.co_cell2arg = {}
+fn.__code__.co_

@@ -1,0 +1,26 @@
+import socket
+# Test socket.if_indextoname()
+ifname = socket.if_indextoname(2)
+print(ifname)
+#ifname = socket.if_indextoname(100)
+#print(ifname)
+#ifname = socket.if_indextoname(0)
+#print(ifname)
+
+# Test socket.getservbyport()
+sname = socket.getservbyport(21)
+print(sname)
+#sname = socket.getservbyport(80)
+#print(sname)
+#sname = socket.getservbyport(8080)
+#print(sname)
+
+# Test socket.gethostbyname()
+naddr = socket.gethostbyname('www.github.com')
+print(naddr)
+naddr = socket.gethostbyname('www.google.com')
+print(naddr)
+#naddr = socket.gethostbyname('www.google.com.tw')
+#print(naddr)
+
+# Test socket.gethostbyname_ex()

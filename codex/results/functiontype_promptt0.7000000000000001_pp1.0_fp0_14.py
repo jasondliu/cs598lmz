@@ -1,0 +1,20 @@
+import types
+# Test types.FunctionType
+print isinstance(operator.add, types.FunctionType)
+print isinstance(operator.eq, types.FunctionType)
+print isinstance(operator.contains, types.FunctionType)
+print isinstance(operator.itemgetter, types.FunctionType)
+print isinstance(operator.attrgetter, types.FunctionType)
+print isinstance(operator.methodcaller, types.FunctionType)
+print isinstance(re.compile, types.FunctionType)
+print isinstance(re.search, types.FunctionType)
+print isinstance(re.match, types.FunctionType)
+print isinstance(re.sub, types.FunctionType)
+print isinstance(re.split, types.FunctionType)
+print isinstance(re.findall, types.FunctionType)
+print isinstance(re.finditer, types.FunctionType)
+print isinstance(re.subn, types.FunctionType)
+print isinstance(re.escape, types.FunctionType)
+print isinstance(re.purge, types.FunctionType)
+print isinstance(re.compile, types.FunctionType)
+print isinstance

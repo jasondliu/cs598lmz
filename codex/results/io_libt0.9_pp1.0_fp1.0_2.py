@@ -1,0 +1,15 @@
+import io.github.jhipster.application.repository.ProjecteurRepository;
+import io.github.jhipster.application.repository.search.ProjecteurSearchRepository;
+import io.github.jhipster.application.web.rest.errors.BadRequestAlertException;
+import io.github.jhipster.application.web.rest.util.HeaderUtil;
+import io.github.jhipster.application.web.rest.util.PaginationUtil;
+import io.github.jhipster.application.service.dto.ProjecteurDTO;
+import io.github.jhipster.application.service.mapper.ProjecteurMapper;
+import io.github.jhipster.web.util.ResponseUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.spring

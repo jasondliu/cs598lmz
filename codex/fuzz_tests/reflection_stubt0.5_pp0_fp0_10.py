@@ -1,0 +1,22 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__code__.co_filename = '&lt;string&gt;'
+fn.__code__.co_firstlineno = 1
+fn.__code__.co_name = '&lt;module&gt;'
+fn.__code__.co_argcount = 0
+fn.__code__.co_flags = 67
+fn.__code__.co_varnames = ()
+fn.__code__.co_cellvars = ()
+fn.__code__.co_freevars = ()
+fn.__code__.co_cell2arg = {}
+fn.__code__.co_consts = (None,)
+fn.__code__.co_names = ()
+fn.__code__.co_lnotab = '\x00\x01'
+fn.__globals__ = {}
+fn.__module__ = '&lt;string&gt;'
+fn.__closure__ = None
+fn.__annotations__ = {}
+fn.__kwdefaults__ = None
+fn.__defaults__ = None
+fn.__

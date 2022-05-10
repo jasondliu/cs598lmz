@@ -1,0 +1,10 @@
+import ctypes
+FUNTYPE = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int)
+
+def myfunc(x):
+    return x + 1
+
+myfunc_c = FUNTYPE(myfunc)
+myfunc_c(2)
+</code>
+

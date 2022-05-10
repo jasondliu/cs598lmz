@@ -1,0 +1,17 @@
+import codecs
+# Test codecs.register_error("test_error", test_error)
+# Test codecs.lookup_error("test_error")
+# Test codecs.strict_errors("test_error")
+# Test codecs.ignore_errors("test_error")
+# Test codecs.replace_errors("test_error")
+# Test codecs.xmlcharrefreplace_errors("test_error")
+# Test codecs.backslashreplace_errors("test_error")
+# Test codecs.open("test.txt", encoding="ascii", errors="test_error")
+# Test codecs.EncodedFile(open("test.txt"), encoding="ascii", errors="test_error")
+# Test codecs.getencoder("ascii")
+# Test codecs.getencoder("ascii", "test_error")
+# Test codecs.getdecoder("ascii")
+# Test codecs.getdecoder("ascii", "test_error")
+# Test codecs.getreader("ascii")
+# Test codecs.getreader("ascii", "test_error")
+# Test codecs

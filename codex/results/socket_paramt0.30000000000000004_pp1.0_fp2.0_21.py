@@ -1,0 +1,28 @@
+import socket
+socket.if_indextoname(2)
+
+# socket.if_nameindex()
+# socket.if_nametoindex()
+
+# socket.gethostname()
+# socket.gethostbyname()
+# socket.gethostbyname_ex()
+# socket.gethostbyaddr()
+# socket.gethostbyname_ex()
+# socket.gethostbyaddr()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex()
+# socket.gethostbyname_ex

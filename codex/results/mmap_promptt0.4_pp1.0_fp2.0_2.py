@@ -1,0 +1,18 @@
+import mmap
+# Test mmap.mmap(0,1).read()
+# Test mmap.mmap(0,1).read_byte()
+# Test mmap.mmap(0,1).readline()
+# Test mmap.mmap(0,1).readlines()
+# Test mmap.mmap(0,1).seek()
+# Test mmap.mmap(0,1).seekable()
+# Test mmap.mmap(0,1).tell()
+# Test mmap.mmap(0,1).write()
+# Test mmap.mmap(0,1).write_byte()
+# Test mmap.mmap(0,1).writelines()
+# Test mmap.mmap(0,1).flush()
+# Test mmap.mmap(0,1).close()
+# Test mmap.mmap(0,1).closed()
+# Test mmap.mmap(0,1).fileno()
+# Test mmap.mmap(0,1).isatty()
+# Test mmap.mmap(0,1).seekable()
+# Test mmap.mmap(0,

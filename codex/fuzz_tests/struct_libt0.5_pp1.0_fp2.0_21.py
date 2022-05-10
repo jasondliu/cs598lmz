@@ -1,0 +1,51 @@
+import _struct
+import _sys
+import _time
+import _types
+import _unittest
+import _urllib
+import _urlparse
+import _uu
+import _warnings
+import _weakref
+import _webbrowser
+import _xml
+import _xmlrpclib
+import _zipfile
+import _zlib
+
+# Modules that are not builtin but are important to the interpreter
+import _codecs
+import _io
+import _json
+import _locale
+import _random
+import _sre
+import _operator
+import _signal
+import _socket
+import _ssl
+import _stat
+import _string
+import _symtable
+import _thread
+import _tracemalloc
+
+# Modules that are not builtin but are important to the standard library
+import _bisect
+import _collections
+import _copyreg
+import _heapq
+import _imp
+import _markupbase
+import _queue
+import _re
+import _sha1
+import _sha256
+import _sha512
+import _socket
+import _sre
+import _stat
+import _symtable
+import _thread
+import _weakref

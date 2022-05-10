@@ -1,0 +1,43 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(a)
+keepali0e.append(a.c)
+keepali0e.append(lst)
+keepali0e.append(callback)
+weakref.ref(a,callback)
+lst.append(str())
+del lst[0]
+del lst[0]
+del a
+del a.c
+del callback
+del keepali0e
+del lst
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(a)
+keepali0e.append(a.c)
+keepali0e.append(lst)
+keepali0e.append(callback)
+weakref.ref(a,callback)
+lst.append(str())
+del lst[0]
+del lst[0]
+del a
+del a.c
+del callback
+del keepali0e
+del lst
+import weakref
+class A(object):pass
+def callback(

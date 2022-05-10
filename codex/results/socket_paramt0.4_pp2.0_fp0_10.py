@@ -1,0 +1,6 @@
+import socket
+socket.if_indextoname(2)
+
+# 'en0'
+</code>
+

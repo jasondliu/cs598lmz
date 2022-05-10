@@ -1,0 +1,26 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [1])
+print(a)
+print(b)
+print(a==b)
+print(type(a)==type(b))
+print(isinstance(a,types.GeneratorType))
+print(isinstance(a,FunctionType))
+print(isinstance(a,Iterable))
+print(isinstance(a,Iterator))
+print(isinstance(a,abc.Iterable))
+print(isinstance(a,abc.Iterator))
+print(isinstance(a,abc.Generator))
+print(isinstance(a,collections.Iterator))
+print(isinstance(a,collections.Iterable))
+print(isinstance(a,collections.Generator))
+print('-'*50)
+a = [1,2,3]
+b = [1,2,3]
+print(a==b)
+print(type(a)==type(b))
+print(isinstance(a,Iterable))
+print(isinstance(a,Iterator))
+print(isinstance(a,abc.Iterable))
+print(isinstance(a,abc.

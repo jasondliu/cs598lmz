@@ -1,0 +1,33 @@
+import selectKeys from 'select-keys';
+-
+-			const apiKey = selectKeys(config, 'twitter.apiKey');
+-			const apiSecret = selectKeys(config, 'twitter.apiSecret');
+-			```
+-
+-	Installation and operation
+----------------------------
+-
+-	```bash
+-	$ npm install select-keys
+-	```
+-
+-	```js
+-	'use strict';
+-
+-	import selectKeys from '../select-keys';
+-
+-	const config = {
+-		twitter: {
+-			apiKey: 'twitter api key',
+-			apiSecret: 'twitter api secret here',
+-		},
+-		facebook: {
+-			apiKey: 'facebook api key',
+-			apiSecret: 'facebook api secret here',
+-		},
+-	};
+-
+-	const apiKey = selectKeys(config, 'twitter.apiKey');
+-	const apiSecret = selectKeys(config, 'twitter.apiSecret');
+-
+-	console.

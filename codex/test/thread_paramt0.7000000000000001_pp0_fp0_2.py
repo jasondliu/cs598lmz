@@ -1,0 +1,6 @@
+import sys, threading
+threading.Thread(target=lambda: webbrowser.open('http://localhost:'+str(port))).start()
+
+app.run(port=port)
+ 
+# ################################################################################################

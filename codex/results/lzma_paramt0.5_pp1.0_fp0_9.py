@@ -1,0 +1,6 @@
+from lzma import LZMADecompressor
+LZMADecompressor().decompress(b'\x5d\x00\x00\x80\x0c\xff')
+
+# Output: b'hello world\n'
+</code>
+

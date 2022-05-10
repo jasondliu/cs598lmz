@@ -1,0 +1,30 @@
+import ctypes
+# Test ctypes.CFUNCTYPE
+
+import _ctypes_test
+
+lib = ctypes.CDLL(_ctypes_test.__file__)
+
+# call a function with a prototype
+prototype = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int)
+restype = ctypes.c_int
+argtypes = (ctypes.c_int,)
+
+func = prototype((b"myfunc", lib), argtypes)
+
+print(func(42))
+
+# call a function without a prototype
+func = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int)((b"myfunc", lib))
+print(func(42))
+
+# call a function with a prototype, but without argtypes
+func = prototype((b"myfunc", lib))
+print(func(42))
+
+# call a function with a prototype, but without restype
+func = prototype((b"myfunc", lib), argtypes, None)
+print(func(42))
+
+# call a function with a prototype, but without restype and argtypes
+func = prototype((b"myfunc

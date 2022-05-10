@@ -1,0 +1,21 @@
+fn = lambda: None
+# Test fn.__code__.co_flags & 0x4 == 0 (no *args)
+fn.__code__ = type(fn.__code__)(
+    fn.__code__.co_argcount,
+    fn.__code__.co_kwonlyargcount,
+    fn.__code__.co_nlocals,
+    fn.__code__.co_stacksize,
+    fn.__code__.co_flags & ~0x4,
+    fn.__code__.co_code,
+    fn.__code__.co_consts,
+    fn.__code__.co_names,
+    fn.__code__.co_varnames,
+    fn.__code__.co_filename,
+    fn.__code__.co_name,
+    fn.__code__.co_firstlineno,
+    fn.__code__.co_lnotab,
+    fn.__code__.co_freevars,
+    fn.__code__.co_cellvars,
+)
+
+# Test fn.__code__.co_flags & 0x8 == 0

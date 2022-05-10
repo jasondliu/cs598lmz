@@ -1,0 +1,19 @@
+import types
+# Test types.FunctionType
+assert issubclass(types.FunctionType, object)
+assert hasattr(types.FunctionType, '__call__')
+assert hasattr(types.FunctionType, '__code__')
+assert hasattr(types.FunctionType, '__defaults__')
+assert hasattr(types.FunctionType, '__dict__')
+assert hasattr(types.FunctionType, '__doc__')
+assert hasattr(types.FunctionType, '__name__')
+assert hasattr(types.FunctionType, '__repr__')
+assert hasattr(types.FunctionType, '__closure__')
+assert hasattr(types.FunctionType, '__globals__')
+assert hasattr(types.FunctionType, '__module__')
+assert hasattr(types.FunctionType, '__get__')
+assert hasattr(types.FunctionType, '__set__')
+assert hasattr(types.FunctionType, '__delete__')
+assert hasattr(types.FunctionType, '__kwdefaults__')
+# Test types.LambdaType
+assert issubclass(types.LambdaType, types.FunctionType

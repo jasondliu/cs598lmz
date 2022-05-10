@@ -1,0 +1,33 @@
+import io
+class File(io.RawIOBase):
+    def __init__(self, file):
+        self.file = file
+    def read(self, n=-1):
+        return self.file.read(n)
+    def readable(self):
+        return True
+    def seekable(self):
+        return True
+    def seek(self, offset, whence=0):
+        self.file.seek(offset, whence)
+    def tell(self):
+        return self.file.tell()
+    def write(self, b):
+        return self.file.write(b)
+    def writable(self):
+        return True
+    def close(self):
+        self.file.close()
+
+class FileWrapper(object):
+    def __init__(self, file):
+        self.file = file
+    def __getattr__(self, name):
+        return getattr(self.file, name)
+    def __iter__(self):
+        return iter(self.file)
+    def __next__(self):
+        return next(self.file)
+    def __enter__(self):
+        return self
+    def __exit

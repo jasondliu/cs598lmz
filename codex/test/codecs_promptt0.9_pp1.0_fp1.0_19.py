@@ -1,0 +1,8 @@
+import codecs
+# Test codecs.register_error().
+
+import sys
+import string
+
+ENCODING = 'ascii'
+

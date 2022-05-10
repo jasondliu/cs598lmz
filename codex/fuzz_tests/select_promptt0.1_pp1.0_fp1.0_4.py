@@ -1,0 +1,24 @@
+import select
+# Test select.select()
+
+# select.select(rlist, wlist, xlist[, timeout])
+# rlist: wait until ready for reading
+# wlist: wait until ready for writing
+# xlist: wait for an “exceptional condition” (see the manual page for what your system considers such a condition)
+# timeout: if not specified, will block until a monitored file descriptor becomes ready
+
+# Return value: three lists of objects that are ready: subsets of the first three arguments
+# If the time limit is reached with no file descriptors ready, three empty lists are returned
+
+# Example:
+# >>> import select
+# >>> import socket
+# >>> s = socket.socket()
+# >>> s.bind(('', 50007))
+# >>> s.listen(1)
+# >>> s.accept()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+#   File "/usr/lib/python3.5/socket.py", line 206, in accept
+#     fd, addr = self._accept()
+# BlockingIOError: [Errno 11] Resource

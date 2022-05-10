@@ -1,0 +1,38 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepalive.append(a)
+lst[0]=a
+weakref.ref(lst[0],callback)
+</code>
+
+<code>&gt;&gt;&gt; import gc
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+&gt;&gt;&gt; gc.collect()
+0
+

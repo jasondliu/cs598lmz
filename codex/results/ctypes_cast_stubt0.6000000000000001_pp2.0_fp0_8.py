@@ -1,0 +1,4 @@
+import ctypes
+ctypes.cast(obj, ctypes.py_object).value
+</code>
+

@@ -1,0 +1,35 @@
+import mmap
+# Test mmap.mmap()
+m = mmap.mmap(-1, 1024)
+m.write(b'Hello')
+m.seek(0)
+print(m.read(5))
+m.close()
+
+# Test mmap.mmap()
+m = mmap.mmap(-1, 1024)
+m.write(b'Hello')
+m.seek(0)
+print(m.read(5))
+m.close()
+
+# Test mmap.mmap()
+m = mmap.mmap(-1, 1024)
+m.write(b'Hello')
+m.seek(0)
+print(m.read(5))
+m.close()
+
+# Test mmap.mmap()
+m = mmap.mmap(-1, 1024)
+m.write(b'Hello')
+m.seek(0)
+print(m.read(5))
+m.close()
+
+# Test mmap.mmap()
+m = mmap.mmap(-1, 1024)
+m.write(b'Hello')
+m.seek(0)
+print(m.read(5))
+m.close

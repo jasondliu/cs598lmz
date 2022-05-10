@@ -1,0 +1,2 @@
+from types import FunctionType
+list(FunctionType(list(FunctionType.__dict__["__code__"].co_consts)[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_consts[0].co_con

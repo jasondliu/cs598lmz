@@ -1,0 +1,12 @@
+import signal
+# Test signal.setitimer()
+signal.setitimer(signal.ITIMER_REAL, 0.1)
+signal.setitimer(signal.ITIMER_REAL, 0.01, 0.01)
+signal.setitimer(signal.ITIMER_PROF, 0.001)
+signal.setitimer(signal.ITIMER_VIRTUAL, 0.01)
+signal.setitimer(signal.ITIMER_REAL, 0.1)
+signal.setitimer(signal.ITIMER_REAL, 0.01, 0.01)
+signal.setitimer(signal.ITIMER_PROF, 0.001)
+signal.setitimer(signal.ITIMER_VIRTUAL, 0.01)
+signal.setitimer(signal.ITIMER_REAL, 1, 1)
+signal.setitimer(signal.ITIMER_PROF, 0.5, 0.5)

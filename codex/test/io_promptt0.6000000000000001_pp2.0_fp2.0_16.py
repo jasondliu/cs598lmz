@@ -1,0 +1,24 @@
+import io
+# Test io.RawIOBase
+# Test io.RawIOBase.read
+# Test io.RawIOBase.read.1
+# Test io.RawIOBase.read.2
+# Test io.RawIOBase.read.3
+# Test io.RawIOBase.read.4
+# Test io.RawIOBase.read.5
+# Test io.RawIOBase.read.6
+# Test io.RawIOBase.read.7
+# Test io.RawIOBase.read.8
+# Test io.RawIOBase.read.9
+# Test io.RawIOBase.read.10
+# Test io.RawIOBase.read.11
+# Test io.RawIOBase.read.12
+# Test io.RawIOBase.read.13
+# Test io.RawIOBase.read.14
+# Test io.RawIOBase.read.15
+# Test io.RawIOBase.read.16
+# Test io.RawIOBase.read.17
+# Test io.RawIOBase.read.18
+# Test io.RawIOBase.read.19
+# Test io.RawIOBase.read.20
+# Test io.

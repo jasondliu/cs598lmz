@@ -1,0 +1,29 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = '<lambda>'
+fn.__qualname__ = '<lambda>'
+fn.__module__ = '__main__'
+fn.__annotations__ = {}
+fn.__kwdefaults__ = None
+fn.__defaults__ = ()
+fn.__globals__ = {}
+fn.__closure__ = None
+fn.__doc__ = None
+fn.__text_signature__ = None
+fn.__dict__ = {}
+fn.__name__ = '<lambda>'
+fn.__qualname__ = '<lambda>'
+fn.__module__ = '__main__'
+fn.__annotations__ = {}
+fn.__kwdefaults__ = None
+fn.__defaults__ = ()
+fn.__globals__ = {}
+fn.__closure__ = None
+fn.__doc__ = None
+fn.__text_signature__ = None
+fn.__dict__ = {}
+
+# fn.__code__ = gi.gi_code
+# fn.__name__ = '<lambda>'
+

@@ -1,0 +1,12 @@
+import bz2
+# Test BZ2Decompressor.extrabuf
+class TestBZ2Decompressor:
+    def test_extrabuf_many_writes(self):
+        comp = bz2.BZ2Decompressor()
+        res = comp.decompress(data=b'\x42\x5a\x68\x21\x00\x00\x00\x00\x00\x00'
+                                  b'\x00\x00\x00\x00\xff\xff\x01\xd7\x00\x00'
+                                  b'\xff\xfb\xff\xf3\xff\xff\xff\xff\xff\xff'
+                                  b'\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff'
+                                  b'\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff'
+                                  b'\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff'
+                                  b'\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff

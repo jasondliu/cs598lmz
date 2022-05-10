@@ -1,0 +1,17 @@
+import threading
+threading.Thread(target=Cron_Job_1).start()
+threading.Thread(target=Cron_Job_2).start()
+threading.Thread(target=Cron_Job_3).start()
+threading.Thread(target=Cron_Job_4).start()
+threading.Thread(target=Cron_Job_5).start()
+threading.Thread(target=Cron_Job_6).start()
+threading.Thread(target=Cron_Job_7).start()
+threading.Thread(target=Cron_Job_8).start()
+threading.Thread(target=Cron_Job_9).start()
+threading.Thread(target=Cron_Job_10).start()
+threading.Thread(target=Cron_Job_11).start()
+threading.Thread(target=Cron_Job_12).start()
+threading.Thread(target=Cron_Job_13).start()
+threading.Thread(target=Cron_Job_14).start()
+threading.Thread(target=Cron_Job_15).start()
+threading

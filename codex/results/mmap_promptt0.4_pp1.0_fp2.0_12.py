@@ -1,0 +1,28 @@
+import mmap
+# Test mmap.mmap()
+f = open(os.path.join(os.path.dirname(__file__), 'test_mmap.txt'), 'r+')
+m = mmap.mmap(f.fileno(), 0)
+m.write('0123456789')
+m.seek(5)
+print m.read(1)
+m.seek(4)
+m.write('4')
+m.seek(0)
+print m.read(10)
+m.close()
+f.close()
+
+# Test mmap.mmap(-1, ...)
+f = open(os.path.join(os.path.dirname(__file__), 'test_mmap.txt'), 'r+')
+m = mmap.mmap(-1, 10, tagname='mytag')
+m.write('0123456789')
+m.seek(5)
+print m.read(1)
+m.seek(4)
+m.write('4')
+m.seek(0)
+print m.read(10)
+m.close()
+f.close()
+
+# Test mmap.

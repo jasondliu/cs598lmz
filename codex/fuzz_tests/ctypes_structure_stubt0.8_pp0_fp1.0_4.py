@@ -1,0 +1,13 @@
+import ctypes
+
+class S(ctypes.Structure):
+    x = ctypes.c_int
+
+s = S()
+
+s.color = "hello"
+s.color = "world"
+
+print s.color  # prints 'world'
+</code>
+

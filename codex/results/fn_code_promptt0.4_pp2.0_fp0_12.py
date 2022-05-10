@@ -1,0 +1,32 @@
+fn = lambda: None
+# Test fn.__code__
+# Test fn.__closure__
+# Test fn.__defaults__
+# Test fn.__globals__
+# Test fn.__name__
+# Test fn.__dict__
+# Test fn.__doc__
+# Test fn.__module__
+# Test fn.__annotations__
+# Test fn.__kwdefaults__
+
+# Test fn.__get__
+# Test fn.__set__
+# Test fn.__delete__
+# Test fn.__slots__
+# Test fn.__qualname__
+# Test fn.__text_signature__
+# Test fn.__objclass__
+# Test fn.__self__
+# Test fn.__func__
+# Test fn.__bases__
+# Test fn.__mro__
+# Test fn.__subclasses__
+# Test fn.__init_subclass__
+# Test fn.__class__
+# Test fn.__prepare__
+# Test fn.__instancecheck__
+# Test fn.__subclasscheck__
+# Test fn.__init__
+# Test fn.__new__
+# Test fn.__del__

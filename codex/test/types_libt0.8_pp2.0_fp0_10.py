@@ -1,0 +1,22 @@
+import types
+types.ClassType
+types.FunctionType
+types.GeneratorType
+types.LambdaType
+types.ModuleType
+types.TypeType
+types.TracebackType
+types.UnboundMethodType
+types.FrameType
+types.BufferType
+types.DictProxyType
+types.NotImplementedType
+types.GetSetDescriptorType
+types.MemberDescriptorType
+types.EllipsisType
+types.SliceType
+types.BuiltinFunctionType
+types.BuiltinMethodType
+types.MethodType
+types.CodeType
+types.UnicodeType

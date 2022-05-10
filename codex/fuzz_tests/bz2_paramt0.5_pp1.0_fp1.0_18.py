@@ -1,0 +1,11 @@
+from bz2 import BZ2Decompressor
+BZ2Decompressor().decompress(data)
+# b'BZh91AY&SY\x94$|\x0e\x00\x00\x00\x81\x00\x03$ \x00!\x9ah3M\x13<]\xc9\x14\xe1BBP\x91\xf08'
+```
+
+这样就可以得到第一个字符串了：
+
+```python
+# 去掉前面的BZh91AY&SY\x94$|\x0e\x00\x00\x00\x81\x00\x03$ \x00!\x9ah3M\x13<]\xc9\x14\xe1BBP\x91\xf08
+# 再进行递归
+BZ2Decompressor().decompress(b'!\x9ah3M\x13<]\xc9\x14\xe1BBP\x91\

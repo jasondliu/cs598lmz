@@ -1,0 +1,18 @@
+import _struct
+# Test _struct.Struct.format_size
+print(_struct.Struct('i').format_size('<'))
+print(_struct.Struct('i').format_size('>'))
+print(_struct.Struct('i').format_size('!'))
+print(_struct.Struct('i').format_size('@'))
+print(_struct.Struct('i').format_size('='))
+print(_struct.Struct('i').format_size('<i'))
+print(_struct.Struct('i').format_size('>i'))
+print(_struct.Struct('i').format_size('!i'))
+print(_struct.Struct('i').format_size('@i'))
+print(_struct.Struct('i').format_size('=i'))
+print(_struct.Struct('i').format_size('<ii'))
+print(_struct.Struct('i').format_size('>ii'))
+print(_struct.Struct('i').format_size('!ii'))
+print(_struct.Struct('i').format_size('@ii'))
+print(_struct.Struct('i').format_size('=ii'))
+print(_struct

@@ -1,0 +1,12 @@
+import mmap
+
+with open('test', 'wb') as f:
+    f.write(bytes(1))
+
+with open('test', 'r+b') as f:
+    m = mmap.mmap(f.fileno(), 0, prot=mmap.PROT_READ)
+    print(m.read())
+    print(m.tell())
+    m.seek(0)
+    print(m.tell())
+    m.close()

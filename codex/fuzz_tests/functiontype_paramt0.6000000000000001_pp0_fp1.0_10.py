@@ -1,0 +1,7 @@
+from types import FunctionType
+list(FunctionType(f.__code__, f.__globals__, name=f.__name__,
+                  argdefs=f.__defaults__,
+                  closure=f.__closure__) for f in (lambda: None, lambda: None))
+</code>
+But I don't know if it is really what you want.
+

@@ -1,0 +1,23 @@
+import mmap
+# Test mmap.mmap
+# Test mmap.mmap.__del__
+# Test mmap.mmap.__enter__
+# Test mmap.mmap.__exit__
+# Test mmap.mmap.__getattribute__
+# Test mmap.mmap.__init__
+# Test mmap.mmap.__iter__
+# Test mmap.mmap.__len__
+# Test mmap.mmap.__new__
+# Test mmap.mmap.__repr__
+# Test mmap.mmap.__setattr__
+# Test mmap.mmap.__sizeof__
+# Test mmap.mmap.__str__
+# Test mmap.mmap.close
+# Test mmap.mmap.find
+# Test mmap.mmap.flush
+# Test mmap.mmap.flush.__doc__
+# Test mmap.mmap.flush.__get__
+# Test mmap.mmap.flush.__set__
+# Test mmap.mmap.flush.__set_name__
+# Test mmap.mmap.flush.__str__
+# Test mmap

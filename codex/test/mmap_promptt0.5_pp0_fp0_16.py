@@ -1,0 +1,26 @@
+import mmap
+# Test mmap.mmap()
+# with open("test.txt", "w+") as f:
+#     f.write(str(1))
+#     f.flush()
+#     f.seek(0)
+#     m = mmap.mmap(f.fileno(), 0)
+#     m.resize(8)
+#     print(m.read(1))
+#     m.seek(2)
+#     m.write_byte(b'1')
+#     print(m.read(1))
+#     m.close()
+#     f.close()
+
+# Test mmap.mmap(-1, length)
+# with open("test.txt", "w+") as f:
+#     f.write(str(1))
+#     f.flush()
+#     f.seek(0)
+#     m = mmap.mmap(-1, 8)
+#     m.write(b'1')
+#     print(m.read(1))
+#     m.seek(2)
+#     m.write(b'1')
+#     print(m.read(1))

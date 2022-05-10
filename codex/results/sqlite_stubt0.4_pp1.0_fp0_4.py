@@ -1,0 +1,43 @@
+import ctypes
+import ctypes.util
+import threading
+import sqlite3
+
+my_threading_local = threading.local()
+
+class deleting_conn(sqlite3.Connection):
+    def __del__(self):
+        self.close()
+
+DB_URI = "file:test?mode=memory"
+
+def my_cb(p):
+    a = sqlite3.connect(DB_URI, uri=True, factory=deleting_conn)
+
+    def test_fn(a, b):
+        return a
+
+    a.create_function("test", 2, test_fn)
+
+    my_threading_local.a = a
+
+    return 1
+
+ctypes.pythonapi.PyEval_InitThreads.argtypes = []
+ctypes.pythonapi.PyEval_InitThreads.restype = ctypes.c_void_p
+ctypes.pythonapi.PyEval_InitThreads()
+
+t = threading.Thread(target=my_cb, args=(1,))
+t.start()
+t.join()
+
+# This is the interesting part:
+# This should raise an exception, but it doesn't.
+# If I remove the create_function call, it does.
+# If I remove the create_function call and the my_threading_local.a = a
+# assignment, it does.
+# If I remove the create_function call and the my_threading_local.a = a
+# assignment and the my_cb function, it does.
+# If I remove the create_function call and the my_threading_local.a = a
+# assignment and the my_cb function and the t.join() call, it does.
+# If I remove the create_function call and the my_threading_local.a = a

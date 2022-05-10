@@ -1,0 +1,4 @@
+from types import FunctionType
+list(FunctionType(FunctionType.__code__, globals(), "lambda", (), 0)())
+</code>
+

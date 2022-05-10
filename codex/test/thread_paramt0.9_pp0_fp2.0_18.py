@@ -1,0 +1,11 @@
+import sys, threading
+threading.Thread(target=lambda: sys.stdout.write('Thread-1')).start()
+time.sleep(1)
+threading.Thread(target=lambda: sys.stdout.write('Thread-2')).start()
+time.sleep(1)
+threading.Thread(target=lambda: sys.stdout.write('Thread-3')).start()
+time.sleep(1)
+threading.Thread(target=lambda: sys.stdout.write('Thread-4')).start()
+time.sleep(1)
+threading.Thread(target=lambda: sys.stdout.write('Thread-5')).start()
+time.sleep(1)

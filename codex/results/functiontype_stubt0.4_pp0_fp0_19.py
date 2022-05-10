@@ -1,0 +1,15 @@
+from types import FunctionType
+a = (x for x in [1])
+b = a.__iter__()
+print(type(a), type(b))
+print(isinstance(a, FunctionType))
+print(isinstance(a, Iterable))
+print(isinstance(a, Iterator))
+print(isinstance(a, Generator))
+print(isinstance(a, type))
+
+print(isinstance(b, FunctionType))
+print(isinstance(b, Iterable))
+print(isinstance(b, Iterator))
+print(isinstance(b, Generator))
+print(isinstance(b, type))

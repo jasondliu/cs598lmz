@@ -1,0 +1,9 @@
+import mmap
+# Test mmap.mmap()
+
+# Create a file and write some data to it
+with open("hello.txt", "wb") as f:
+    f.write("Hello Python!\n")
+
+# Open the file
+f = open("hello.txt", "r+b")

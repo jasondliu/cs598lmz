@@ -1,0 +1,25 @@
+import ctypes
+FUNTYPE = ctypes.CFUNCTYPE(ctypes.c_double,ctypes.c_double)
+fun_sin_c = FUNTYPE(np.sin)
+print(fun_sin_c(0.0))
+
+print('------------Sin in deg vs rad------')
+print(np.sin(30.0/180.0 * np.pi))
+print(np.sin(30*np.pi/180))
+print(np.sin(np.deg2rad(30.0)))
+print(np.deg2rad(30))
+print(np.rad2deg(np.pi/6))
+
+print('------------Linear algebra------------')
+x = np.array([[1.,2.,3.],[4.,5.,6.]])
+y = np.array([[6.,23.], [-1, 7], [8, 9]])
+print('x matrix')
+print(x)
+print('y matrix')
+print(y)
+print('x diagonal')
+print(np.diag(x))
+print('---------------------------------------------------------------------')
+print('Dot product')
+print(x.dot(y))
+print(np.dot(x,

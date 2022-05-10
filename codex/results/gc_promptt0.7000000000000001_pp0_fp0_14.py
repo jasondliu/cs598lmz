@@ -1,0 +1,30 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collectable()
+l = []
+l.append(l)
+l.append(l)
+l.append(l)
+del l
+gc.collect()
+# This should call gc.collect()
+#gc.collect(2)
+gc.garbage
+gc.collect()
+# Test gc.get_debug()
+gc.get_debug()
+gc.set_debug(gc.DEBUG_UNCOLLECTABLE)
+gc.get_debug()
+gc.set_debug(0)
+gc.get_debug()
+gc.set_debug(gc.DEBUG_SAVEALL)
+gc.get_debug()
+gc.set_debug(gc.DEBUG_STATS)
+gc.get_debug()
+gc.set_debug(gc.DEBUG_LEAK)
+gc.get_debug()
+gc.set_debug(0)
+gc.get_debug()
+gc.set_debug(gc.DEBUG_COLLECTABLE|gc.DEBUG_UNCOLLECTABLE|gc.DEBUG_INSTANCES|gc.DEBUG_OBJECTS)
+gc.get_debug()
+gc.set_debug(gc

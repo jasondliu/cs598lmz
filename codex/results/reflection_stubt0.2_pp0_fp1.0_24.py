@@ -1,0 +1,24 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = 'fn'
+fn.__doc__ = 'doc'
+fn.__dict__ = {'a': 1}
+fn.__defaults__ = (1, 2, 3)
+fn.__closure__ = (1, 2, 3)
+fn.__globals__ = {'a': 1}
+fn.__annotations__ = {'a': 1}
+fn.__kwdefaults__ = {'a': 1}
+fn.__module__ = 'module'
+fn.__qualname__ = 'qualname'
+fn.__text_signature__ = 'text_signature'
+fn.__self__ = 'self'
+fn.__get__ = 'get'
+fn.__set__ = 'set'
+fn.__delete__ = 'delete'
+fn.__slots__ = 'slots'
+fn.__call__ = 'call'
+fn.__prepare__ = 'prepare'
+fn.__init_subclass__ = 'init_subclass'
+fn.__new__ = 'new'
+fn.__init

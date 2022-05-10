@@ -1,0 +1,29 @@
+gi = (i for i in ())
+# Test gi.gi_code
+# Test gi.gi_frame
+# Test gi.gi_running
+# Test gi.gi_yieldfrom
+# Test gi.__name__
+# Test gi.__qualname__
+# Test gi.__module__
+# Test gi.__annotations__
+# Test gi.__closure__
+# Test gi.__code__
+# Test gi.__defaults__
+# Test gi.__globals__
+# Test gi.__dict__
+# Test gi.__kwdefaults__
+# Test gi.__self__
+# Test gi.__get__
+# Test gi.__set__
+# Test gi.__delete__
+# Test gi.__init__
+# Test gi.__new__
+# Test gi.__prepare__
+# Test gi.__instancecheck__
+# Test gi.__subclasscheck__
+# Test gi.__init_subclass__
+# Test gi.__delattr__
+# Test gi.__sizeof__
+# Test gi.__dir__
+# Test

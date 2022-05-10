@@ -1,0 +1,27 @@
+import ctypes
+# Test ctypes.CFUNCTYPE
+cfunc_type = ctypes.CFUNCTYPE
+# Test ctypes.pythonapi
+pythonapi = ctypes.pythonapi
+# Test ctypes.cast
+cast = ctypes.cast
+# Test ctypes.POINTER
+POINTER = ctypes.POINTER
+# Test ctypes.py_object
+py_object = ctypes.py_object
+# Test ctypes.c_long
+c_long = ctypes.c_long
+# Test ctypes.c_int
+c_int = ctypes.c_int
+# Test ctypes.c_short
+c_short = ctypes.c_short
+# Test ctypes.c_ubyte
+c_ubyte = ctypes.c_ubyte
+# Test ctypes.c_bool
+c_bool = ctypes.c_bool
+# Test ctypes.c_char_p
+c_char_p = ctypes.c_char_p
+# Test ctypes.c_void_p
+c_void_p = ctypes.c_void_p
+# Test ctypes.c_char
+c_char = c

@@ -1,0 +1,24 @@
+import io
+# Test io.RawIOBase
+from io import RawIOBase
+from io import BufferedIOBase
+from io import TextIOBase
+from io import BytesIO
+from io import StringIO
+from io import SEEK_SET
+from io import SEEK_CUR
+from io import SEEK_END
+from io import UnsupportedOperation
+from io import BlockingIOError
+from io import FileIO
+from io import DEFAULT_BUFFER_SIZE
+from io import open
+from io import __doc__
+from io import __all__
+from io import __file__
+from io import __name__
+from io import __package__
+from io import __loader__
+from io import __spec__
+from io import __cached__
+from io import __builtins__

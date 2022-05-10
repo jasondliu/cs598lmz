@@ -1,0 +1,21 @@
+import lzma
+lzma.LZMACompressor()
+
+#f = open('./test.txt', 'rb')
+#c = lzma.LZMACompressor()
+#data = f.read()
+#compressed = c.compress(data)
+#compressed += c.flush()
+#f.close()
+#f = open('./test.xz', 'wb')
+#f.write(compressed)
+#f.close()
+
+f = open('./test.xz', 'rb')
+d = lzma.LZMADecompressor()
+data = f.read()
+decompressed = d.decompress(data)
+f.close()
+f = open('./test.txt', 'wb')
+f.write(decompressed)
+f.close()

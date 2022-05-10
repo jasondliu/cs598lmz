@@ -1,0 +1,21 @@
+gi = (i for i in ())
+# Test gi.gi_code
+# Test gi.gi_frame
+# Test gi.gi_running
+# Test gi.gi_yieldfrom
+# Test gi.gi_weakreflist
+# Test gi.gi_exc_state.exc_type
+# Test gi.gi_exc_state.exc_value
+# Test gi.gi_exc_state.exc_traceback
+# Test gi.gi_exc_state.previous_item
+# Test gi.gi_exc_state.stack_pointer
+# Test gi.gi_exc_state.frame
+# Test gi.gi_exc_state.traceback
+# Test gi.gi_exc_state.exc_type
+# Test gi.gi_exc_state.exc_value
+# Test gi.gi_exc_state.exc_traceback
+# Test gi.gi_exc_state.previous_item
+# Test gi.gi_exc_state.stack_pointer
+# Test gi.gi_exc_state.frame
+# Test gi.gi_exc_state.traceback
+# Test gi.

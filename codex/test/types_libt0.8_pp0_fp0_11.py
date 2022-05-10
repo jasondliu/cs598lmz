@@ -1,0 +1,10 @@
+import types
+types.ModuleType.__dict__.__setitem__('true_type', {})
+types.ModuleType.__dict__.__setitem__('pseudo_type', {})
+types.ModuleType.__dict__.__setitem__('type_keywords', {})
+types.ModuleType.__dict__.__setitem__('type_of_keywords', {})
+types.ModuleType.__dict__.__setitem__('lambda_type', {})
+types.ModuleType.__dict__.__setitem__('regex_type', {})
+types.ModuleType.__dict__.__setitem__('ask_type', {})
+types.ModuleType.__dict__.__setitem__('ask_type_of', {})
+types.ModuleType.__dict__.__setitem__('ask_data', {})

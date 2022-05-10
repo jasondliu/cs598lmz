@@ -1,0 +1,24 @@
+fn = lambda: None
+# Test fn.__code__.co_varnames
+setattr(fn, '__code__', 'wibble')
+setattr(fn, '__code__', 3)
+setattr(fn, '__code__', object())
+setattr(fn, '__code__', [])
+setattr(fn, '__code__', True)
+setattr(fn, '__code__', ())
+setattr(fn, '__code__', True)
+fn.__code__ = True
+fn.__code__ = None
+fn.__code__ = ()
+fn.__code__ = 0
+fn.__code__ = object()
+fn.__code__ = []
+fn.__code__ = True
+fn.__code__ = True
+# Test fn.__code__.co_argcount
+setattr(fn, '__code__', 'wibble')
+setattr(fn, '__code__', 3)
+setattr(fn, '__code__', object())
+setattr(fn, '__code__', [])
+setattr(fn, '__code__', True)
+setattr(fn, '__code__', ())

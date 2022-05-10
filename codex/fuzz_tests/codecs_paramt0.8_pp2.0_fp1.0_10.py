@@ -1,0 +1,15 @@
+import codecs
+codecs.register_error('ErrUnexpectedEOF', UnexpectedEOF)
+codecs.register_error('ErrEmpty', Empty)
+codecs.register_error('ErrInvalidEncoding', InvalidEncoding)
+codecs.register_error('ErrIncomplete', Incomplete)
+codecs.register_error('ErrInvalidLineLength', InvalidLineLength)
+codecs.register_error('ErrExpectedByte', ExpectedByte)
+codecs.register_error('ErrInvalidLineSequence', InvalidLineSequence)
+codecs.register_error('ErrMaximumRetry', MaximumRetry)
+codecs.register_error('ErrIgnore', Ignore)
+codecs.register_error('ErrUndefinedCharacterName', UndefinedCharacterName)
+codecs.register_error('ErrCharacterMapping', CharacterMapping)
+codecs.register_error('ErrUndefinedEncoding', UndefinedEncoding)
+codecs.register_error('ErrIllegalState', IllegalState)
+codecs.register_error('ErrEOFCode', EOFCode

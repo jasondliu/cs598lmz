@@ -1,0 +1,23 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [1])
+print(a is b)
+print(type(a))
+print(isinstance(a, FunctionType))
+print(isinstance(b, FunctionType))
+
+print(type(a))
+print(type(b))
+print(type(a) is type(b))
+print(type(a) == type(b))
+
+# print(a == b)
+# print(a is b)
+# print(a.__eq__(b))
+# print(a.__hash__())
+# print(b.__hash__())
+# print(a.__hash__() == b.__hash__())
+# print(a.__hash__() is b.__hash__())
+# print(a.__hash__() is b.__hash__())
+# print(a.__hash__() is b.__hash__())
+# print(a.__hash__() is b.__hash__())

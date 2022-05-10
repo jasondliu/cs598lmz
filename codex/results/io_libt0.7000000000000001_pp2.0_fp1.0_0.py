@@ -1,0 +1,19 @@
+import io.github.bennofs.wdumper.spec.Constraint;
+import io.github.bennofs.wdumper.spec.ItemSpec;
+import io.github.bennofs.wdumper.spec.PropertySpec;
+import io.github.bennofs.wdumper.spec.SitelinkSpec;
+import io.github.bennofs.wdumper.spec.StatementSpec;
+import io.github.bennofs.wdumper.spec.TemplateSpec;
+import io.github.bennofs.wdumper.spec.ValueSpec;
+import io.github.bennofs.wdumper.spec.WikidataSpec;
+import org.supercsv.io.CsvMapReader;
+import org.supercsv.prefs.CsvPreference;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.

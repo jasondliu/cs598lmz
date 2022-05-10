@@ -1,0 +1,40 @@
+import ctypes
+FUNTYPE = ctypes.CFUNCTYPE(ctypes.py_object)
+@FUNTYPE
+def fun():
+    return 'Hello'
+
+print fun()
+print fun.__name__
+print fun.__doc__
+print fun.__module__
+print fun.__dict__
+print fun.__defaults__
+print fun.__code__
+print fun.__closure__
+#print fun.__annotations__
+print fun.__globals__
+print fun.__dict__
+print fun.__class__
+print fun.__call__
+print fun.__get__
+print fun.__getattribute__
+print fun.__hash__
+print fun.__init__
+print fun.__new__
+print fun.__reduce__
+print fun.__reduce_ex__
+print fun.__repr__
+print fun.__setattr__
+print fun.__sizeof__
+print fun.__str__
+print fun.__subclasshook__
+print fun.__weakref__
+print fun.__format__
+print fun.__delattr__
+print fun.__dir__
+print fun.__doc__
+print fun.__format__
+print fun.__getattribute__
+print fun.__hash__
+print fun

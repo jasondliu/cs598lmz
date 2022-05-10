@@ -1,0 +1,33 @@
+import io
+
+class File(io.RawIOBase):
+    def readinto(self, buf):
+        global view
+        view = buf
+    def readable(self):
+        return True
+
+f = io.BufferedReader(File())
+f.read(1)
+del f
+
+# Test that we can correctly handle a BufferedReader object
+# that has been closed by the garbage collector.
+
+class File(io.RawIOBase):
+    def readinto(self, buf):
+        global view
+        view = buf
+    def readable(self):
+        return True
+
+f = io.BufferedReader(File())
+del f
+gc.collect()
+
+try:
+    f.read()
+except ValueError:
+    pass
+else:
+    raise Exception("expected ValueError")

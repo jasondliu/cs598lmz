@@ -1,0 +1,3 @@
+from lzma import LZMADecompressor
+LZMADecompressor.__init__
+...

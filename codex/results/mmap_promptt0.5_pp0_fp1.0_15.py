@@ -1,0 +1,54 @@
+import mmap
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test mmap.mmap()
+
+# Test

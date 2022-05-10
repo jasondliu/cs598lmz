@@ -1,0 +1,20 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [1])
+print(type(a) == type(b))
+print(type(a) is type(b))
+print(a.__next__() is b.__next__())
+print(a.__next__() == b.__next__())
+print(a.__next__() is not b.__next__())
+print(a.__next__() != b.__next__())
+print(a is b)
+print(a == b)
+
+a = FunctionType(lambda x:x,globals())
+b = FunctionType(lambda x:x,globals())
+print(type(a) == type(b))
+print(type(a) is type(b))
+print(a.__code__.co_code == b.__code__.co_code)
+print(a.__code__.co_code is b.__code__.co_code)
+print(a.__code__.co_code != b.__code__.co_code)
+print(a.__code__.co_code is not b.__

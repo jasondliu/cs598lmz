@@ -1,0 +1,15 @@
+from lzma import LZMADecompressor
+LZMADecompressor().decompress(data)
+
+# b'This is the text to be compressed.  '
+
+# Compress some data
+data = b'This is the text to be compressed.  '
+
+compressor = LZMACompressor()
+compressed_data = compressor.compress(data)
+compressed_data += compressor.flush()
+
+compressed_data
+
+# b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x

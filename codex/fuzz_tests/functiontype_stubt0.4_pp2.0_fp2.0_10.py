@@ -1,0 +1,32 @@
+from types import FunctionType
+a = (x for x in [1])
+b = [1, 2, 3]
+c = {'a': 1}
+d = {1, 2, 3}
+e = FunctionType(lambda x: x, globals())
+f = "hello"
+g = 1
+h = 1.1
+i = None
+j = True
+k = False
+l = b"hello"
+m = bytearray(b"hello")
+n = memoryview(b"hello")
+o = range(10)
+p = frozenset(range(10))
+q = complex(1, 2)
+r = set(range(10))
+s = type(lambda x: x)
+t = type(type(lambda x: x))
+u = type(1)
+v = type(1.1)
+w = type(None)
+x = type(True)
+y = type(False)
+z = type(b"hello")
+aa = type(bytearray(b"hello"))
+ab = type(memoryview(b"hello"))
+ac = type(range(10))
+ad = type(frozenset(range(10)))
+ae

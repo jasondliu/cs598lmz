@@ -1,0 +1,34 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+gc.collect()
+gc.collect()
+
+# Test gc.get_objects()
+gc.get_objects()
+
+# Test gc.get_referrers()
+gc.get_referrers(gc)
+
+# Test gc.get_referents()
+gc.get_referents(gc)
+
+# Test gc.get_stats()
+gc.get_stats()
+
+# Test gc.is_tracked()
+gc.is_tracked(gc)
+
+# Test gc.is_tracked()
+gc.is_tracked(gc)
+
+# Test gc.set_debug()
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+gc.set_debug(gc.DEBUG_UNCOLLECTABLE)
+gc.set_debug(gc.DEBUG_INSTANCES)
+gc.set_debug(gc.DEBUG_OBJECTS)
+gc.set_debug(gc.DEBUG_SAVEALL)
+gc.set_debug(gc.DEBUG_LEAK)
+gc.set_debug(0)
+
+# Test g

@@ -1,0 +1,10 @@
+from lzma import LZMADecompressor
+LZMADecompressor().decompress(b'\x5d\x00\x00\x80\x00\x10\x00\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+
+# uncompressed size: 65535
+
+# compressed size: 29
+
+# ratio: 0.00043956043956043956
+
+# time: 0.00275969505

@@ -1,0 +1,7 @@
+import lzma
+# Test LZMADecompressor with an empty input
+decompressor = lzma.LZMADecompressor()
+decompressor.decompress(b'')
+
+decompressor.decompress(b'\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+

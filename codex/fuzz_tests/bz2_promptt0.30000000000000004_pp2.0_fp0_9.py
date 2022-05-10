@@ -1,0 +1,26 @@
+import bz2
+# Test BZ2Decompressor
+
+decompressor = bz2.BZ2Decompressor()
+
+with open('sample.bz2', 'rb') as input:
+    with open('sample.out', 'wb') as output:
+        for block in iter(lambda: input.read(100 * 1024), b''):
+            output.write(decompressor.decompress(block))
+            if not decompressor.eof:
+                raise EOFError('Compressed file ended before the '
+                               'end-of-stream marker was reached.')
+ 
+# Test BZ2Compressor
+
+compressor = bz2.BZ2Compressor()
+
+with open('sample.out', 'rb') as input:
+    with open('sample.bz2.out', 'wb') as output:
+        for block in iter(lambda: input.read(100 * 1024), b''):
+            output.write(compressor.compress(block))
+        output.write(compressor.flush())
+ 
+# Test BZ2File
+
+with bz2.BZ2File('sample.bz2', 'rb

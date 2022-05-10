@@ -1,0 +1,15 @@
+import types
+types.MethodType(lambda self: self.__class__.__name__, None, object)
+
+# 使用__slots__
+# 使用__slots__要注意，__slots__定义的属性仅对当前类实例起作用，对继承的子类是不起作用的：
+class Student(object):
+    __slots__ = ('name', 'age') # 用tuple定义允许绑定的属性名称
+
+s = Student() # 创建新的实例
+s.name = 'Michael' # 绑定属性'name'
+s.age = 25 # 绑定属性'age'
+# ERROR: AttributeError: 'Student' object has no attribute 'score'
+try:
+    s.score = 99
+

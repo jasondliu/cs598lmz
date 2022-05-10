@@ -1,0 +1,15 @@
+import lzma
+# Test LZMADecompressor
+data = b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\x00\x00\x00\x1b\x00\x00\x00\x04\x03\x00\x03\x00\x03\x00\x03\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00b\x01\x00\x00\x00\x00'
+decomp = lzma.LZMADecompressor()
+
+# Feed data in one-by-one to the decompressor.
+# We could also use an iterator that yields one
+# byte at a time, but this is simpler.
+result = b''
+while True:
+    try:
+        result += decomp.decompress(data)
+    except EOFError:
+        break
+assert result

@@ -1,0 +1,14 @@
+import ctypes
+# Test ctypes.CFUNCTYPE()
+def add(a, b):
+    return a + b
+
+my_add = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int, ctypes.c_int)(add)
+my_add(2, 3)
+
+def add(a, b):
+    return a + b
+
+# create ctypes for all arguments and return type
+add_ctypes = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int, ctypes.c_int)
+# create functools.partial object with first argument fixed to 2

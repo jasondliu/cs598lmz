@@ -1,0 +1,25 @@
+import mmap
+# Test mmap.mmap(0, 1, "shared", mmap.MAP_SHARED, 0, 0)
+
+import os
+# Test os.close(0)
+# Test os.dup(0)
+# Test os.dup2(0, 1)
+# Test os.fchdir(0)
+# Test os.fchmod(0, 0)
+# Test os.fchown(0, 0, 0)
+# Test os.fdatasync(0)
+# Test os.fstat(0)
+# Test os.fstatvfs(0)
+# Test os.fsync(0)
+# Test os.ftruncate(0, 0)
+# Test os.lchown(0, 0, 0)
+# Test os.link(0, 0)
+# Test os.listdir(0)
+# Test os.lseek(0, 0, 0)
+# Test os.lstat(0)
+# Test os.mkdir(0, 0)
+# Test os.open(0, 0)
+# Test os.openpty()
+# Test os.pipe()
+# Test

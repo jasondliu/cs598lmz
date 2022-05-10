@@ -1,0 +1,15 @@
+import codecs
+# Test codecs.register_error('replace_with_space',replace_with_space)
+# Test codecs.register_error('ignore',ignore)
+# Test codecs.register_error('strict',strict)
+# Test codecs.register_error('replace',replace)
+# Test codecs.register_error('xmlcharrefreplace',xmlcharrefreplace)
+# Test codecs.register_error('backslashreplace',backslashreplace)
+# Test codecs.register_error('namereplace',namereplace)
+# Test codecs.register_error('surrogateescape',surrogateescape)
+# Test codecs.register_error('surrogatepass',surrogatepass)
+# Test codecs.register_error('xmlcharrefreplace_errors',xmlcharrefreplace_errors)
+# Test codecs.register_error('backslashreplace_errors',backslashreplace_errors)
+# Test codecs.register_error('namereplace_errors',namereplace_errors)
+# Test codecs.register_error('strict_errors',strict_errors)
+# Test codecs.register_error('ignore_errors',

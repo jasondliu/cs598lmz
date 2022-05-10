@@ -1,0 +1,17 @@
+import socket
+# Test socket.if_indextoname()
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+print(s.bind(('', 0)))
+print(s.getsockname())
+print(socket.if_indextoname(s.fileno(), 0))
+print(socket.if_indextoname(s.fileno(), 1))
+print(socket.if_indextoname(s.fileno(), 2))
+print(socket.if_indextoname(s.fileno(), 3))
+print(socket.if_indextoname(s.fileno(), 4))
+print(socket.if_indextoname(s.fileno(), 5))
+print(socket.if_indextoname(s.fileno(), 6))
+print(socket.if_indextoname(s.fileno(), 7))
+print(socket.if_indextoname(s.fileno(), 8))
+print(socket.if_indextoname(s.fileno(), 9))
+print(socket.if_indextoname(s.fileno(), 10))
+print

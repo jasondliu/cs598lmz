@@ -1,0 +1,34 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+del a
+print lst
+
+#结果：
+#['\x00']
+
+#解释：
+#a.c=a，a引用自身，导致a不会被回收，因此lst中的str对象不会被回收。
+
+#示例2：
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+del a
+print lst
+
+#结果：
+#[]
+
+#解释：
+#a.c=a，a引用自身，导致a不会

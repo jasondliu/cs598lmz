@@ -1,0 +1,24 @@
+import signal
+# Test signal.setitimer
+signal.setitimer(signal.ITIMER_REAL, 0.1, 0.1)
+# Test signal.getitimer
+signal.getitimer(signal.ITIMER_REAL)
+# Test signal.signal
+signal.signal(signal.SIGALRM, lambda x, y: None)
+# Test signal.getsignal
+signal.getsignal(signal.SIGALRM)
+# Test signal.pause
+signal.pause()
+# Test signal.alarm
+signal.alarm(1)
+# Test signal.set_wakeup_fd
+signal.set_wakeup_fd(1)
+# Test signal.siginterrupt
+signal.siginterrupt(signal.SIGALRM, False)
+# Test signal.sigpending
+signal.sigpending()
+# Test signal.sigwait
+signal.sigwait([signal.SIGALRM])
+# Test signal.sigwaitinfo
+signal.sigwaitinfo([signal.SIGALRM])
+# Test

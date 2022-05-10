@@ -1,0 +1,14 @@
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
+import me.jessyan.armscomponent.commonsdk.base.BaseSupportFragment;
+import me.jessyan.armscomponent.commonsdk.bean.Historyrecord.AssistBean;
+import me.jessyan.armscomponent.commonsdk.bean.Historyrecord.OfficesBean;
+import me.jessyan.armscomponent.commonsdk.bean.Historyrecord.OperationBean;
+import me.jessyan.armscomponent.commonsdk.bean.Historyrecord.PatrolBean;
+import me.jessyan.armscomponent.commonsdk.bean.Historyrecord.PatrolRecordBean;
+import me

@@ -1,0 +1,20 @@
+from lzma import LZMADecompressor
+LZMADecompressor.decompress(data)
+
+#------------------------------------------------------------------------------
+# LZMADecompressor.flush()
+
+#------------------------------------------------------------------------------
+# LZMADecompressor.reset()
+
+#------------------------------------------------------------------------------
+# LZMADecompressor.unused_data
+
+#------------------------------------------------------------------------------
+# LZMADecompressor.decompress(data)
+
+##data = b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\x00\x00\x00\x04\x00\x00\x00\x00\x00'
+##decompressor = LZMADecompressor()
+##decompressor.decompress(data)
+##
+##data = b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\x00\x00

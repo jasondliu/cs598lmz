@@ -1,0 +1,32 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+gc.collect()
+gc.set_debug(gc.DEBUG_UNCOLLECTABLE)
+gc.collect()
+gc.set_debug(gc.DEBUG_SAVEALL)
+gc.collect()
+gc.set_debug(gc.DEBUG_LEAK)
+gc.collect()
+gc.set_debug(gc.DEBUG_STATS)
+gc.collect()
+gc.set_debug(gc.DEBUG_INSTANCES)
+gc.collect()
+gc.set_debug(gc.DEBUG_OBJECTS)
+gc.collect()
+gc.set_debug(gc.DEBUG_STATS)
+gc.collect()
+gc.set_debug(gc.DEBUG_UNCOLLECTABLE)
+gc.collect()
+
+# Test gc.get_debug()
+gc.get_debug()
+
+# Test gc.get_threshold()
+gc.get_threshold()
+
+# Test gc.set_threshold()
+gc.set_threshold(700, 10, 10)
+gc.get_threshold()
+gc.set_threshold(10, 10, 10)
+gc.

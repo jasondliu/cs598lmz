@@ -1,0 +1,18 @@
+import signal
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+
+from PyQt4.QtGui import *
+from PyQt4.QtCore import *
+
+from ui_mainwindow import Ui_MainWindow
+from ui_about import Ui_About
+from ui_preferences import Ui_Preferences
+from ui_preferences_general import Ui_Preferences_General
+from ui_preferences_appearance import Ui_Preferences_Appearance
+from ui_preferences_network import Ui_Preferences_Network
+from ui_preferences_torrent import Ui_Preferences_Torrent
+from ui_preferences_webui import Ui_Preferences_WebUI
+from ui_preferences_advanced import Ui_Preferences_Advanced
+from ui_preferences_scheduler import Ui_Preferences_Scheduler
+from ui_preferences_scheduler_edit import Ui_Preferences_Scheduler_Edit
+from ui_preferences_sc

@@ -1,0 +1,22 @@
+import signal
+# Test signal.setitimer()
+
+def handler(signum, frame):
+    print("Signal handler called with signal", signum)
+
+signal.signal(signal.SIGALRM, handler)
+
+# Define a 5-second alarm
+signal.setitimer(signal.ITIMER_REAL, 5)
+
+# This open() may hang indefinitely
+fd = os.open('/dev/ttyS0', os.O_RDWR)
+
+# Do some lengthy stuff
+time.sleep(10)
+
+# Disable the alarm
+signal.setitimer(signal.ITIMER_REAL, 0)
+
+# Close the file descriptor
+os.close(fd)

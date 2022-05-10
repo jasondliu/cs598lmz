@@ -1,0 +1,53 @@
+import codecs
+codecs.register_error('strict', codecs.ignore_errors)
+
+#-------------------------------------------------------------------------------
+#  Imports:
+#-------------------------------------------------------------------------------
+
+from os.path \
+    import join, exists, dirname, abspath, basename, splitext, isdir
+
+from os \
+    import makedirs, listdir, remove, rmdir, walk
+
+from glob \
+    import glob
+
+from shutil \
+    import copyfile, copytree, rmtree
+
+from subprocess \
+    import Popen, PIPE
+
+from sys \
+    import exit, argv, stdout, stderr
+
+from time \
+    import time, sleep
+
+from optparse \
+    import OptionParser
+
+from re \
+    import compile as re_compile
+
+from cStringIO \
+    import StringIO
+
+from zipfile \
+    import ZipFile, ZIP_DEFLATED
+
+from tarfile \
+    import TarFile, open as tar_open
+
+from tempfile \
+    import mkdtemp
+
+from threading \
+    import Thread
+
+from traceback \
+    import print_exc
+
+

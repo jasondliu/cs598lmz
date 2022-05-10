@@ -1,0 +1,33 @@
+import codecs
+# Test codecs.register_error()
+
+def test_main(verbose=None):
+    test_classes = [Test_UnicodeError,
+                    Test_UnicodeTranslateError,
+                    Test_UnicodeEncodeError,
+                    Test_UnicodeDecodeError,
+                    Test_UnicodeWarning,
+                    Test_LookupError,
+                    Test_IndexError,
+                    Test_KeyError,
+                    Test_IOError,
+                    Test_EnvironmentError,
+                    Test_SyntaxError,
+                    Test_AssertionError,
+                    Test_AttributeError,
+                    Test_ImportError,
+                    Test_ArithmeticError,
+                    Test_OverflowError,
+                    Test_ZeroDivisionError,
+                    Test_FloatingPointError,
+                    Test_ValueError,
+                    Test_UnboundLocalError,
+                    Test_IOError0,
+                    Test_IOError1,
+                    Test_IOError2,
+                    Test_OSError,
+                    Test_SyntaxError0,
+                    Test_SyntaxError1,
+                    Test_SyntaxError2,
+                    Test_SyntaxError3,
+                   

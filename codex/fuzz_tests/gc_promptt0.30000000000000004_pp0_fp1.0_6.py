@@ -1,0 +1,47 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+gc.collect()
+
+# Test gc.get_objects()
+gc.get_objects()
+
+# Test gc.get_referrers()
+gc.get_referrers()
+
+# Test gc.get_referents()
+gc.get_referents()
+
+# Test gc.is_tracked()
+gc.is_tracked()
+
+# Test gc.set_threshold()
+gc.set_threshold()
+
+# Test gc.get_threshold()
+gc.get_threshold()
+
+# Test gc.get_count()
+gc.get_count()
+
+# Test gc.enable()
+gc.enable()
+
+# Test gc.disable()
+gc.disable()
+
+# Test gc.isenabled()
+gc.isenabled()
+
+# Test gc.collect()
+gc.collect()
+
+# Test gc.garbage
+gc.garbage
+
+# Test gc.DEBUG_LEAK
+gc.DEBUG_LEAK
+
+# Test gc.DEBUG_STATS
+gc.DEBUG_STATS
+

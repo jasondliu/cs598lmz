@@ -1,0 +1,13 @@
+import codecs
+codecs.register_error('docxreplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplacereplace("r", "")
+		if("Keywords:" in line):
+			line = line.replace("Keywords:", "")
+			keywords.append(line.replace("\n","").replace(" ", ""));
+
+	abstract = ' '.join(abstract)
+	author = ", ".join(author)
+
+	return {
+		"year": year[0],
+		"title": title[0],
+		"ab

@@ -1,0 +1,17 @@
+import socket
+socket.if_indextoname(socket.if_nametoindex('eth0'))
+
+# ftp模块
+import ftplib
+ftp = ftplib.FTP('ftp.debian.org')
+ftp.login()
+ftp.cwd('debian')
+ftp.quit()
+
+# telnet模块
+import telnetlib
+tel = telnetlib.Telnet('192.168.0.2')
+tel.write('girish\n')
+tel.write('password\n')
+tel.write('ls\n')
+tel.write('exit\n')

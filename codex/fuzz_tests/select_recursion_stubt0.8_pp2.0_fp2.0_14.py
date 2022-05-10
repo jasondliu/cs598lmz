@@ -1,0 +1,13 @@
+import select
+
+def test_select_mutated():
+    a = []
+
+    class F:
+        def fileno(self):
+            test_select_mutated()
+
+    select.select([], [], [F()])
+
+test_select_mutated()
+test_select_mutated()

@@ -1,0 +1,16 @@
+from types import FunctionType
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x: x, globals(), 'foo')())
+list(FunctionType(lambda x:

@@ -1,0 +1,57 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+
+class Foo:
+    pass
+
+class Bar:
+    pass
+
+def test():
+    f = Foo()
+    b = Bar()
+    f.b = b
+    b.f = f
+    del f, b
+    gc.collect()
+
+test()
+
+# Test gc.get_objects()
+
+def test():
+    f = Foo()
+    b = Bar()
+    f.b = b
+    b.f = f
+    del f, b
+    gc.collect()
+
+test()
+
+# Test gc.get_referrers()
+
+def test():
+    f = Foo()
+    b = Bar()
+    f.b = b
+    b.f = f
+    del f, b
+    gc.collect()
+
+test()
+
+# Test gc.get_referents()
+
+def test():
+    f = Foo()
+    b = Bar()
+    f.b = b
+    b.f = f
+    del f, b
+    gc.collect()
+
+test()
+
+# Test gc.get_

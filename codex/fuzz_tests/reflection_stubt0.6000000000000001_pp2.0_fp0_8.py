@@ -1,0 +1,15 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = 'fn'
+fn.__dict__ = {}
+fn.__defaults__ = ()
+fn.__globals__ = {'__builtins__': __builtins__, '__name__': '__main__', '__file__': '/home/vagrant/pypy/pypy/translator/sandbox/test/test_pyjitpl.py', '__doc__': None, '__package__': None}
+fn.func_closure = None
+fn.func_doc = None
+fn.func_name = 'fn'
+fn.func_dict = {}
+fn.func_defaults = ()
+fn.func_globals = {'__builtins__': __builtins__, '__name__': '__main__', '__file__': '/home/vagrant/pypy/pypy/translator/sandbox/test/test_pyjitpl.py', '__doc__': None, '__package__': None}
+fn.__module__ = '__main__'
+fn.__doc__ =

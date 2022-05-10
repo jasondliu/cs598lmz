@@ -1,0 +1,10 @@
+from _struct import Struct
+s = Struct.__new__(Struct)
+s.init(b'I 2s f')
+s.size
+s.pack(1, b'ab', 3.0)
+
+s.unpack(_)
+s.unpack(b'\x01\x00\x00\x00ab\x00\x00\x9a\x99\x99\x99\x99\x9a')
+
+s.unpack_from(b'\x00\x00\x00\x00xy\x00\x00\xf0\x3f\x00\x00\x00\x00\x00\x00\x00\x00')

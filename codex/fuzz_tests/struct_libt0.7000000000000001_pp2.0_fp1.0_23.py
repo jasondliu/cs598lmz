@@ -1,0 +1,35 @@
+import _struct
+import _time
+
+
+__all__ = [
+    'SerialException',
+    'SerialTimeoutException',
+    'portNotOpenError',
+    'writeTimeoutError',
+    'Timeout',
+    'open',
+    'Serial',
+    'to_bytes',
+    'to_str',
+    'EIGHTBITS',
+    'SEVENBITS',
+    'SIXBITS',
+    'FIVEBITS',
+    'FOURBITS',
+    'THREEBITS',
+    'TWOBITS',
+    'PARITY_NONE',
+    'PARITY_EVEN',
+    'PARITY_ODD',
+    'PARITY_MARK',
+    'PARITY_SPACE',
+    'PARITY_INVERTED',
+    'STOPBITS_ONE',
+    'STOPBITS_ONE_POINT_FIVE',
+    'STOPBITS_TWO',
+    'STOPBITS_CONFIGURABLE',
+    'XON',
+    'XOFF',
+    'XANY',
+    'RS485_MODE_N

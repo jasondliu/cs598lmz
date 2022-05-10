@@ -1,0 +1,6 @@
+import io
+# Test io.RawIOBase compatibility:
+class TestRawIOBase(io.RawIOBase):
+    ...
+class TestBytesIO(io.BytesIO):
+    ...

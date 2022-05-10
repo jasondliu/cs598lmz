@@ -1,0 +1,31 @@
+import socket
+socket.if_indextoname(3)
+
+# 获取接口的索引
+socket.if_nametoindex('en0')
+
+# 获取接口的状态
+socket.if_nameindex()
+
+# 获取接口的状态
+socket.if_nameindex()
+
+# 获取接口的状态
+socket.if_nameindex()
+
+# 获取接口的状态
+socket.if_nameindex()
+
+# 获取接口的状态
+socket.if_nameindex()
+
+# 获取接口的状态
+socket.if_nameindex()
+
+# 获取接口的状态
+socket.if_nameindex()
+
+# 获取接口的状态
+socket.if_nameindex()
+
+# 获

@@ -1,0 +1,20 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+a, b = [], []
+a.append(weakref.ref(b))
+a.append(weakref.ref(b))
+a.append(weakref.ref(a[1]))
+a.append(weakref.ref(a[2]))
+print(gc.collect())
+a.pop().__call__().pop().__call__().pop().__call__().pop().__call__()
+print(gc.collect())
+a.pop().__call__().pop().__call__().pop().__call__().pop().__call__()
+print(gc.collect())
+a.pop().__call__().pop().__call__().pop().__call__().pop().__call__()
+print(gc.collect())
+a.pop().__call__().pop().__call__().pop().__call__().pop().__call__()
+print(gc.collect())
+a.pop().__call__().pop().__call__().pop().__call__().pop().__call__()
+print(gc.collect())
+a.pop().__call__().pop().__call__().

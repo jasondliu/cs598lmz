@@ -1,0 +1,43 @@
+import ctypes
+ctypes.cast(0, ctypes.py_object)
+
+# ___________________________________________________________________________
+# Exceptions
+
+class Error(Exception):
+    """Base class for exceptions in this module."""
+    pass
+
+class DataError(Error):
+    """Exception raised for errors in the input.
+
+    Attributes:
+        expression -- input expression in which the error occurred
+        message -- explanation of the error
+    """
+
+    def __init__(self, expression, message):
+        self.expression = expression
+        self.message = message
+
+class TransitionError(Error):
+    """Raised when an operation attempts a state transition that's not
+    allowed.
+
+    Attributes:
+        previous -- state at beginning of transition
+        next -- attempted new state
+        message -- explanation of why the specific transition is not allowed
+    """
+
+    def __init__(self, previous, next, message):
+        self.previous = previous
+        self.next = next
+        self.message = message
+
+# ___________________________________________________________________________
+# Main class
+
+class FSM(object):
+    """A simple finite state machine that mimics the behavior of a device from a
+    high level

@@ -1,0 +1,18 @@
+import _struct
+# Test _struct.Struct('i') == _struct.Struct('=i')
+s = _struct.Struct('i')
+s.unpack(s.pack(1)) == (1,)
+# _struct.Struct('i') != _struct.Struct('=i')
+s = _struct.Struct('i')
+_struct.Struct('=i').unpack(s.pack(1)) == (1,)
+# _struct.Struct('=i') == _struct.Struct('i')
+s = _struct.Struct('=i')
+s.unpack(s.pack(1)) == (1,)
+# _struct.Struct('=i') != _struct.Struct('i')
+s = _struct.Struct('=i')
+_struct.Struct('i').unpack(s.pack(1)) == (1,)
+# _struct.Struct('i') == _struct.Struct(b'i')
+s = _struct.Struct('i')
+s.unpack(s.pack(1)) == (1,)
+# _struct.Struct('i') != _struct.Struct(b'i')
+s = _struct.Struct('i

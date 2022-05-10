@@ -1,0 +1,44 @@
+fn = lambda: None
+# Test fn.__code__ and fn.__closure__
+
+# Test fn.__code__.co_flags
+# Test fn.__code__.co_name
+# Test fn.__code__.co_argcount
+# Test fn.__code__.co_varnames
+# Test fn.__code__.co_filename
+# Test fn.__code__.co_firstlineno
+# Test fn.__code__.co_lnotab
+
+# Test fn.__closure__
+
+# Test fn.__globals__
+
+# Test fn.__defaults__
+
+# Test fn.__kwdefaults__
+
+# Test fn.__dict__
+
+# Test fn.__annotations__
+
+# Test fn.__module__
+
+# Test fn.__qualname__
+
+# Test fn.__text_signature__
+
+# Test fn.__name__
+
+# Test fn.__get__
+
+# Test fn.__set__
+
+# Test fn.__delete__
+
+# Test fn.__init__
+
+# Test fn.__new__
+
+# Test fn.__call__
+
+#

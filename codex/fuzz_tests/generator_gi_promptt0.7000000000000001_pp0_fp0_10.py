@@ -1,0 +1,13 @@
+gi = (i for i in ())
+# Test gi.gi_code = None
+gi = (i for i in ())
+gi.gi_code = None
+# Test gi.gi_frame = None
+gi = (i for i in ())
+gi.gi_frame = None
+# Test gi.gi_running = None
+gi = (i for i in ())
+gi.gi_running = None
+# Test gi.gi_yieldfrom = None
+gi = (i for i in ())
+gi.gi_yieldfrom = None

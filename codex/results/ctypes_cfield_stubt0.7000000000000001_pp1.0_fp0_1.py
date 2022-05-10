@@ -1,0 +1,16 @@
+import ctypes
+
+class S(ctypes.Structure):
+    _fields_ = [('x', ctypes.c_int)]
+
+ctypes.CField = type(S.x)
+
+s = S()
+
+s.x = 10
+print(s.x)
+
+s.x = 'abc'
+print(s.x)
+</code>
+

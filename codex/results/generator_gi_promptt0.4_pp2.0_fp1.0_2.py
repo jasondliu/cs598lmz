@@ -1,0 +1,20 @@
+gi = (i for i in ())
+# Test gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_flags
+# Test c_gi.gi_code.co_

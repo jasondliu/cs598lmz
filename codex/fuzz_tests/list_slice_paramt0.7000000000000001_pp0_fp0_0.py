@@ -1,0 +1,15 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+a=None
+#print lst
+
+'''
+weakref.ref(object,callback)
+weakref.proxy(object,callback)
+'''

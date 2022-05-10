@@ -1,0 +1,13 @@
+import _struct
+# Test _struct.Struct.__setattr__()
+TestError("_struct.Struct('@c').l", AttributeError, 'readonly attribute')
+TestError("_struct.Struct('@c').format", AttributeError, 'readonly attribute')
+TestError("_struct.Struct('@c').format_code", AttributeError, 'readonly attribute')
+TestError("_struct.Struct('@c').size", AttributeError, 'readonly attribute')
+TestError("_struct.Struct('@c').unpack", AttributeError, 'readonly attribute')
+TestError("_struct.Struct('@c').unpack_from", AttributeError, "readonly attribute")
+TestError("_struct.Struct('@c').pack", AttributeError, 'readonly attribute')
+TestError("_struct.Struct('@c').pack_into", AttributeError, "readonly attribute")
+# Test _struct.Struct.__new__()
+TestError("_struct.Struct('@cc')", TypeError, "Struct() takes no arguments")
+TestError("_struct.Struct('@c', 2)", TypeError, "Struct() takes no arguments

@@ -1,0 +1,21 @@
+import mmap
+# Test mmap.mmap()
+# Test mmap.mmap(-1, ...)
+
+# Test mmap.mmap()
+# Test mmap.mmap(-1, ...)
+buf = mmap.mmap(-1, 1)
+buf.close()
+buf = mmap.mmap(-1, 1, access=mmap.ACCESS_READ, tagname="test")
+buf.close()
+buf = mmap.mmap(-1, 1, tagname="test")
+buf.close()
+buf = mmap.mmap(-1, 1, access=mmap.ACCESS_READ)
+buf.close()
+buf = mmap.mmap(-1, 1, access=mmap.ACCESS_WRITE)
+buf.close()
+buf = mmap.mmap(-1, 1, access=mmap.ACCESS_COPY)
+buf.close()
+buf = mmap.mmap(-1, 1, access=mmap.ACCESS_DEFAULT)
+buf.close()
+buf = mmap.mmap(-1, 1, access=mmap.ACCESS_READ | mmap.ACCESS

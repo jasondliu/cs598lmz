@@ -1,0 +1,33 @@
+import io
+# Test io.RawIOBase
+# Test io.BufferedIOBase
+# Test io.TextIOBase
+# Test io.FileIO
+# Test io.BytesIO
+# Test io.StringIO
+# Test io.BufferedReader
+# Test io.BufferedWriter
+# Test io.BufferedRWPair
+# Test io.BufferedRandom
+# Test io.TextIOWrapper
+# Test io.open
+# Test io.StringIO
+# Test io.BytesIO
+# Test io.SEEK_SET
+# Test io.SEEK_CUR
+# Test io.SEEK_END
+# Test io.DEFAULT_BUFFER_SIZE
+# Test io.FileIO
+# Test io.open
+# Test io.file
+# Test io.TextIOWrapper
+# Test io.BufferedReader
+# Test io.BufferedWriter
+# Test io.BufferedRWPair
+# Test io.BufferedRandom
+# Test io.RawIOBase
+# Test io.RawIOBase.read
+# Test io.RawIOBase.readinto
+# Test io.RawIOBase.write
+# Test io.RawIOBase.seek
+

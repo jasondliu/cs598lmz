@@ -1,0 +1,47 @@
+gi = (i for i in ())
+# Test gi.gi_code
+try:
+    gi.gi_code
+except AttributeError:
+    pass
+else:
+    print('AttributeError expected')
+# Test gi.gi_frame
+try:
+    gi.gi_frame
+except AttributeError:
+    pass
+else:
+    print('AttributeError expected')
+# Test gi.gi_running
+try:
+    gi.gi_running
+except AttributeError:
+    pass
+else:
+    print('AttributeError expected')
+# Test gi.__name__
+try:
+    gi.__name__
+except AttributeError:
+    pass
+else:
+    print('AttributeError expected')
+# Test gi.__qualname__
+try:
+    gi.__qualname__
+except AttributeError:
+    pass
+else:
+    print('AttributeError expected')
+# Test gi.__self__
+try:
+    gi.__self__
+except AttributeError:
+    pass
+else:
+    print('AttributeError expected')
+# Test gi.__closure__
+try:
+    gi.__closure__
+except

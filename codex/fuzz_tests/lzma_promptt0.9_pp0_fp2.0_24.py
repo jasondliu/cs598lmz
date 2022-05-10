@@ -1,0 +1,18 @@
+import lzma
+# Test LZMADecompressor
+
+# test data: b"adadadadadadad" (compressed)
+test = [0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0x60, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x02, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x81, 0x62, 0x5A, 0x0A, 0x5A, 0x18, 0x08, 0x0F]
+
+testdata = ''.join(chr(x) for x in test)
+print("testdata: %s" % testdata)
+
+decomp = lzma.LZMADecompressor()
+
+try:
+    buf = decomp.decompress(testdata)
+except lzma.LZMAError, e:
+    print("Error: %s" % e.message)
+    buf = decomp.unused_data
+print("buf: %s" % buf)
+print

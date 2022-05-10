@@ -1,0 +1,56 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+
+class A:
+    pass
+
+a = A()
+a.b = A()
+a.b.a = a
+
+ref = weakref.ref(a)
+
+del a
+gc.collect()
+
+print(ref())
+
+# Test gc.garbage
+
+class A:
+    pass
+
+a = A()
+a.b = A()
+a.b.a = a
+
+ref = weakref.ref(a)
+
+del a
+
+print(gc.garbage)
+
+# Test gc.get_debug()
+
+print(gc.get_debug())
+
+# Test gc.get_count()
+
+print(gc.get_count())
+
+# Test gc.get_objects()
+
+print(len(gc.get_objects()))
+
+# Test gc.get_referrers()
+
+print(len(gc.get_referrers(gc)))
+
+# Test gc.get_threshold()
+
+print(gc.get_threshold())
+
+# Test gc.set_debug()
+
+gc.set_debug(

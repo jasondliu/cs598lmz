@@ -1,0 +1,56 @@
+import _struct
+import _sys
+import _thread
+import _time
+import _types
+import _urllib
+import _urllib2
+import _urlparse
+import _uuid
+import _warnings
+import _weakref
+import _xmlrpclib
+import _zipfile
+import _zlib
+
+import _collections
+import _functools
+import _heapq
+import _locale
+import _random
+import _socket
+import _sre
+import _ssl
+import _stat
+import _string
+import _struct
+import _symtable
+import _thread
+import _warnings
+import _weakref
+
+import _codecs
+import _csv
+import _hashlib
+import _io
+import _json
+import _locale
+import _multibytecodec
+import _random
+import _socket
+import _sre
+import _ssl
+import _struct
+import _symtable
+import _warnings
+import _weakref
+import _winreg
+
+import _codecs
+import _collections
+import _csv
+import _functools
+import _hashlib
+import _heapq
+import _io
+

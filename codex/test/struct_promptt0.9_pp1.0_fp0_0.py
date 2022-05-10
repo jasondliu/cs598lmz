@@ -1,0 +1,22 @@
+import _struct
+# Test _struct.Struct.format with '@' alignment.
+format = _struct.Struct('@i') # '@' is not needed for alignment is 4 bytes
+format.pack(42)
+format.unpack(_bytes(4294967280))
+format = _struct.Struct('@b')
+format.unpack(_bytes(255))
+format = _struct.Struct('@B')
+format.unpack(_bytes(255))
+format = _struct.Struct('@?')
+format.unpack(_bytes(1))
+format.unpack(_bytes(0))
+format = _struct.Struct('@h')
+format.unpack(_bytes(32768))
+format = _struct.Struct('@H')
+format.unpack(_bytes(65535))
+format = _struct.Struct('@l')
+format.unpack(_bytes(2147483648))
+format = _struct.Struct('@L')
+format.unpack(_bytes(4294967295))
+format = _struct.Struct('@q')
+format.unpack(_bytes(9223372036854775808))

@@ -1,0 +1,23 @@
+import mmap
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc__
+# Test mmap.mmap.__doc

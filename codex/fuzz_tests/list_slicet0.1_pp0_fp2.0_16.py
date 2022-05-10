@@ -1,0 +1,62 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+del a
+while lst:keepali0e.append(lst[:])
+print(keepali0e)
+
+#结果：
+#[<weakref at 0x000002A7E8B8A8C8; to 'A' at 0x000002A7E8B8A8B0>, ['']]
+#[<weakref at 0x000002A7E8B8A8C8; dead>, ['']]
+#[<weakref at 0x000002A7E8B8A8C8; dead>, []]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#[]
+#

@@ -1,0 +1,33 @@
+from types import FunctionType
+a = (x for x in [1])
+print(type(a))
+print(type(abs))
+print(type(lambda x: x))
+print(type((x for x in range(10))))
+print(type(isinstance))
+print(type(FunctionType))
+print(type(FunctionType.__call__))
+print(type(FunctionType.__call__.__call__))
+
+print(type(int))
+print(type(str))
+print(type(dict))
+print(type(list))
+print(type(tuple))
+print(type(set))
+print(type(object))
+print(type(type))
+
+print(type(type) == type)
+print(type(int) == type)
+print(type(str) == type)
+print(type(dict) == type)
+print(type(list) == type)
+print(type(tuple) == type)
+print(type(set) == type)
+print(type(object) == type)
+print(type(type) == type)
+
+print(type(type(int)))
+print(type(type(str)))
+print(type(

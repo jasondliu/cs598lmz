@@ -1,0 +1,17 @@
+import socket
+socket.if_indextoname(3)
+
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.bind(('', 0))
+s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast>', 5000))
+s.sendto(b'Hello', ('<broadcast

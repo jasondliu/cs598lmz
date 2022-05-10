@@ -1,0 +1,23 @@
+import socket
+import sys
+import time
+import threading
+import signal
+import os
+
+# Global variables
+global num_of_clients
+global client_list
+global client_list_lock
+global client_list_cond
+global client_list_cond_lock
+global client_list_cond_lock_lock
+global client_list_cond_lock_lock_lock
+global client_list_cond_lock_lock_lock_lock
+global client_list_cond_lock_lock_lock_lock_lock
+global client_list_cond_lock_lock_lock_lock_lock_lock
+global client_list_cond_lock_lock_lock_lock_lock_lock_lock
+global client_list_cond_lock_lock_lock_lock_lock_lock_lock_lock
+global client_list_cond_lock_lock_lock_lock_lock_lock_lock_lock_lock
+global client_list_cond_lock_lock_lock_lock_lock_lock_lock_lock_lock_lock
+global client_list_cond_lock_lock_lock_lock_lock_lock_lock_lock_lock_lock

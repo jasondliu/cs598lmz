@@ -1,0 +1,13 @@
+import mmap
+
+with open('test', 'wb') as f:
+    f.write(bytes(1))
+
+with open('test', 'r+b') as f:
+    m = mmap.mmap(f.fileno(), 0)
+    m[0] = b'2'
+
+with open('test', 'rb') as f:
+    assert f.read(1) == b'2'
+</code>
+

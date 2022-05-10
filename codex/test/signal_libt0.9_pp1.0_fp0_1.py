@@ -1,0 +1,17 @@
+import signal
+signal.signal(signal.SIGINT, signal.SIG_DFL) 
+
+class settingsdialog(QDialog, Ui_settings):
+    def __init__(self, version, parent = None):
+        QDialog.__init__(self, parent)
+        self.setupUi(self)
+        self.parent = parent
+        self.version = version
+        self.parent = parent
+        self.setGeometry(300, 200, self.width(), self.height()) 
+        self.ConnectSignalSlot()
+        self.ShowSettings()
+    
+    def ConnectSignalSlot(self):
+        self.buttonBox.accepted.connect(self.SaveSetting)
+

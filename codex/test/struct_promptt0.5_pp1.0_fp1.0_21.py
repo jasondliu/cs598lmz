@@ -1,0 +1,10 @@
+import _struct
+# Test _struct.Struct.unpack_from()
+_struct.Struct.unpack_from(b'@H', b'\x01\x02', 0)
+_struct.Struct.unpack_from(b'@H', b'\x01\x02', 1)
+_struct.Struct.unpack_from(b'@H', b'\x01\x02', 2)
+# Test _struct.Struct.pack_into()
+buf = bytearray(b'\x00\x00\x00\x00')
+_struct.Struct.pack_into(b'@H', buf, 0, 1)
+_struct.Struct.pack_into(b'@H', buf, 1, 1)
+_struct.Struct.pack_into(b'@H', buf, 2, 1)

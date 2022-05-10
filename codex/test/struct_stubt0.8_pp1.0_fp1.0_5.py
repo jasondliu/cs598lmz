@@ -1,0 +1,12 @@
+from _struct import Struct
+s = Struct.__new__(Struct)
+s.__init__('<12shhl')
+print(s.size)
+
+print('{0[0]} {0[1]}'.format(s.unpack(b'\x12\x34\x56\x78\x9a\xbc\xde\xf0\x11\x22\x33\x44\x66\x77\x88\x99')))
+
+print([ord(c) for c in s.pack(b'\x12\x34\x56\x78\x9a\xbc\xde\xf0\x11\x22\x33\x44', 66, 77, 8899)])
+
+print('{0[0]} {0[1]} {0[2]} {0[3]}'.format((s.unpack_from(b'\x12\x34\x56\x78\x9a\xbc\xde\xf0\x11\x22\x33\x44\x55\x66\x77\x88\x99\xaa', 0))))
+
+print

@@ -1,0 +1,47 @@
+import ctypes
+import ctypes.util
+import threading
+import sqlite3
+# Test sqlite3.connect(':memory:').execute('pragma journal_mode=wal')
+# Test sqlite3.connect(':memory:').execute('pragma synchronous=0')
+import os
+import sys
+import time
+import signal
+import subprocess
+import hashlib
+import random
+import re
+import datetime
+import json
+import socket
+import urllib.request, urllib.error, urllib.parse
+import tempfile
+import traceback
+import html.parser
+import locale
+import email.utils
+import email.header
+import email.message
+import email.mime.text
+import email.mime.multipart
+import email.mime.application
+import email.mime.message
+import email.mime.base
+import email.encoders
+import email.charset
+import smtplib
+import poplib
+import imaplib
+import getpass
+import base64
+import quopri
+import binascii
+import zlib
+import gzip
+import bz2
+import lzma
+import lz4.frame
+import zstd
+import brotli
+import lz4

@@ -1,0 +1,32 @@
+from types import FunctionType
+a = (x for x in [1])
+b = [1, 2, 3]
+c = {1: 2, 3: 4}
+d = {1, 2, 3}
+e = FunctionType(lambda: None, globals())
+f = type(None)
+g = type(lambda: None)
+h = type(1)
+i = type(1.0)
+j = type(1j)
+k = type('')
+l = type(u'')
+m = type(b'')
+n = type(bytearray())
+o = type(range(1))
+p = type(x for x in [1])
+q = type(iter([1]))
+r = type(dict())
+s = type(set())
+t = type(frozenset())
+u = type(object())
+v = type(object)
+w = type(Exception())
+x = type(Exception)
+y = type(BaseException())
+z = type(BaseException)
+aa = type(StopIteration())
+ab = type(StopIteration)
+ac = type(GeneratorExit())
+ad = type(GeneratorExit)
+ae

@@ -1,0 +1,32 @@
+import codecs
+
+def add_one_codepoint(exc):
+    return ("a", exc.start)
+
+def add_utf16_bytes(exc):
+    return (b'ab', exc.start)
+
+def add_utf32_bytes(exc):
+    return (b'abcd', exc.start)
+
+codecs.register_error("add_one_codepoint", add_one_codepoint)
+codecs.register_error("add_utf16_bytes", add_utf16_bytes)
+codecs.register_error("add_utf32_bytes", add_utf32_bytes)
+
+def test_main():
+    # test utf-16-le
+    for encoding in ("utf-16-le", "utf-16-be"):
+        for errors in ("strict", "ignore", "replace", "add_one_codepoint",
+                       "add_utf16_bytes"):
+            for bom in (b"", b"\xff\xfe"):
+                for data in (b"\xff\xfe", b"\xfe\xff", b"\xfe\xfe",
+                             b"\xff\xff", b"\xfe\xfe\xff\xff",
+                             b"\xff\xff\xfe\xfe"):
+                    for data_len in range(len(data)):
+                        for offset in range(len(data)):
+                            for data_len2 in range(len(data) - offset):
+                                try:
+                                    codecs.utf_16_decode(data[offset:offset+data_len2],
+                                                         errors, True)
+                                except UnicodeDecodeError:
+                                    pass

@@ -1,0 +1,29 @@
+import lzma
+lzma.LZMAError
+
+import magic
+magic.MagicException
+
+import mechanize
+mechanize.BrowserStateError
+mechanize._http.BrowserStateError
+mechanize._urllib2_fork.parse_http_list
+mechanize.HTTPError
+mechanize._http.HTTPError
+mechanize._urllib2_fork.HTTPError
+mechanize.RobotExclusionError
+mechanize._http.RobotExclusionError
+mechanize._urllib2_fork.RobotExclusionError
+mechanize.BrowserStateError
+mechanize._sockettimeout.HTTPError
+mechanize.BrowserStateError
+mechanize._urllib2_fork.HTTPError
+mechanize.RobotExclusionError
+mechanize._urllib2_fork.RobotExclusionError
+mechanize.BrowserStateError
+mechanize._urllib2_fork.HTTPError
+mechanize.BrowserStateError
+mechanize._response.Error
+mechanize.BrowserStateError
+mechanize._useragent.Error
+mechanize._sockettimeout.HTTP

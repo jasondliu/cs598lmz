@@ -1,0 +1,4 @@
+from _struct import Struct
+s = Struct.__new__(Struct)
+
+s.format = "5s3s3s3s3s3s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s4s

@@ -1,0 +1,23 @@
+gi = (i for i in ())
+# Test gi.gi_code
+# Test gi.gi_frame
+# Test gi.gi_running
+# Test gi.gi_yieldfrom
+# Test gi.__name__
+# Test gi.__qualname__
+# Test gi.__module__
+# Test gi.__class__
+# Test gi.__await__()
+# Test gi.__aiter__()
+# Test gi.__anext__()
+# Test gi.async_gen.asend(1)
+# Test gi.async_gen.athrow(Exception())
+# Test gi.async_gen.aclose()
+# Test gi.async_gen.ag_await
+# Test gi.async_gen.ag_frame
+# Test gi.async_gen.ag_running
+# Test gi.async_gen.ag_code
+# Test gi.async_gen.ag_yieldfrom
+# Test gi.async_gen.__name__
+# Test gi.async_gen.__qualname__
+# Test gi.async

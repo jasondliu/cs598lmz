@@ -1,0 +1,21 @@
+import _struct
+# Test _struct.Struct.format
+assert _struct.Struct('h').format == 'h'
+assert _struct.Struct('hh').format == 'hh'
+assert _struct.Struct('i').format == 'i'
+assert _struct.Struct('ii').format == 'ii'
+assert _struct.Struct('l').format == 'l'
+assert _struct.Struct('ll').format == 'll'
+assert _struct.Struct('q').format == 'q'
+assert _struct.Struct('qq').format == 'qq'
+assert _struct.Struct('f').format == 'f'
+assert _struct.Struct('ff').format == 'ff'
+assert _struct.Struct('d').format == 'd'
+assert _struct.Struct('dd').format == 'dd'
+assert _struct.Struct('s').format == 's'
+assert _struct.Struct('p').format == 'p'
+assert _struct.Struct('P').format == 'P'
+assert _struct.Struct('c').format == 'c'
+assert _struct.Struct('b').format == 'b'
+assert _struct.Struct('B').format == 'B'
+assert

@@ -1,0 +1,29 @@
+import threading
+threading.stack_size(2**27)
+import sys
+sys.setrecursionlimit(10**7)
+sys.stdin = open('inpy.txt', 'r')
+sys.stdout = open('outpy.txt', 'w')
+from math import *
+from collections import *
+from queue import PriorityQueue
+from bisect import bisect_left, bisect_right
+from itertools import permutations, combinations, product, accumulate, combinations_with_replacement
+from copy import deepcopy
+from string import ascii_lowercase, ascii_uppercase, digits
+from functools import reduce
+def inp(): return(int(input()))
+def inlt(): return(list(map(int, input().split())))
+def insr(): return(input())
+def invr(): return(map(int, input().split()))
+def mod 1000000007
+
+N = inp()
+A = inlt()
+B = inlt()
+
+if sum(A) != sum(B):
+    print(-1)
+else:
+    ans = 0
+    for i in range(N):

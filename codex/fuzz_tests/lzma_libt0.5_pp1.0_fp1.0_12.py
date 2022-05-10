@@ -1,0 +1,11 @@
+import lzma
+lzma.LZMAError
+
+print(lzma.LZMACompressor().compress(b"Hello World"))
+print(lzma.LZMADecompressor().decompress(b"\x5d\x00\x00\x80\x0bX\xf4H\xcd\xc9\xc9\x07\x00\x06,\x04\x00\x00\x00\x00"))
+
+import bz2
+bz2.BZ2Error
+
+print(bz2.BZ2Compressor().compress(b"Hello World"))
+print(bz2.BZ2Decompressor().decompress(b"BZh91AY&SY\x9c\x00\x00\x00\x01\x01\x80\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00

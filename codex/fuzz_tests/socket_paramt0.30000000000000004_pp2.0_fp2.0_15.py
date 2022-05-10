@@ -1,0 +1,23 @@
+import socket
+socket.if_indextoname(3)
+
+# socket.gethostbyname(hostname)
+# socket.gethostbyname_ex(hostname)
+# socket.gethostbyaddr(ip_address)
+# socket.getnameinfo(sockaddr, flags)
+# socket.getfqdn(name)
+# socket.getaddrinfo(host, port, family=0, type=0, proto=0, flags=0)
+# socket.getdefaulttimeout()
+# socket.setdefaulttimeout(timeout)
+# socket.gethostname()
+# socket.gethostbyname(hostname)
+# socket.gethostbyaddr(ip_address)
+# socket.gethostbyname_ex(hostname)
+# socket.gethostbyaddr(ip_address)
+# socket.getnameinfo(sockaddr, flags)
+# socket.getfqdn(name)
+# socket.getaddrinfo(host, port, family=0, type=0, proto=0, flags=0)
+# socket.getdefaulttimeout()
+# socket.setdefaulttimeout(timeout)
+# socket.gethostname()
+# socket

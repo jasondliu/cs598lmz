@@ -1,0 +1,45 @@
+import types
+types.ModuleType.__dict__.__setitem__('__getattr__', lambda self, name: self.__dict__[name])
+
+import sys
+sys.modules.__setitem__('__builtin__', sys.modules['builtins'])
+
+import os
+import re
+import sys
+import json
+import time
+import copy
+import math
+import random
+import base64
+import logging
+import requests
+import threading
+import traceback
+import subprocess
+import collections
+import functools
+import datetime
+import contextlib
+import multiprocessing
+import concurrent.futures
+import urllib.parse
+import urllib.request
+import urllib.error
+import urllib.parse
+import urllib.request
+import urllib.parse
+import urllib.error
+import http.client
+import http.cookies
+import http.cookiejar
+import queue
+import socket
+import ssl
+import select
+import email.utils
+import email.message
+import email.mime.multipart
+import email.mime.text
+import email.mime.application

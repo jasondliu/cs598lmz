@@ -1,0 +1,23 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = 'fn'
+fn.__doc__ = 'doc'
+fn.__dict__ = {}
+fn.__defaults__ = ()
+fn.__closure__ = None
+fn.__globals__ = {}
+fn.__get__ = lambda self, obj, type=None: None
+fn.__set__ = lambda self, obj, value: None
+fn.__delete__ = lambda self, obj: None
+fn.__repr__ = lambda self: '<function fn>'
+fn.__hash__ = lambda self: None
+fn.__str__ = lambda self: '<function fn>'
+fn.__call__ = lambda self, *args, **kwargs: None
+fn.__nonzero__ = lambda self: False
+fn.__dir__ = lambda self: []
+fn.__format__ = lambda self, format_spec: None
+fn.__sizeof__ = lambda self: None
+fn.__reduce__ = lambda self: None
+fn.__reduce_ex__ = lambda self, protocol: None
+fn.__getattribute__ = lambda

@@ -1,0 +1,10 @@
+import signal
+# Test signal.setitimer()
+signal.setitimer(0, 0.5, 0.5)
+signal.setitimer(1, 0.25, 0.25)
+signal.setitimer(2, 0.125, 0.125)
+signal.setitimer(3, 0.0625, 0.0625)
+signal.setitimer(5, 0.5)
+signal.setitimer(5, 0.5)
+signal.setitimer(5, 0.5)
+signal.setitimer(5, 0.5)

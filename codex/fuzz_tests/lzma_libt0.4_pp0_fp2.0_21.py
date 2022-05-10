@@ -1,0 +1,22 @@
+import lzma
+lzma.LZMACompressor()
+lzma.LZMADecompressor()
+lzma.LZMAError()
+lzma.LZMAFile()
+lzma.LZMAFile.__enter__()
+lzma.LZMAFile.__exit__()
+lzma.LZMAFile.close()
+lzma.LZMAFile.closed
+lzma.LZMAFile.fileno()
+lzma.LZMAFile.flush()
+lzma.LZMAFile.isatty()
+lzma.LZMAFile.mode
+lzma.LZMAFile.name
+lzma.LZMAFile.next()
+lzma.LZMAFile.read()
+lzma.LZMAFile.read1()
+lzma.LZMAFile.readable()
+lzma.LZMAFile.readinto()
+lzma.LZMAFile.readinto1()
+lzma.LZMAFile.readline()
+lzma.LZMAFile.readlines()

@@ -1,0 +1,15 @@
+import io.reactivex.Single
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.schedulers.Schedulers
+import kotlinx.android.synthetic.main.fragment_login.*
+import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.core.parameter.parametersOf
+import vn.com.mattana.R
+import vn.com.mattana.base.BaseFragment
+import vn.com.mattana.model.api.checkin.CheckInRequest
+import vn.com.mattana.model.api.checkin.CheckInResponse
+import vn.com.mattana.model.api.checkout.CheckOutRequest
+import vn.com.mattana.model.api.checkout.CheckOutResponse
+import vn.com.mattana.model.api.login.LoginRequest
+import vn.com.m

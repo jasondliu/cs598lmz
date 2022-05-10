@@ -1,0 +1,31 @@
+import socket
+# Test socket.if_indextoname()
+
+def test_if_indextoname():
+    # Test if_indextoname()
+    ifname = socket.if_indextoname(1)
+    assert ifname == 'lo'
+
+def test_if_nameindex():
+    # Test if_nameindex()
+    ifname = socket.if_nameindex()
+    assert ifname == [(1, 'lo')]
+
+def test_if_nameindex_error():
+    # Test if_nameindex() error
+    try:
+        socket.if_nameindex(-1)
+    except OSError as e:
+        assert e.args[0] == errno.EINVAL
+
+def test_if_nametoindex():
+    # Test if_nametoindex()
+    ifname = socket.if_nametoindex('lo')
+    assert ifname == 1
+
+def test_if_nametoindex_error():
+    # Test if_nametoindex() error
+    try:
+        socket.if_nametoindex('bad_interface_name')
+    except OSError as e:
+       

@@ -1,0 +1,26 @@
+import socket
+# Test socket.if_indextoname()
+if_indextoname(1)
+if_indextoname(1, True)
+if_indextoname(1, False)
+if_indextoname(1, None)
+if_indextoname(1, '123')
+
+# Test socket.if_nameindex()
+if_nameindex()
+if_nameindex(True)
+if_nameindex(False)
+if_nameindex(None)
+if_nameindex('123')
+
+# Test socket.if_nametoindex()
+if_nametoindex('lo')
+if_nametoindex('lo', True)
+if_nametoindex('lo', False)
+if_nametoindex('lo', None)
+if_nametoindex('lo', '123')
+
+# Test socket.inet_aton()
+inet_aton('127.0.0.1')
+inet_aton('127.0.0.1', True)
+inet_aton('127.0.0.1', False)

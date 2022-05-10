@@ -1,0 +1,11 @@
+import bz2
+bz2.decompress('BZh91AY&SYA\xaf\x82\r\x00\x00\x01\x01\x80\x02\xc0\x02\x00 \x00!\x9ah3M\x07<]\xc9\x14\xe1BA\x06\xbe\x084')
+
+#unprintable chracters '\x00\x01\x02..'
+#replace get rid of unprintable characters
+
+#bz2.decompress('BZh91AY&SYA\xaf\x82\r\x00\x00\x01\x01\x80\x02\xc0\x02\x00 \x00!\x9ah3M\x07<]\xc9\x14\xe1BA\x06\xbe\x084').replace('\x00','*')
+
+#now replace the message with the reconstructed message
+
+bz2.decompress('BZh91AY&SYA\xaf\x82\r\x00\x

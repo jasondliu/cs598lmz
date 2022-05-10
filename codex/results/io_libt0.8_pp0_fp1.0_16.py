@@ -1,0 +1,20 @@
+import io.crate.expression.symbol.Literal;
+import io.crate.expression.symbol.Function;
+import io.crate.expression.symbol.InputColumn;
+import io.crate.expression.symbol.Literal;
+import io.crate.expression.symbol.Symbol;
+import io.crate.metadata.ColumnIdent;
+import io.crate.metadata.FunctionIdent;
+import io.crate.metadata.Functions;
+import io.crate.metadata.Reference;
+import io.crate.metadata.ReferenceIdent;
+import io.crate.metadata.RowGranularity;
+import io.crate.metadata.TableIdent;
+import io.crate.metadata.table.TableInfo;
+import io.crate.data.BatchIterator;
+import io.crate.data.Row;
+import io.crate.data.Input;
+import io.crate.planner.fetch.IndexBaseBuilder;
+
+import io.crate.planner.node.dml.InsertFromSubQuery;
+import io.crate.planner.

@@ -1,0 +1,14 @@
+import lzma
+# Test LZMADecompressor with XZ-compressed data.
+
+data = b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\x00\x00\x00\x00'
+c = lzma.LZMADecompressor()
+c.decompress(data)
+c.unused_data
+c.decompress(b'\x00\x00\x04\x00')
+c.unused_data
+c.flush()
+
+# Test LZMADecompressor with raw (no container) data.
+
+data = b'\x00\x10\x04\x00\x00\x01\x00\x00\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\

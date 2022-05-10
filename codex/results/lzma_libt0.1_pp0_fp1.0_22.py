@@ -1,0 +1,33 @@
+import lzma
+lzma.LZMAFile
+
+import os
+import sys
+import time
+import shutil
+import tempfile
+import subprocess
+import multiprocessing
+import multiprocessing.pool
+import multiprocessing.dummy
+import multiprocessing.queues
+import multiprocessing.managers
+import multiprocessing.sharedctypes
+import multiprocessing.heap
+import multiprocessing.synchronize
+import multiprocessing.connection
+import multiprocessing.pool
+import multiprocessing.process
+import multiprocessing.util
+import multiprocessing.dummy
+import multiprocessing.dummy.connection
+import multiprocessing.dummy.pool
+import multiprocessing.dummy.process
+import multiprocessing.dummy.connection
+import multiprocessing.dummy.connection
+import multiprocessing.dummy.connection
+import multiprocessing.dummy.connection
+import multiprocessing.dummy.connection
+import multiprocessing.dummy.connection
+import multiprocessing.dummy.connection
+import multiprocessing

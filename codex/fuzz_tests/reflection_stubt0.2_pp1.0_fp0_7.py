@@ -1,0 +1,22 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = 'fn'
+fn.__qualname__ = 'fn'
+fn.__annotations__ = {}
+fn.__kwdefaults__ = None
+fn.__defaults__ = None
+fn.__globals__ = {}
+fn.__closure__ = None
+fn.__dict__ = {}
+fn.__doc__ = None
+fn.__text_signature__ = None
+fn.__module__ = '__main__'
+fn.__class__ = <class 'function'>
+fn.__dict__ = {}
+fn.__get__ = <method-wrapper '__get__' of function object at 0x7f9c9c9b1f28>
+fn.__set__ = <method-wrapper '__set__' of function object at 0x7f9c9c9b1f28>
+fn.__delete__ = <method-wrapper '__delete__' of function object at 0x7f9c9c9b1f28>
+fn.__slots__ = ()
+fn.__weakref__ = None
+fn.

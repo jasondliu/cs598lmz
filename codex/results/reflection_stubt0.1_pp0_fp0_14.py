@@ -1,0 +1,23 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = 'fn'
+fn.__qualname__ = 'fn'
+fn.__module__ = '__main__'
+fn.__annotations__ = {}
+fn.__kwdefaults__ = None
+fn.__defaults__ = ()
+fn.__globals__ = {}
+fn.__closure__ = None
+fn.__dict__ = {}
+fn.__doc__ = None
+fn.__text_signature__ = None
+fn.__get__ = lambda self, obj, type=None: self
+fn.__set__ = lambda self, obj, value: None
+fn.__delete__ = lambda self, obj: None
+fn.__init__ = lambda self, *args, **kwargs: None
+fn.__new__ = lambda cls, *args, **kwargs: None
+fn.__prepare__ = lambda cls, bases, **kwargs: None
+fn.__instancecheck__ = lambda self, instance: True
+fn.__subclasscheck__ = lambda self, subclass: True
+fn.__subclasshook__ = lambda cls,

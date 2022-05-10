@@ -1,0 +1,50 @@
+import types
+# Test types.FunctionType
+def f(): pass
+def g(): pass
+def h(): pass
+def i(): pass
+def j(): pass
+def k(): pass
+def l(): pass
+def m(): pass
+def n(): pass
+def o(): pass
+def p(): pass
+def q(): pass
+def r(): pass
+def s(): pass
+def t(): pass
+def u(): pass
+def v(): pass
+def w(): pass
+def x(): pass
+def y(): pass
+def z(): pass
+
+def f2(): pass
+def g2(): pass
+def h2(): pass
+def i2(): pass
+def j2(): pass
+def k2(): pass
+def l2(): pass
+def m2(): pass
+def n2(): pass
+def o2(): pass
+def p2(): pass
+def q2(): pass
+def r2(): pass
+def s2(): pass
+def t2(): pass
+def u2(): pass
+def v2(): pass
+def w2(): pass
+def x2(): pass
+def y2(): pass
+def z2(): pass
+
+def f3(): pass
+def g3(): pass
+def h3(): pass
+def i3

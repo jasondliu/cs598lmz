@@ -1,0 +1,36 @@
+import socket
+# Test socket.if_indextoname()
+
+def test_if_indextoname():
+    if_indextoname = socket.if_indextoname
+    try:
+        if_indextoname(1)
+    except OSError as e:
+        if e.errno == errno.EINVAL:
+            # No interface with index 1
+            pass
+        else:
+            raise
+
+# Test socket.if_nameindex()
+
+def test_if_nameindex():
+    if_nameindex = socket.if_nameindex
+    try:
+        if_nameindex()
+    except OSError as e:
+        if e.errno == errno.EINVAL:
+            # No interface with index 1
+            pass
+        else:
+            raise
+
+# Test socket.if_nametoindex()
+
+def test_if_nametoindex():
+    if_nametoindex = socket.if_nametoindex
+    try:
+        if_nametoindex('lo')
+    except OSError as e:
+        if e.errno == errno.EINVAL:
+           

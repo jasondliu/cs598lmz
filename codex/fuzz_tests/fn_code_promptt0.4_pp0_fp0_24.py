@@ -1,0 +1,19 @@
+fn = lambda: None
+# Test fn.__code__.co_flags & 8
+# Test fn.__code__.co_flags & 16
+# Test fn.__code__.co_flags & 32
+# Test fn.__code__.co_flags & 64
+# Test fn.__code__.co_flags & 128
+# Test fn.__code__.co_flags & 256
+# Test fn.__code__.co_flags & 512
+# Test fn.__code__.co_flags & 1024
+# Test fn.__code__.co_flags & 2048
+# Test fn.__code__.co_flags & 4096
+# Test fn.__code__.co_flags & 8192
+# Test fn.__code__.co_flags & 16384
+# Test fn.__code__.co_flags & 32768
+# Test fn.__code__.co_flags & 65536
+# Test fn.__code__.co_flags & 131072
+# Test fn.__code__.co_flags & 262144
+# Test fn.__code__.co_flags & 524288
+# Test fn.__code__.co_flags & 1048576

@@ -1,0 +1,15 @@
+import mmap
+# Test mmap.mmap(0, 1000000)
+a = mmap.mmap(0, 1000000)
+# Test mmap.mmap(0, 1000000).write(b'\x00' * 1000000)
+a.write(b'\x00' * 1000000)
+# Test mmap.mmap(0, 1000000).write(b'\x00' * 1000000)
+a.write(b'\x00' * 1000000)
+# Test mmap.mmap(0, 1000000).write(b'\x00' * 1000000)
+a.write(b'\x00' * 1000000)
+# Test mmap.mmap(0, 1000000).write(b'\x00' * 1000000)
+a.write(b'\x00' * 1000000)
+# Test mmap.mmap(0, 1000000).write(b'\x00' * 1000000)
+a.write(b'\x00' * 1000000)
+# Test mmap.mmap(0, 1000000).write(b'\x00' * 1000000)
+a.write

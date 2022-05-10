@@ -1,0 +1,32 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [1])
+print(a is b)
+print(a == b)
+print(type(a))
+print(type(b))
+print(type(a) == type(b))
+print(type(a) is type(b))
+print(FunctionType is type(a))
+print(FunctionType == type(a))
+print(FunctionType is type(b))
+print(FunctionType == type(b))
+
+# 判断是否是可调用对象
+print(callable(a))
+print(callable(b))
+print(callable(print))
+print(callable(int))
+print(callable(str))
+print(callable(list))
+print(callable(tuple))
+print(callable(dict))
+print(callable(set))
+print(callable(range))
+print(callable(FunctionType))
+print(callable(type))
+print(callable(object))
+print(callable(type(a)))
+print(callable(type(b)))
+
+

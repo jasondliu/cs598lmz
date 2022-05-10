@@ -1,0 +1,22 @@
+from types import FunctionType
+a = (x for x in [1])
+print(a)
+print(isinstance(a, Iterator))
+print(isinstance(a, Iterable))
+print(isinstance(a, Generator))
+print(isinstance(a, FunctionType))
+print(isinstance(a, list))
+
+print(isinstance(iter([]), Iterator))
+print(isinstance([], Iterator))
+print(isinstance((x for x in []), Iterator))
+print(isinstance(iter([]), Iterable))
+print(isinstance([], Iterable))
+print(isinstance((x for x in []), Iterable))
+
+print(isinstance(iter([]), Generator))
+print(isinstance([], Generator))
+print(isinstance((x for x in []), Generator))
+print(isinstance(iter([]), FunctionType))
+print(isinstance([], FunctionType))
+print(isinstance((x for x in []), FunctionType))

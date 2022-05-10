@@ -1,0 +1,39 @@
+import ctypes
+import ctypes.util
+import threading
+import sqlite3
+import codecs
+import os
+import gzip
+import json
+import libCore
+import libPng
+import libAscii
+import libCrypto
+import libMime
+import libConformance
+import libPhone
+import libFile
+import libOS
+import libNet
+import libSys
+
+
+nameDict = {
+    0x0000: "Z",
+    0x0001: "Bit",
+    0x0002: "UInt8",
+    0x0003: "UInt16",
+    0x0004: "UInt32",
+    0x0005: "UInt64",
+    0x0006: "Int8",
+    0x0007: "Int16",
+    0x0008: "Int32",
+    0x0009: "Int64",
+    0x000a: "Float32",
+    0x000b: "Float64",
+    0x000c: "ZERO",
+    0x000d: "ONE",
+    0x000e: "FALSE",
+    0x000f: "TRUE",
+    0x0010: "NAN",

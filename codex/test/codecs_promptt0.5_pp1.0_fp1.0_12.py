@@ -1,0 +1,16 @@
+import codecs
+# Test codecs.register_error('test', codecs.replace_errors)
+# Test codecs.register_error('test', codecs.ignore_errors)
+# Test codecs.register_error('test', codecs.xmlcharrefreplace)
+# Test codecs.register_error('test', codecs.backslashreplace)
+# Test codecs.register_error('test', codecs.namereplace)
+# Test codecs.register_error('test', codecs.strict)
+# Test codecs.register_error('test', codecs.ignore)
+# Test codecs.register_error('test', codecs.replace)
+# Test codecs.register_error('test', codecs.xmlcharrefreplace)
+# Test codecs.register_error('test', codecs.backslashreplace)
+# Test codecs.register_error('test', codecs.namereplace)
+# Test codecs.register_error('test', codecs.strict)
+# Test codecs.register_error('test', codecs.ignore)
+# Test codecs.register_error('test', codecs.replace)
+# Test codecs.

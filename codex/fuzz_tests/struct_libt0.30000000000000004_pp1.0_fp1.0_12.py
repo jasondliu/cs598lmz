@@ -1,0 +1,45 @@
+import _struct
+import _thread
+import _threading
+import _time
+import _traceback
+import _types
+import _warnings
+import _weakref
+import _weakrefset
+
+# These modules are not built by default, but are included in the
+# standard library.
+import _testcapi
+import _tkinter
+import _asyncio
+import _bisect
+import _blake2
+import _codecs_cn
+import _codecs_hk
+import _codecs_iso2022
+import _codecs_jp
+import _codecs_kr
+import _codecs_tw
+import _collections
+import _csv
+import _ctypes
+import _datetime
+import _decimal
+import _elementtree
+import _functools
+import _hashlib
+import _heapq
+import _hotshot
+import _json
+import _lsprof
+import _lzma
+import _md5
+import _multibytecodec
+import _multiprocessing
+import _opcode
+import _operator
+import _pickle
+import _posixsubprocess
+import _random
+import _sha

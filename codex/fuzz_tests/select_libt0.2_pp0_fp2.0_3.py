@@ -1,0 +1,35 @@
+import select
+import socket
+import sys
+import threading
+import time
+
+from . import config
+from . import log
+from . import util
+from . import version
+
+# The maximum number of bytes to read from a socket at a time.
+_MAX_READ_BYTES = 4096
+
+# The maximum number of bytes to write to a socket at a time.
+_MAX_WRITE_BYTES = 4096
+
+# The maximum number of bytes to read from a socket at a time when reading
+# a line.
+_MAX_LINE_BYTES = 4096
+
+# The maximum number of bytes to read from a socket at a time when reading
+# a message.
+_MAX_MESSAGE_BYTES = 4096
+
+# The maximum number of bytes to read from a socket at a time when reading
+# a message header.
+_MAX_HEADER_BYTES = 4096
+
+# The maximum number of bytes to read from a socket at a time when reading
+# a message body.
+_MAX_BODY_BYTES = 4096
+
+# The maximum number of bytes to read from a socket at a time when reading
+# a

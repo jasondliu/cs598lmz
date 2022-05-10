@@ -1,0 +1,20 @@
+gi = (i for i in ())
+# Test gi.gi_code.co_flags
+# Test gi.gi_frame.f_code.co_flags
+# Test gi.gi_frame.f_lasti
+# Test gi.gi_frame.f_trace
+# Test gi.gi_running
+# Test gi.gi_yieldfrom
+# Test gi.__name__
+# Test gi.__qualname__
+# Test gi.__annotations__
+# Test gi.__await__
+# Test gi.__aiter__
+# Test gi.__aiter__.__await__
+# Test gi.__aiter__.__anext__
+# Test gi.__aiter__.__anext__.__await__
+# Test gi.__aiter__.__anext__.__annotations__
+# Test gi.__aiter__.__anext__.__code__
+# Test gi.__aiter__.__anext__.__defaults__
+# Test gi.__aiter__.__anext__.__globals__
+# Test gi.__a

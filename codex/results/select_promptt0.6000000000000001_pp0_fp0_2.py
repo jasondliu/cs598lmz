@@ -1,0 +1,34 @@
+import select
+# Test select.select
+# select.select()
+
+import socket
+# socket.socket()
+# socket.gethostname()
+# socket.gethostbyname()
+# socket.gethostbyname_ex()
+# socket.gethostbyaddr()
+# socket.getservbyname()
+# socket.getservbyport()
+# socket.getprotobyname()
+# socket.socketpair()
+# socket.fromfd()
+# socket.AF_INET
+# socket.AF_UNIX
+# socket.PF_INET
+# socket.PF_UNIX
+# socket.SOCK_STREAM
+# socket.SOCK_DGRAM
+# socket.SOL_SOCKET
+# socket.SO_REUSEADDR
+# socket.SO_TYPE
+# socket.SO_ERROR
+# socket.SOMAXCONN
+# socket.SHUT_RD
+# socket.SHUT_WR
+# socket.SHUT_RDWR
+# socket.AI_CANONNAME
+# socket.AI_PASSIVE
+# socket.AI_NUMERICHOST
+# socket.AI_NUMERICSERV
+# socket

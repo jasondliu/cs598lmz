@@ -1,0 +1,13 @@
+import _struct
+# Test _struct.Struct()
+test_sizeof(_struct, _struct.Struct('i'), 'int')
+test_sizeof(_struct, _struct.Struct('ii'), '2 ints')
+test_sizeof(_struct, _struct.Struct('iii'), '3 ints')
+test_sizeof(_struct, _struct.Struct('h'), 'short')
+test_sizeof(_struct, _struct.Struct('hh'), '2 shorts')
+test_sizeof(_struct, _struct.Struct('hhh'), '3 shorts')
+test_sizeof(_struct, _struct.Struct('l'), 'long')
+test_sizeof(_struct, _struct.Struct('ll'), '2 longs')
+test_sizeof(_struct, _struct.Struct('lll'), '3 longs')
+test_sizeof(_struct, _struct.Struct('q'), 'long long')
+test_sizeof(_struct, _struct.Struct('qq'), '2 long longs')

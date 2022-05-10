@@ -1,0 +1,5 @@
+import lzma
+lzma.LZMAError
+
+# ---
+

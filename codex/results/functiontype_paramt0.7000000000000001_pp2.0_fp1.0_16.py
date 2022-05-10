@@ -1,0 +1,3 @@
+from types import FunctionType
+list(FunctionType([], []).__dict__.items()).sort()
+# [('__annotations__', {}), ('__call__', <method-wrapper '__call__' of function object at 0x7f41d2f9b3b0>), ('__closure__', None), ('__code__', <code object <lambda> at 0x7f41d2f9b660, file "<stdin>", line 1>), ('__defaults__', None), ('__dict__', <attribute '__dict__' of 'function' objects>), ('__doc__', None), ('__globals__', {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x7f41d2f8d358>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': '<stdin>', '__cached__': None}), ('__kwdefaults__', None

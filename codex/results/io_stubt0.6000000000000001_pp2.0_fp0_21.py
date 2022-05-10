@@ -1,0 +1,17 @@
+import io
+
+class File(io.RawIOBase):
+    def readinto(self, buf):
+        global view
+        view = buf
+    def readable(self):
+        return True
+
+f = io.BufferedReader(File())
+f.read(1)
+del f
+
+# Make sure the buffer has been freed.
+gc.collect()
+gc.collect()
+print("OK")

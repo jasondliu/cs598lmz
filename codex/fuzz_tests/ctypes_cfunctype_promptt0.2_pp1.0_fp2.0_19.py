@@ -1,0 +1,26 @@
+import ctypes
+# Test ctypes.CFUNCTYPE
+
+import _ctypes_test
+
+lib = ctypes.CDLL(_ctypes_test.__file__)
+
+# This is a function pointer type, it should be callable
+
+func = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int)(_ctypes_test.callback)
+
+# This is a function pointer type, it should be callable
+
+func = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int)(_ctypes_test.callback)
+
+# This is a function pointer type, it should be callable
+
+func = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int)(_ctypes_test.callback)
+
+# This is a function pointer type, it should be callable
+
+func = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int)(_ctypes_test.callback)
+
+# This is a function pointer type, it should be callable
+
+func = ctypes.CFUNCTYPE(

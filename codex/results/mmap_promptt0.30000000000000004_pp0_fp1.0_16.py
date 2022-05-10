@@ -1,0 +1,25 @@
+import mmap
+# Test mmap.mmap()
+# Test mmap.ACCESS_READ
+# Test mmap.ACCESS_WRITE
+# Test mmap.ACCESS_COPY
+# Test mmap.MAP_SHARED
+# Test mmap.MAP_PRIVATE
+# Test mmap.MAP_ANONYMOUS
+# Test mmap.MAP_ANON
+# Test mmap.MAP_FIXED
+# Test mmap.MAP_GROWSDOWN
+# Test mmap.MAP_DENYWRITE
+# Test mmap.MAP_EXECUTABLE
+# Test mmap.MAP_LOCKED
+# Test mmap.MAP_NORESERVE
+# Test mmap.MAP_POPULATE
+# Test mmap.MAP_NONBLOCK
+# Test mmap.MAP_STACK
+# Test mmap.MAP_HUGETLB
+# Test mmap.PROT_READ
+# Test mmap.PROT_WRITE
+# Test mmap.PROT_EXEC
+# Test mmap.PROT_NONE
+# Test mmap.PROT_GROWSDOWN
+# Test mmap.PR

@@ -1,0 +1,4 @@
+from lzma import LZMADecompressor
+LZMADecompressor().decompress(b'\xfd\xc0\x01\x00\x00\x00\x20\xfb\xfa\xff#\x08\x11\x01\x00\x00\x00')
+</code>
+

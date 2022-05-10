@@ -1,0 +1,44 @@
+import ctypes
+import ctypes.util
+import threading
+import sqlite3
+
+my_threading_local = threading.local()
+
+class deleting_conn(sqlite3.Connection):
+    def __del__(self):
+        self.close()
+
+DB_URI = "file:test?mode=memory"
+
+def my_cb(p):
+    a = sqlite3.connect(DB_URI, uri=True, factory=deleting_conn)
+
+    def test_fn(a, b):
+        return a
+
+    a.create_function("test", 2, test_fn)
+
+    my_threading_local.a = a
+
+    return 1
+
+
+def my_init(p):
+    a = sqlite3.connect(DB_URI, uri=True, factory=deleting_conn)
+
+    another = sqlite3.connect(DB_URI, uri=True, factory=deleting_conn)
+    my_threading_local.a = a
+    my_threading_local.another = another
+    return 1
+
+
+def my_thread_init():
+    fn_test = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_void_p)(my_cb)
+    fn_init = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_void_p)(my_init)
+    if hasattr(my_threading_local, "a"):
+        lib = ctypes.CDLL(ctypes.util.find_library("sqlite3"))
+        lib.sqlite3_test_control.argtypes = (
+            ctypes.c_int,
+            ctypes.c_int,
+            ctypes.c_void_p,

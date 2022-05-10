@@ -1,0 +1,37 @@
+import _struct
+import _thread
+import _threading
+import _time
+import _traceback
+import _types
+import _warnings
+import _weakref
+import _weakrefset
+import _winreg
+import _winxptheme
+import _xxsubinterpreters
+import _xxlimited
+import _xxsubprocess
+import _xxsubtype
+import _xxsubtype_example
+import _xxsubtype_override
+import _xxsubtype_slots
+import _xxsubtype_weakref
+
+# These modules are not built by default
+import _bisect
+import _codecs_cn
+import _codecs_hk
+import _codecs_iso2022
+import _codecs_jp
+import _codecs_kr
+import _codecs_tw
+import _collections
+import _csv
+import _ctypes
+import _ctypes_test
+import _elementtree
+import _functools
+import _hashlib
+import _heapq
+import _hotshot

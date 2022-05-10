@@ -1,0 +1,44 @@
+import _struct
+import _thread
+import _threading
+import _time
+import _tracemalloc
+import _traceback
+import _turtle
+import _turtledemo
+import _typing
+import _uu
+import _uuid
+import _warnings
+import _weakref
+import _webbrowser
+import _winreg
+import _wsgiref
+import _xdrlib
+import _xml
+import _xmlrpc
+import _zipfile
+import _zlib
+
+# These modules are not installed in the standard library, but are
+# included in the test suite.
+import _testbuffer
+import _testcapi
+import _testimportmultiple
+import _testimportmultiple2
+import _testimportmultiple3
+import _testmultiphase
+import _testpackage
+import _testpackage2
+import _testpackage3
+import _testpackage4
+import _testpackage5
+import _testpackage6
+import _testpackage7
+import _testpackage8
+import _testpackage9
+import _testpackage10
+import _testpackage11
+import _testpackage12
+import _testpackage13
+import _testpackage14

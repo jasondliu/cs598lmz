@@ -1,0 +1,59 @@
+import _struct
+import _thread
+import _threading
+import _time
+import _traceback
+import _types
+import _warnings
+import _weakref
+
+# Modules that don't have a '_' prefix in CPython
+import binascii
+import collections
+import contextlib
+import copyreg
+import datetime
+import errno
+import functools
+import hashlib
+import itertools
+import math
+import operator
+import os
+import pickle
+import random
+import re
+import select
+import socket
+import string
+import sys
+import time
+import unicodedata
+import zlib
+
+# Modules that are not present in CPython
+import array
+import fcntl
+import mmap
+import termios
+import uerrno
+import uhashlib
+import uio
+import ujson
+import uos
+import upip
+import upysh
+import usocket
+import ussl
+import ustruct
+import utime
+import utimeq
+import uzlib
+import ucollections
+import uctypes
+import urequests
+import uheapq
+import ubinascii
+import ujson
+import ustruct
+import

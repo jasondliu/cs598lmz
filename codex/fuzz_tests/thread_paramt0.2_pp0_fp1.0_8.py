@@ -1,0 +1,28 @@
+import sys, threading
+threading.Thread(target=lambda: sys.stdout.write('\x1b[2J\x1b[H')).start()
+
+# Import the necessary modules
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+
+# Import the necessary modules
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
+
+# Create training and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state=42)
+
+# Create the regressor: reg_all
+reg_all = LinearRegression()
+
+# Fit the regressor to the training data
+reg_all.fit(X_train, y_train)
+
+# Predict on the test data: y_pred
+y_pred = reg_all.predict(X_test)
+
+# Compute and print R^2 and RMSE
+print("R^2: {}".

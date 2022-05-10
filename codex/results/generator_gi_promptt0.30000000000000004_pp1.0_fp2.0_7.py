@@ -1,0 +1,23 @@
+gi = (i for i in ())
+# Test gi.gi_code
+print(gi.gi_code)
+print(type(gi.gi_code))
+print(gi.gi_code.co_name)
+print(gi.gi_code.co_filename)
+print(gi.gi_code.co_firstlineno)
+print(gi.gi_code.co_flags)
+print(gi.gi_code.co_code)
+print(gi.gi_code.co_consts)
+print(gi.gi_code.co_names)
+print(gi.gi_code.co_varnames)
+print(gi.gi_code.co_freevars)
+print(gi.gi_code.co_cellvars)
+print(gi.gi_code.co_stacksize)
+print(gi.gi_code.co_lnotab)
+
+# Test gi.gi_frame
+print(gi.gi_frame)
+print(type(gi.gi_frame))
+print(gi.gi_frame.f_code)
+print(gi.gi_frame.f_globals)
+print(gi.gi_frame

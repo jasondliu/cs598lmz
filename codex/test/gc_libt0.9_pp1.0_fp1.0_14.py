@@ -1,0 +1,22 @@
+import gc, weakref
+
+class C(object): pass
+
+weak_obj_dict = weakref.WeakKeyDictionary()
+
+for i in range(20):
+    obj = C()
+    weak_obj_dict[obj] = i
+    del obj
+
+for i in range(20):
+    obj = C()
+    obj.attr = i
+    del obj
+
+# force a garbage collection cycle.
+# GC should have collected the weakref'ed
+# the object, but it didn't...
+gc.collect()
+
+print('{0} objects in weak_obj_dict'.format(len(weak_obj_dict)))

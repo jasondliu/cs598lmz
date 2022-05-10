@@ -1,0 +1,20 @@
+import _struct
+
+from . import _py_compat
+from . import _util
+from . import _version
+from . import _warnings
+from . import _winreg
+from . import _winreg_util
+
+_C_API = None
+
+_DEFAULT_SUBJECT_ALT_NAME_OID = '2.5.29.17'
+
+_CERT_NAME_STR_SEMICOLON_FLAG = 0x40000000
+_CERT_NAME_STR_NO_PLUS_FLAG = 0x20000000
+_CERT_NAME_STR_NO_QUOTING_FLAG = 0x10000000
+_CERT_NAME_STR_CRLF_FLAG = 0x08000000
+_CERT_NAME_STR_COMMA_FLAG = 0x04000000
+_CERT_NAME_STR_REVERSE_FLAG = 0x02000000
+

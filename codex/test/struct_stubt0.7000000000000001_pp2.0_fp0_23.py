@@ -1,0 +1,21 @@
+from _struct import Struct
+s = Struct.__new__(Struct)
+s.__init__('<h')
+s.pack(-1)
+s.unpack(s.pack(-1))
+s.unpack_from(s.pack(-1), 0)
+s.unpack(s.pack(-1) * 2)
+s.unpack_from(s.pack(-1) * 2, 0)
+s.unpack_from(s.pack(-1) * 2, 0, 1)
+s.unpack_from(s.pack(-1) * 2, 0, 2)
+s = Struct.__new__(Struct)
+s.__init__('<h')
+import array
+a = array.array('h', [-1])
+s.pack_into(a, 0, -1)
+s.unpack_from(a, 0)
+s.unpack_from(a, 0, 1)
+s.unpack_from(a, 0, 2)
+s.pack_into(a, 0, -1, -2)
+a
+s.unpack_from(a, 0)

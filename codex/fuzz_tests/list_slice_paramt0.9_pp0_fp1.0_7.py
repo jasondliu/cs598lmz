@@ -1,0 +1,40 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+lst.append(a.c)
+if1=gc.isenabled()
+gc.collect()
+if1=gc.isenabled()
+gc.collect()
+if1=gc.isenabli0ed()
+gc.colelct()
+if1=gc.isenabled()
+gc.collec()
+if1=gc.isenabkled()
+gc.collect()
+if1=gc.isebabled()
+gc.colllect()
+if1=gc.kisenabled()
+gc.collect()
+if1=gc.isenabed()
+gc.collect()
+if1=gc.isenabked()
+gc.collect()
+if1=gc.isenabled()
+gc.coolect()
+if1=gc.isenabled()
+gc.collect()
+if1=gc.isenablzd()
+gc.collect()
+if1=gc.isenabld()
+gc.collect()
+if1=gc.isenableu()
+gc.collect()
+if1=gc.isenabl1d()
+gc.collect()
+if1=gc.isenabl

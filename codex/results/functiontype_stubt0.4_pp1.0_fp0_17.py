@@ -1,0 +1,20 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [1])
+print(a == b)
+print(type(a) == type(b))
+print(FunctionType)
+print(type(a) == FunctionType)
+print(type(a) == type(FunctionType))
+print(type(a) == type(type))
+print(type(a) == type)
+print(type(type) == type)
+print(type(type) == type(type))
+
+# 判断类型
+print(isinstance(a, type(b)))
+print(isinstance(a, FunctionType))
+print(isinstance(a, type))
+print(isinstance(a, type(type)))
+print(isinstance(type, type))
+print(isinstance(type, type(type)))

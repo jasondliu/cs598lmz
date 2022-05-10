@@ -1,0 +1,18 @@
+from _struct import Struct
+s = Struct.__new__(Struct)
+s.__init__('i')
+s.size
+
+# __new__ is a static method (special-cased by the interpreter)
+# __init__ is a normal instance method
+
+# __new__ is the first step of instance creation. It's called first, and is responsible for returning a new instance of your class. In contrast, __init__ doesn't return anything; it's only responsible for initializing the instance after it's been created.
+
+# In general, you shouldn't need to override __new__ unless you're subclassing an immutable type like str, int, unicode or tuple.
+
+# __new__ is the method that's called when you call MyClass()
+# __init__ is the method that's called when you call MyClass.__init__(self)
+
+# __new__ is the first step of instance creation. It's called first, and is responsible for returning a new instance of your class. In contrast, __init__ doesn't return anything; it's only responsible for initializing the instance after it's been created.
+
+# In general, you shouldn't need to override __new__ unless you're subclassing an immutable type like str

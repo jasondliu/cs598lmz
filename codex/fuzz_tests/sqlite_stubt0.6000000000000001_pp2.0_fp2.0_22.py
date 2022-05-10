@@ -1,0 +1,42 @@
+import ctypes
+import ctypes.util
+import threading
+import sqlite3
+
+my_threading_local = threading.local()
+
+class deleting_conn(sqlite3.Connection):
+    def __del__(self):
+        self.close()
+
+DB_URI = "file:test?mode=memory"
+
+def my_cb(p):
+    a = sqlite3.connect(DB_URI, uri=True, factory=deleting_conn)
+
+    def test_fn(a, b):
+        return a
+
+    a.create_function("test", 2, test_fn)
+
+    my_threading_local.a = a
+
+    return 1
+
+def my_cb_close(p):
+    my_threading_local.a.close()
+    return 1
+
+if __name__ == '__main__':
+    sqlite3.enable_callback_tracebacks(True)
+    sqlite3.enable_shared_cache(False)
+    sqlite3.threadsafety = 1
+    sqlite3.connect(DB_URI, uri=True, factory=deleting_conn)
+    sqlite3.set_authorizer(my_cb)
+    sqlite3.set_authorizer(my_cb_close)
+</code>
+It seems to me like this should be a perfectly valid way to use sqlite3, but any time I call a function, I get an error:
+<code>&gt;&gt;&gt; import test
+&gt;&gt;&gt; test.my_threading_local.a.execute("select test(1,2)").fetchone()
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt

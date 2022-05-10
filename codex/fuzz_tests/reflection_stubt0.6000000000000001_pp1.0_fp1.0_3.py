@@ -1,0 +1,15 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__code__ = None
+fn.__code__ = 1
+fn.__code__ = (1, 2, 3)
+fn.__code__ = (1, 2, 3, 4)
+fn.__code__ = fn.__code__
+fn.__code__ = fn.__code__.__code__
+fn.__code__ = fn.__code__.__code__.__code__
+fn.__code__ = fn.__code__.__code__.__code__.__code__
+fn.__code__ = fn.__code__.__code__.__code__.__code__.__code__
+fn.__code__ = fn.__code__.__code__.__code__.__code__.__code__.__code__
+fn.__code__ = fn.__code__.__code__.__code__.__code__.__code__.__code__.__code__
+fn.__code__ = fn.__code__.__code__.__code__.__code__.__code__.__code__.__code

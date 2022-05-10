@@ -1,0 +1,16 @@
+import lzma
+lzma.LZMADecompressor().decompress(b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\x00\x00\x00\x00')
+
+ 
+# In[53]:
+
+
+compressed = lzma.compress(b'BZh91AY&SYA\xaf\x82\r\x00\x00\x01\x01\x80\x02\xc0\x02\x00 \x00!\x9ah3M\x07<]\xc9\x14\xe1BA\x06\xbe\x084')
+lzma.LZMADecompressor().decompress(compressed)
+
+
+# In[54]:
+
+
+import bz2
+bz2.BZ2Decompressor().decompress(b'BZh91AY&SY\x94$|\x0e\x00\x00\x

@@ -1,0 +1,23 @@
+import lzma
+# Test LZMADecompressor
+compressor = lzma.LZMACompressor()
+data = b"Hello world!"
+compressed = compressor.compress(data)
+compressed += compressor.flush()
+decompressor = lzma.LZMADecompressor()
+decompressed = decompressor.decompress(compressed)
+print(decompressed)
+
+# Test LZMADecompressor.decompress() with multiple calls
+decompressor = lzma.LZMADecompressor()
+decompressed = decompressor.decompress(compressed[:5])
+decompressed += decompressor.decompress(compressed[5:])
+print(decompressed)
+
+# Test LZMADecompressor.decompress() with multiple calls and max_length
+decompressor = lzma.LZMADecompressor()
+decompressed = decompressor.decompress(compressed[:5], max_length=5)
+decompressed += decompressor.decompress(compressed[5:], max_length=5)
+print(decompressed)
+
+

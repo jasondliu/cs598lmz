@@ -1,0 +1,17 @@
+from types import FunctionType
+a = (x for x in [1])
+print(a)
+print(type(a))
+print(dir(a))
+print(type(dir(a)))
+# print(dir(dir(a)))
+# print(dir(dir(dir(a))))
+# print(dir(dir(dir(dir(a)))))
+# print(dir(dir(dir(dir(dir(a))))))
+# print(dir(dir(dir(dir(dir(dir(a)))))))
+# print(dir(dir(dir(dir(dir(dir(dir(a))))))))
+# print(dir(dir(dir(dir(dir(dir(dir(dir(a)))))))))
+# print(dir(dir(dir(dir(dir(dir(dir(dir(dir(a))))))))))
+# print(dir(dir(dir(dir(dir(dir(dir(dir(dir(dir(a)))))))))))
+# print(dir(dir(dir(dir(dir(dir(dir(dir(dir(dir(dir(a))))))))))))
+# print(dir(dir(dir(dir(dir(dir(dir(dir(dir(dir(dir

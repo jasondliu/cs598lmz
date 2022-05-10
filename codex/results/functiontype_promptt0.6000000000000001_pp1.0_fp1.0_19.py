@@ -1,0 +1,17 @@
+import types
+# Test types.FunctionType()
+print(type(types.FunctionType))
+print(type(types.FunctionType(xrange, list)))
+print(type(types.FunctionType(range, xrange)))
+print(type(types.FunctionType(xrange, xrange)))
+print(type(types.FunctionType(xrange, types.FunctionType(xrange, xrange))))
+print(type(types.FunctionType(xrange, types.FunctionType(xrange, types.FunctionType(xrange, xrange)))))
+# Test types.BuiltinFunctionType()
+print(type(types.BuiltinFunctionType))
+print(type(types.BuiltinFunctionType(xrange)))
+print(type(types.BuiltinFunctionType(range)))
+print(type(types.BuiltinFunctionType(types.BuiltinFunctionType(xrange))))
+print(type(types.BuiltinFunctionType(types.BuiltinFunctionType(types.BuiltinFunctionType(xrange)))))
+# Test types.LambdaType()
+print(type(types.LambdaType))
+print(type(types.LambdaType(xrange, list

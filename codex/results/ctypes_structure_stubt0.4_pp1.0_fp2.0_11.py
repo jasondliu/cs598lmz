@@ -1,0 +1,14 @@
+import ctypes
+
+class S(ctypes.Structure):
+    x = ctypes.c_char * 3
+    _fields_ = [('x', ctypes.c_char * 3)]
+
+s = S()
+s.x = 'abc'
+print(s.x)
+</code>
+Output:
+<code>abc
+</code>
+

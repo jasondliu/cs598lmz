@@ -1,0 +1,17 @@
+import io.searchbox.core.SearchRequestBuilder;
+-import io.searchbox.core.SearchResult;
+-import io.searchbox.core.search.aggregation.TermsAggregation;
+-import io.searchbox.indices.mapping.GetMapping;
+-import org.apache.http.HttpHost;
+-import org.elasticsearch.action.get.GetRequest;
+-import org.elasticsearch.action.get.GetResponse;
+-import org.elasticsearch.action.search.SearchRequest;
+-import org.elasticsearch.action.search.SearchResponse;
+-import org.elasticsearch.client.*;
+-import org.elasticsearch.client.indices.CreateIndexRequest;
+-import org.elasticsearch.client.indices.GetIndexRequest;
+-import org.elasticsearch.common.settings.Settings;
+-import org.elasticsearch.common.xcontent.XContentType;
+-import org.elasticsearch.index.query.QueryBuilders;
+-import org.elasticsearch.search.SearchHit;
+-import org.el

@@ -1,0 +1,3 @@
+import bz2
+# Test BZ2Decompressor.unused_data behavior ...
+obj = bz2.BZ2Decompressor()

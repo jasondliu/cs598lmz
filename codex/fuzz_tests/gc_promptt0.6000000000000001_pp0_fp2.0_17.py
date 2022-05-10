@@ -1,0 +1,38 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+gc.collect()
+gc.collect()
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+gc.collect()
+gc.collect()
+# Test gc.garbage
+gc.collect()
+gc.collect()
+# Test gc.get_referrers()
+gc.collect()
+gc.collect()
+# Test gc.get_referents()
+gc.collect()
+gc.collect()
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+gc.collect()
+gc.collect()
+# Test gc.garbage
+gc.collect()
+gc.collect()
+# Test gc.get_referrers()
+gc.collect()
+gc.collect()
+# Test gc.get_referents()
+gc.collect()
+gc.collect()
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+gc.collect()
+gc.collect()

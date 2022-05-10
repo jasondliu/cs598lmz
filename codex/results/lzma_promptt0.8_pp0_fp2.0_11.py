@@ -1,0 +1,10 @@
+import lzma
+# Test LZMADecompressor/Compressor with examples from the spec
+class LZMATestCase(unittest.TestCase):
+    def test_decompressor(self):
+        uncomp = b'\x00\x00\x00\x00\x01\x00\x02\x00\x03'
+        comp = b'\x5D\x00\x00\x80\x00\x00\x00\x03\x00\x05\x00\x00\x07\x00\x08\x00\x09\x00\x0A'
+        self.assertEqual(lzma.decompress(comp), uncomp)
+    def test_compressor(self):
+        uncomp = b'\x00\x00\x00\x00\x01\x00\x02\x00\x03'
+        comp = b'\x5D\x00\x00\x80\x00\x00\x00\x03\x00\x05\x00\x00\x07\x00\x08\x00\x09

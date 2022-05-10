@@ -1,0 +1,26 @@
+import ctypes
+import ctypes.util
+import threading
+import sqlite3
+# Test sqlite3.connect()
+conn = sqlite3.connect(":memory:")
+c = conn.cursor()
+c.execute("create table test(a, b);")
+c.execute("insert into test(a, b) values (?, ?);", (1, 1))
+conn.commit()
+conn.close()
+# Test ctypes.util.find_library()
+ctypes.util.find_library("c")
+ctypes.util.find_library("python3.5m")
+# Test ctypes.util.find_library("c")
+ctypes.cdll.LoadLibrary(ctypes.util.find_library("c"))
+# Test ctypes.util.find_library("python3.5m")
+ctypes.cdll.LoadLibrary(ctypes.util.find_library("python3.5m"))
+# Test threading.Lock()
+l = threading.Lock()
+l.acquire()
+l.release()
+# Test threading.Thread()
+t = threading.Thread(target=lambda: None)
+t.start()
+t.join()

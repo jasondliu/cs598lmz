@@ -1,0 +1,30 @@
+import weakref
+
+from . import _compat as five
+from . import _compat as six
+from . import _compat as seven
+from . import _compat as eight
+from . import _compat as nine
+from . import _compat as ten
+from . import _compat as eleven
+from . import _compat as twelve
+from . import _compat as thirteen
+from . import _compat as fourteen
+from . import _compat as fifteen
+from . import _compat as sixteen
+from . import _compat as seventeen
+from . import _compat as eighteen
+from . import _compat as nineteen
+from . import _compat as twenty
+from . import _compat as twentyone
+from . import _compat as twentytwo
+from . import _compat as twentythree
+from . import _compat as twentyfour
+from . import _compat as twentyfive
+from . import _compat as twentysix
+from . import _compat as twentyseven
+from . import _compat as twentyeight
+
+from . import _compat as twentynine
+from . import _compat as thirty
+from . import _compat as thirty

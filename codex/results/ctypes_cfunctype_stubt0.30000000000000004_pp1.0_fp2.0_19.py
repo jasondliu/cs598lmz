@@ -1,0 +1,12 @@
+import ctypes
+FUNTYPE = ctypes.CFUNCTYPE(ctypes.py_object)
+@FUNTYPE
+def fun():
+    return 1
+
+print(fun())
+</code>
+The output is:
+<code>1
+</code>
+

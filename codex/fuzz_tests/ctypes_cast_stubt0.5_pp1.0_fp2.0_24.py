@@ -1,0 +1,4 @@
+import ctypes
+ctypes.cast(p, ctypes.py_object).value = 'hello'
+</code>
+

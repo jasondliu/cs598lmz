@@ -1,0 +1,26 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = 'fn'
+fn.__doc__ = 'fn'
+fn.__module__ = 'fn'
+fn.__dict__ = {}
+fn.__defaults__ = None
+fn.__globals__ = {}
+fn.__closure__ = None
+fn.__annotations__ = {}
+fn.__kwdefaults__ = None
+fn.__get__ = lambda *args: fn
+fn.__set__ = lambda *args: None
+fn.__delete__ = lambda *args: None
+fn.__init__ = lambda *args: None
+fn.__new__ = lambda *args: fn
+fn.__reduce__ = lambda *args: fn
+fn.__reduce_ex__ = lambda *args: fn
+fn.__subclasshook__ = lambda *args: False
+fn.__init_subclass__ = lambda *args: None
+fn.__format__ = lambda *args: 'fn'
+fn.__sizeof__ = lambda *args: 0
+fn.__dir__ = lambda *args: []
+fn.__class__ = type
+

@@ -1,0 +1,31 @@
+import select
+# Test select.select()
+
+# select.select(rlist, wlist, xlist[, timeout])
+# rlist: wait until ready for reading
+# wlist: wait until ready for writing
+# xlist: wait for an “exceptional condition” (see the manual page for what your system considers such a condition)
+
+# Return value: three lists of objects that are ready
+
+# select.error: exception raised in case of an error
+
+# select.select() can be used as a way to implement a timeout on blocking I/O operations like the one in the example below.
+
+# Example
+
+# The following example shows how to use select() to implement a timeout on a blocking I/O operation.
+
+import socket
+import sys
+import select
+
+host = ''
+port = 51423
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+s.bind((host, port))
+s.listen(1)
+
+input = [s, sys.stdin]

@@ -1,0 +1,20 @@
+import selector from 'selector';
+import store from 'store';
+import { connect } from 'react-redux';
+import 'connect.css';
+import { Component } from 'react';
+import './goods.css';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
+import img1 from './images/top1.png';
+import img2 from './images/top2.png';
+import img3 from './images/top3.png';
+import img4 from './images/top4.png';
+import img5 from './images/top5.png';
+import img6 from './images/top6.png';
+import img7 from './images/top7.png';
+import img8 from './images/top8.png';
+import img9 from './images/top9.png';
+import img10 from './images/top10.png';
+import myimg from '../index/images/user.png';
+import pic from '../index/images/pic1.png';
+import imghot from './images/hot2.png

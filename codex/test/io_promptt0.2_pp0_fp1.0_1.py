@@ -1,0 +1,40 @@
+import io
+# Test io.RawIOBase
+
+import _io
+import unittest
+import weakref
+import os
+import sys
+import io
+import errno
+import tempfile
+import random
+import itertools
+import functools
+import contextlib
+import warnings
+import array
+import pickle
+import gc
+import struct
+import shutil
+import stat
+import subprocess
+import threading
+import time
+import mmap
+import collections
+import abc
+import atexit
+import textwrap
+import locale
+import re
+import socket
+import select
+import signal
+import platform
+import sysconfig
+import traceback
+import builtins
+

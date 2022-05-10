@@ -1,0 +1,4 @@
+import types
+types.MethodType(f, None, class_)
+</code>
+

@@ -1,0 +1,53 @@
+import select
+
+def test_select_mutated():
+    a = []
+
+    class F:
+        def fileno(self):
+            test_select_mutated()
+            return 1
+
+    a.append(F())
+
+    try:
+        select.select(a, [], [])
+    except RuntimeError:
+        pass
+    else:
+        raise AssertionError("select() didn't raise RuntimeError")
+
+def test_select_mutated_2():
+    a = []
+
+    class F:
+        def fileno(self):
+            a.append(None)
+            return 1
+
+    a.append(F())
+
+    try:
+        select.select(a, [], [])
+    except RuntimeError:
+        pass
+    else:
+        raise AssertionError("select() didn't raise RuntimeError")
+
+def test_select_mutated_3():
+    a = []
+
+    class F:
+        def fileno(self):
+            a.pop()
+            return 1
+
+    a.append(F())
+
+    try:
+        select.select(a, [], [])
+    except RuntimeError:
+        pass
+    else:
+        raise AssertionError("select() didn't raise RuntimeError")
+

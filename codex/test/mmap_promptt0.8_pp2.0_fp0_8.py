@@ -1,0 +1,13 @@
+import mmap
+# Test mmap.mmap()
+m = mmap.mmap(-1, 2048)
+m.write('\x00'*2048)
+m.move(0, 1024, 256)
+m.seek(0)
+assert '\x00'*1280 + '\xFF'*256 + '\x00'*512 == m.read(2048)
+# Test mmap.mmap.move()
+m = mmap.mmap(-1, 2048)
+m.write('\x00'*2048)
+m.seek(0)
+assert '\x00'*2048 == m.read(2048)
+m.move(0, 1024, 256)

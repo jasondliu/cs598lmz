@@ -1,0 +1,10 @@
+import io.github.mingjia.mybatis.autocache.anno.FlushId;
+import io.github.mingjia.mybatis.autocache.anno.FlushIds;
+import io.github.mingjia.mybatis.autocache.anno.FlushType;
+import io.github.mingjia.mybatis.autocache.provider.sharding.algorithm.PreciseShardingAlgorithm;
+import io.github.mingjia.mybatis.autocache.strategy.QueryShardingStrategy;
+import io.github.mingjia.mybatis.autocache.test.mapper.interceptor.CityMapper;
+import io.github.mingjia.mybatis.autocache.test.mapper.interceptor.CityMapperAuto;
+import io.github.mingjia.mybatis.autocache.test.po.City;
+import io.github.mingjia.mybatis.autocache.utils.PropHelper;
+import io.github.mingjia.mybatis

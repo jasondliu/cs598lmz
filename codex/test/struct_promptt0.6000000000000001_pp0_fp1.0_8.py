@@ -1,0 +1,18 @@
+import _struct
+# Test _struct.Struct
+from test.test_structseq import TestStructSequence
+from test.test_structseq import TestStruct
+from test.test_structseq import TestStructWithSlots
+from test.test_structseq import TestNamedtuple
+from test.test_structseq import TestNamedtupleSubclass
+from test.test_structseq import TestNamedtupleMeta
+from test.test_structseq import TestNamedtupleDocstrings
+from test.test_structseq import TestNamedtuplePickle
+from test.test_structseq import TestNamedtupleSubclassPickle
+from test.test_structseq import TestNamedtupleSubclassABC
+from test.test_structseq import TestNamedtupleReflection
+from test.test_structseq import TestNamedtupleWithDefaultValues
+from test.test_structseq import TestNamedtupleSubclassWithDefaultValues
+from test.test_structseq import TestNamedtupleImmutable
+from test.test_structseq import TestNamedtupleSlots
+from test.test_structseq import TestNamedtupleSlotsPickle

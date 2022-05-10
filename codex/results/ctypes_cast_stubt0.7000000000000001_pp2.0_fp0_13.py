@@ -1,0 +1,12 @@
+import ctypes
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_int))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_byte))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_int))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_byte))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_int))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_byte))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_int))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_byte))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_int))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c_byte))
+ctypes.cast(c_void_p(0), ctypes.POINTER(c

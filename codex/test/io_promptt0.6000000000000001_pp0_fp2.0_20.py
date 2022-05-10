@@ -1,0 +1,23 @@
+import io
+# Test io.RawIOBase()
+#io.RawIOBase.read(b'', 1)
+#io.RawIOBase.readinto(b'')
+#io.RawIOBase.readinto1(b'')
+#io.RawIOBase.write(b'')
+#io.RawIOBase.fileno()
+#io.RawIOBase.isatty()
+#io.RawIOBase.readable()
+#io.RawIOBase.readline(b'')
+#io.RawIOBase.seek(0, io.SEEK_SET)
+#io.RawIOBase.seekable()
+#io.RawIOBase.tell()
+#io.RawIOBase.truncate()
+#io.RawIOBase.writable()
+#io.RawIOBase.close()
+#io.RawIOBase.flush()
+
+# Test io.BufferedIOBase()
+#io.BufferedIOBase.read(b'', 1)
+#io.BufferedIOBase.read1(b'', 1)
+#io.BufferedIOBase.readinto(b'')
+#io.BufferedIOBase

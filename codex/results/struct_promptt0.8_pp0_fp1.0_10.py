@@ -1,0 +1,26 @@
+import _struct
+# Test _struct.Struct constructors using valid format strings
+formats = [
+'t>?hilBHILfd',
+'<cspP',
+'=cbhilBHILfd',
+'>cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'=cbhilBHILfd',
+'=cbhilBHILfd',
+'=cbhilBHILfd',
+'=cbhilBHILfd',
+'=cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBHILfd',
+'<cbhilBH

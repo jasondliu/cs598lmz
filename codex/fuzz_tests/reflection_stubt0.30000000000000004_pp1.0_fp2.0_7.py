@@ -1,0 +1,16 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code = type(lambda: None)()
+fn.__code__.co_code = b'\x00\x00\x00\x00\x00\x00\x00\x00'
+fn.__code__.co_flags = 0
+fn.__code__.co_consts = ()
+fn.__code__.co_names = ()
+fn.__code__.co_varnames = ()
+fn.__code__.co_filename = ''
+fn.__code__.co_name = ''
+fn.__code__.co_firstlineno = 0
+fn.__code__.co_lnotab = b''
+fn.__code__.co_freevars = ()
+fn.__code__.co_cellvars = ()
+</code>
+

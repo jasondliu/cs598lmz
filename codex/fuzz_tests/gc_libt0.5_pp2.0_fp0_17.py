@@ -1,0 +1,26 @@
+import gc, weakref
+
+class A:
+    def __init__(self, value):
+        self.value = value
+    def __repr__(self):
+        return str(self.value)
+
+a = A(10)
+d = weakref.WeakValueDictionary()
+d['primary'] = a
+print('d["primary"]', d['primary'])
+del a
+gc.collect()
+print('d["primary"]', d['primary'])
+
+
+# 使用健壮弱引用
+a = A(10)
+d = weakref.WeakValueDictionary()
+d['primary'] = a
+d['primary']
+d['primary']
+print(d['primary'])
+del a
+print(d['primary'])

@@ -1,0 +1,26 @@
+import io
+# Test io.RawIOBase
+# Test io.BufferedIOBase
+# Test io.TextIOBase
+# Test io.BytesIO
+# Test io.StringIO
+# Test io.FileIO
+# Test io.BufferedReader
+# Test io.BufferedWriter
+# Test io.BufferedRWPair
+# Test io.BufferedRandom
+# Test io.TextIOWrapper
+# Test io.TextIOWrapper.read
+# Test io.TextIOWrapper.readline
+# Test io.TextIOWrapper.readlines
+# Test io.TextIOWrapper.write
+# Test io.TextIOWrapper.writelines
+# Test io.TextIOWrapper.seek
+# Test io.TextIOWrapper.tell
+# Test io.TextIOWrapper.truncate
+# Test io.TextIOWrapper.flush
+# Test io.TextIOWrapper.close
+# Test io.TextIOWrapper.isatty
+# Test io.TextIOWrapper.fileno
+# Test io.TextIOWrapper.seekable
+# Test io.TextIOW

@@ -1,0 +1,27 @@
+gi = (i for i in ())
+# Test gi.gi_code 
+gi.gi_code is None
+gi.gi_code is None
+gi.gi_code is None
+gi.gi_code is None
+# Test gi.gi_frame 
+gi.gi_frame is None
+gi.gi_frame is None
+gi.gi_frame is None
+gi.gi_frame is None
+# Test gi.gi_running 
+gi.gi_running is False
+gi.gi_running is False
+gi.gi_running is False
+gi.gi_running is False
+# Test gi.gi_frame.f_back 
+gi.gi_frame.f_back is None
+gi.gi_frame.f_back is None
+gi.gi_frame.f_back is None
+gi.gi_frame.f_back is None
+# Test gi.gi_frame.f_code 
+gi.gi_frame.f_code is None
+gi.gi_frame.f_code is None
+gi.gi_frame.f_code is None
+gi.gi_frame.f_code is None
+# Test gi.gi_frame.f_exc_

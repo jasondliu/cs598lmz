@@ -1,0 +1,12 @@
+import select
+def test_select_mutated():
+    a = []
+    class F:
+        def fileno(self):
+            test_select_mutated()
+    a.append(F())
+    try:
+        select.select(a, a, a, 0)
+    except RuntimeError:
+        pass
+test_select_mutated()

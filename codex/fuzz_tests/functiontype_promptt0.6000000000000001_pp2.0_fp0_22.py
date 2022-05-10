@@ -1,0 +1,34 @@
+import types
+# Test types.FunctionType
+# Test types.LambdaType
+# Test types.GeneratorType
+# Test types.CodeType
+# Test types.BuiltinFunctionType
+# Test types.BuiltinMethodType
+# Test types.MethodType
+# Test types.UnboundMethodType
+# Test types.TracebackType
+# Test types.FrameType
+# Test types.SliceType
+# Test types.EllipsisType
+# Test types.XRangeType
+# Test types.NotImplementedType
+# Test types.DictProxyType
+# Test types.GetSetDescriptorType
+# Test types.MemberDescriptorType
+# Test types.WrapperDescriptorType
+# Test types.ClassType
+# Test types.InstanceType
+# Test types.TypeType
+# Test types.ObjectType
+# Test types.FileType
+# Test types.NoneType
+# Test types.IntType
+# Test types.LongType
+# Test types.FloatType
+# Test types.ComplexType
+# Test types.StringType
+# Test types.UnicodeType
+# Test types.TupleType
+# Test types.ListType
+# Test

@@ -1,0 +1,33 @@
+import ctypes
+# Test ctypes.CField
+
+class X(ctypes.Structure):
+    _fields_ = [("a", ctypes.c_int),
+                ("b", ctypes.c_int)]
+
+class Y(ctypes.Structure):
+    _fields_ = [("x", X),
+                ("c", ctypes.c_int)]
+
+class Z(ctypes.Structure):
+    _fields_ = [("y", Y),
+                ("d", ctypes.c_int)]
+
+z = Z()
+z.y.x.a = 1
+z.y.x.b = 2
+z.y.c = 3
+z.d = 4
+
+print z.y.x.a, z.y.x.b, z.y.c, z.d
+
+z.y.x.a = 5
+z.y.x.b = 6
+z.y.c = 7
+z.d = 8
+
+print z.y.x.a, z.y.x.b, z.y.c, z.d
+
+# Test ctypes.CField.from_address
+
+

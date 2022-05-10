@@ -1,0 +1,54 @@
+import ctypes
+ctypes.cast(0, ctypes.py_object)
+
+# SOURCE LINE 3
+
+import sys
+import os
+import time
+import threading
+import traceback
+import logging
+import logging.handlers
+import socket
+import struct
+import select
+import errno
+import signal
+import re
+import cStringIO
+import cPickle
+import gc
+import weakref
+import copy
+import types
+import pprint
+import inspect
+import __builtin__
+import __future__
+import __main__
+import __pypy__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+import __builtin__
+

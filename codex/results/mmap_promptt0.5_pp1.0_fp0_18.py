@@ -1,0 +1,28 @@
+import mmap
+# Test mmap.mmap()
+#m = mmap.mmap(0, 0, prot=mmap.PROT_READ)
+#print m.size()
+#print m.readline()
+#print m.tell()
+#m.seek(0)
+#print m.readline()
+#print m.tell()
+#m.close()
+
+# Test mmap.mmap.read_byte()
+#m = mmap.mmap(0, 0, prot=mmap.PROT_READ)
+#print m.read_byte()
+#m.close()
+
+# Test mmap.mmap.read_line()
+#m = mmap.mmap(0, 0, prot=mmap.PROT_READ)
+#print m.read_line()
+#print m.tell()
+#print m.read_line()
+#print m.tell()
+#m.close()
+
+# Test mmap.mmap.read()
+#m = mmap.mmap(0, 0, prot=mmap.PROT_READ)
+#print m.read()
+#print m.tell()

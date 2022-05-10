@@ -1,0 +1,27 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+for i in range(3):
+    a = []
+    a.append(a)
+    a.append(weakref.ref(a))
+    a.append(weakref.ref(a))
+    a.append(a)
+    a.append(weakref.ref(a))
+    a.append(weakref.ref(a))
+    a.append(a)
+    a.append(weakref.ref(a))
+    a.append(weakref.ref(a))
+    a.append(a)
+    a.append(weakref.ref(a))
+    a.append(weakref.ref(a))
+    a.append(a)
+    a.append(weakref.ref(a))
+    a.append(weakref.ref(a))
+    a.append(a)
+    a.append(weakref.ref(a))
+    a.append(weakref.ref(a))
+    a.append(a)
+    a.append(weakref.ref(a))
+    a.append(weakref.ref(a))
+    a

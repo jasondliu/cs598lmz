@@ -1,0 +1,23 @@
+import io
+
+class File(io.RawIOBase):
+    def readinto(self, buf):
+        global view
+        view = buf
+    def readable(self):
+        return True
+
+f = io.BufferedReader(File())
+f.read(1)
+del f
+
+import gc
+gc.collect()
+
+# This should not crash:
+view[0] = 1
+
+# This should crash:
+view[0] = 1
+del view
+gc.collect()

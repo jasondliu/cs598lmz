@@ -1,0 +1,10 @@
+import mmap
+# Test mmap.mmap()
+# Test mmap.mmap()
+mem = mmap.mmap(-1, 1024, tagname="my_mmap")
+mem.seek(0)
+mem.write(b"Hello")
+mem.write(b" ")
+mem.write(b"World!")
+mem.seek(0)
+print(mem.read(1024))

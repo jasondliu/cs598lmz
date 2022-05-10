@@ -1,0 +1,43 @@
+import lzma
+lzma.LZMAError
+
+import zlib
+zlib.error
+
+import bz2
+bz2.BZ2Error
+
+import zipfile
+zipfile.BadZipfile
+zipfile.LargeZipFile
+
+import tarfile
+tarfile.TarError
+tarfile.ReadError
+tarfile.CompressionError
+tarfile.StreamError
+tarfile.ExtractError
+tarfile.HeaderError
+tarfile.EmptyHeaderError
+tarfile.InvalidHeaderError
+tarfile.SubsequentHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError
+tarfile.InvalidHeaderError

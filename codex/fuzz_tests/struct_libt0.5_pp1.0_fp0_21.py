@@ -1,0 +1,20 @@
+import _struct
+from _testcapi import getargs_keywords
+from _testcapi import getargs_wchar
+from _testcapi import getargs_sizeof_ptr
+from _testcapi import getargs_float
+from _testcapi import getargs_double
+from _testcapi import getargs_longdouble
+from _testcapi import getargs_stdarg
+from _testcapi import getargs_ellipsis
+from _testcapi import getargs_ellipsis_keywords
+from _testcapi import getargs_c
+from _testcapi import getargs_c_keywords
+from _testcapi import getargs_c_varargs
+from _testcapi import getargs_c_varargs_keywords
+from _testcapi import getargs_c_varargs_star
+from _testcapi import getargs_c_varargs_star_keywords
+from _testcapi import getargs_c_star
+from _testcapi import getargs_c_star_keywords
+from _testcapi import getargs_c_star_star
+from _testcapi import

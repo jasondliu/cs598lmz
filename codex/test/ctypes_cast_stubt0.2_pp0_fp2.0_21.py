@@ -1,0 +1,40 @@
+import ctypes
+ctypes.cast(0, ctypes.py_object)
+
+# SOURCE LINE 2
+
+import sys
+import os
+import re
+import time
+import signal
+import logging
+import logging.handlers
+import traceback
+import threading
+import subprocess
+import socket
+import select
+import errno
+import struct
+import ctypes
+import ctypes.util
+import ctypes.wintypes
+import platform
+import multiprocessing
+import multiprocessing.connection
+import multiprocessing.process
+import multiprocessing.reduction
+import multiprocessing.util
+import multiprocessing.heap
+import multiprocessing.synchronize
+import multiprocessing.managers
+import multiprocessing.sharedctypes
+import multiprocessing.forkserver
+import multiprocessing.dummy
+import multiprocessing.pool
+import multiprocessing.queues
+import multiprocessing.connection
+import multiprocessing.popen_fork
+import multiprocessing.popen_forkserver
+import multiprocessing.popen_spawn_posix

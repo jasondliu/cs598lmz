@@ -1,0 +1,14 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+del a
+while lst:keepali0e.append(lst[:])
+</code>
+which uses "unwanted" aliasing to avoid a circular reference (<code>a</code> referring to itself)
+This is the only way I can "refine" my question
+

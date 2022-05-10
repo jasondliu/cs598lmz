@@ -1,0 +1,33 @@
+import gc, weakref
+
+class Node(object):
+    def __init__(self, value):
+        self.value = value
+        self._parent = None
+        self.children = []
+    def __repr__(self):
+        return 'Node({!r:})'.format(self.value)
+    # property that manages the parent as a weak-reference
+    @property
+    def parent(self):
+        return None if self._parent is None else self._parent()
+    @parent.setter
+    def parent(self, node):
+        self._parent = weakref.ref(node)
+    def add_child(self, child):
+        self.children.append(child)
+        child.parent = self
+
+# create a reference cycle
+root = Node('parent')
+c1 = Node('child')
+root.add_child(c1)
+# manually break the reference cycle
+del c1
+gc.collect()
+
+# weakref.ref(node)
+# weakref.getweakrefcount(node)
+# weakref.getweakrefs(node)
+
+# weakref.finalize(node,

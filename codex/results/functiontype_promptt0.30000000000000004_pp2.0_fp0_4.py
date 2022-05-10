@@ -1,0 +1,36 @@
+import types
+# Test types.FunctionType
+def f(): pass
+assert isinstance(f, types.FunctionType)
+
+# Test types.BuiltinFunctionType
+assert isinstance(len, types.BuiltinFunctionType)
+
+# Test types.MethodType
+class C:
+    def m(self): pass
+assert isinstance(C().m, types.MethodType)
+
+# Test types.UnboundMethodType
+assert isinstance(C.m, types.UnboundMethodType)
+
+# Test types.LambdaType
+assert isinstance(lambda: None, types.LambdaType)
+
+# Test types.GeneratorType
+def g(): yield 1
+assert isinstance(g(), types.GeneratorType)
+
+# Test types.GeneratorType
+def g(): yield 1
+assert isinstance(g(), types.GeneratorType)
+
+# Test types.CodeType
+assert isinstance(f.__code__, types.CodeType)
+
+# Test types.TracebackType
+try:
+    1/0
+except:
+    tb = sys.exc_info()[2]
+    assert isinstance(tb, types.Trace

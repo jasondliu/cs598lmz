@@ -1,0 +1,18 @@
+import types
+# Test types.FunctionType
+testTypes(types.FunctionType,
+          ('m', 200, ['spam']),
+          ('x', 200, ['eggs']),
+          ('__add__', 200, ['self', 'other']),
+          ('__call__', 0, ['self', 'args', 'kw']),
+          ('__cmp__', 0, ['self', 'other']),
+          ('__coerce__', 0, ['self', 'other']),
+          ('__delattr__', 0, ['self', 'name']),
+          ('__delitem__', 0, ['self', 'index']),
+          ('__delslice__', 0, ['self', 'lower', 'upper']),
+          ('__div__', 200, ['self', 'other']),
+          ('__divmod__', 200, ['self', 'other']),
+          ('__getitem__', 0, ['self', 'index']),
+          ('__getslice__', 0, ['self', 'lower', 'upper']),
+          ('__mod__', 200, ['self', 'other']),
+          ('__mul__', 200,

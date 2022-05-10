@@ -1,0 +1,15 @@
+import threading
+# Test threading daemon without any join()
+# d=threading.Thread(name='daemon', target=daemon)
+# d.setDaemon(True)
+# d.start()
+# t=threading.Thread(name='non-daemon', target=non_daemon)
+# t.start()
+# Test threading daemon with join()=throws error after exiting for loop
+d = threading.Thread(name='daemon', target=daemon)
+d.setDaemon(True)
+d.start()
+t = threading.Thread(name='non-daemon', target=non_daemon)
+t.start()
+d.join()
+t.join()

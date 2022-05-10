@@ -1,0 +1,26 @@
+gi = (i for i in ())
+# Test gi.gi_code
+# Test gi.gi_frame
+# Test gi.gi_running
+print('for-else-else')
+gi = (i for i in [])
+print('empty list')
+gi = (i for i in [0])
+print('list with one value')
+gi = (i for i in [0, 1])
+print('list with two values')
+gi = (i for i in range(2))
+print('range with two values')
+gi = (i for i in range(100))
+print('long range')
+gi = (i for i in (1, 2))
+print('tuple with two values')
+gi = (i for i in (i for i in ()))
+print('nested generator')
+gi = (i for i in (i for i in []))
+print('nested generator (empty)')
+gi = (i for i in (i for i in [0]))
+print('nested generator (one value)')
+gi = (i for i in (i for i in [0, 1]))
+print('nested generator (two values)')
+gi = (i for i

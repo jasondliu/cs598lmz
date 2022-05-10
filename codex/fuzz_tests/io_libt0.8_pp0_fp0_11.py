@@ -1,0 +1,20 @@
+import io.vertx.core.http.HttpServer;
+-import io.vertx.core.http.HttpServerResponse;
+-import io.vertx.core.json.Json;
+-import io.vertx.core.json.JsonObject;
+-import io.vertx.ext.web.Router;
+-import io.vertx.ext.web.handler.BodyHandler;
+-import java.util.HashMap;
+-import java.util.Map;
+-
+-public class Server {
+-    public static void main(String[] args) {
+-        Vertx vertx = Vertx.vertx();
+-        HttpServer server = vertx.createHttpServer();
+-
+-        Router router = Router.router(vertx);
+-
+-        router.route().handler(BodyHandler.create());
+-        router.get("/todos/:key").handler(req-> {
+-            Integer key = Integer.valueOf(req.request().getParam("key"));
+-            String json = Json.encodePrettily(todos.get(key));

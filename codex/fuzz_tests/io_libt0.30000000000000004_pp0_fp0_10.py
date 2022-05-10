@@ -1,0 +1,11 @@
+import io.reactivex.schedulers.Schedulers
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.content_main.view.*
+import kotlinx.android.synthetic.main.content_main.view.recyclerView
+import kotlinx.android.synthetic.main.content_main.view.swipeRefreshLayout
+import kotlinx.android.synthetic.main.content_main.view.toolbar
+import kotlinx.android.synthetic.main.content_main.view.viewFlipper
+import kotlinx.android.synthetic.main.content_main.view.viewFlipper.DISPLAY_CHILD_LOADING
+import kotlinx.android.synthetic.main.content_main.view.viewFlipper.DISPLAY_CHILD_RECYCLER
+import kotlinx.android.synthetic.

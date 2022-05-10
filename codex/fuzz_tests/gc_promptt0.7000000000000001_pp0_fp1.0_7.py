@@ -1,0 +1,23 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+gc.collect()
+print("gc.garbage:", gc.garbage)
+# Test gc.get_referrers() and gc.get_referents()
+class C: pass
+c = C()
+d = C()
+weakref.ref(c)
+print("gc.get_referrers(c):", gc.get_referrers(c))
+print("gc.get_referents(c):", gc.get_referents(c))
+# Test gc.get_objects()
+print("gc.get_objects():", len(gc.get_objects()))
+# Test gc.get_threshold()
+print("gc.get_threshold():", gc.get_threshold())
+# Test gc.set_threshold()
+gc.set_threshold(100)
+print("gc.get_threshold():", gc.get_threshold())
+gc.collect()
+print("gc.get_threshold():", gc.get_threshold())
+# Test gc.is_tracked()
+print("gc.

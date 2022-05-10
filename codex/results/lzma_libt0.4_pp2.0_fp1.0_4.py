@@ -1,0 +1,6 @@
+import lzma
+lzma.decompress(b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\xcaIU\xce\xd1\x0b\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x00')
+
+# decompress(data, format=FORMAT_AUTO, memlimit=None, filters=None)
+# data - входной буфер, который содержит сжатые данные. Должен быть типа bytes.
+# format - Формат сжатых данных. Может быть следу

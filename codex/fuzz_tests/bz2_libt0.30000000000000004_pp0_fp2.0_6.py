@@ -1,0 +1,55 @@
+import bz2
+bz2.BZ2Compressor()
+
+import bz2
+bz2.BZ2Decompressor()
+
+import bz2
+bz2.compress()
+
+import bz2
+bz2.decompress()
+
+import bz2
+bz2.open()
+
+import bz2
+bz2.compress()
+
+import bz2
+bz2.decompress()
+
+import bz2
+bz2.open()
+
+import bz2
+bz2.compress()
+
+import bz2
+bz2.decompress()
+
+import bz2
+bz2.open()
+
+import bz2
+bz2.compress()
+
+import bz2
+bz2.decompress()
+
+import bz2
+bz2.open()
+
+import bz2
+bz2.compress()
+
+import bz2
+bz2.decompress()
+
+import bz2
+bz2.open()
+
+import bz2
+bz2.compress()
+
+import bz2

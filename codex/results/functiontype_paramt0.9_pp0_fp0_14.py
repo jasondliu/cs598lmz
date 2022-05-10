@@ -1,0 +1,15 @@
+from types import FunctionType
+list(FunctionType('fun',globals(),argdefs='[],[]'))
+list(FunctionType('fun',globals()))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'))
+list(FunctionType('fun',globals(),argdefs='[]'

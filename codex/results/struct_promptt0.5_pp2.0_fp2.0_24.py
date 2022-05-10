@@ -1,0 +1,15 @@
+import _struct
+# Test _struct.Struct objects.
+
+import unittest
+from test import support
+
+struct_tests = [
+    ('=', 'struct_test', 'struct_test'),
+    ('=', 'struct_test', 'struct_test',
+     '\x12\x34\x56\x78\x9a\xbc\xde\xff\x00\x00\x00\x00\x00\x00\x00\x00'),
+    ('=', 'struct_test', 'struct_test',
+     '\x12\x34\x56\x78\x9a\xbc\xde\xff\x00\x00\x00\x00\x00\x00\x00\x00',
+     '\x12\x34\x56\x78\x9a\xbc\xde\xff\x00\x00\x00\x00\x00\x00\x00\x00'),
+    ('=', 'struct_test', 'struct_test',
+     '\x12\x34\x56\x78\x9a\

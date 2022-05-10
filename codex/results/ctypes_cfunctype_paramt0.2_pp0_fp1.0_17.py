@@ -1,0 +1,12 @@
+import ctypes
+FUNTYPE = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_int)
+
+def callback(n):
+    print "callback called with", n
+    return 0
+
+CALLBACK = FUNTYPE(callback)
+
+lib.call_in_c(CALLBACK)
+</code>
+

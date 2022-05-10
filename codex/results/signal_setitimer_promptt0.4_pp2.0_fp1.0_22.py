@@ -1,0 +1,17 @@
+import signal
+# Test signal.setitimer()
+signal.setitimer(signal.ITIMER_REAL, 1)
+signal.setitimer(signal.ITIMER_REAL, 0)
+signal.signal(signal.SIGALRM, signal.SIG_IGN)
+# Test signal.setitimer()
+signal.setitimer(signal.ITIMER_REAL, 1)
+signal.setitimer(signal.ITIMER_REAL, 0)
+signal.signal(signal.SIGALRM, signal.SIG_IGN)
+# Test signal.setitimer()
+signal.setitimer(signal.ITIMER_REAL, 1)
+signal.setitimer(signal.ITIMER_REAL, 0)
+signal.signal(signal.SIGALRM, signal.SIG_IGN)
+# Test signal.setitimer()
+signal.setitimer(signal.ITIMER_REAL, 1)
+signal.setitimer(signal.ITIMER_REAL, 0)
+sign

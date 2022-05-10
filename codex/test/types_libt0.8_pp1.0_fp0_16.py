@@ -1,0 +1,3 @@
+import types
+types.ModuleType('foo')
+# ...

@@ -1,0 +1,20 @@
+gi = (i for i in ())
+# Test gi.gi_code (code object)
+test_ne(gi.gi_code, None)
+# Test gi.gi_frame (frame object)
+test_ne(gi.gi_frame, None)
+# Test gi.gi_running (bool)
+test_eq(gi.gi_running, 0)
+# Test gi.gi_yieldfrom (object)
+test_eq(gi.gi_yieldfrom, None)
+
+# Test gi.gi_frame.f_code (code object)
+test_eq(gi.gi_frame.f_code, gi.gi_code)
+# Test gi.gi_frame.f_globals (dict)
+test_eq(gi.gi_frame.f_globals, {})
+# Test gi.gi_frame.f_locals (dict)
+test_eq(gi.gi_frame.f_locals, {})
+# Test gi.gi_frame.f_back (frame object)
+test_eq(gi.gi_frame.f_back, None)
+
+gi = (i for i in (1,

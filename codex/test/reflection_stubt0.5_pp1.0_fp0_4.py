@@ -1,0 +1,10 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = "foo"
+fn.__qualname__ = "bar"
+fn.__annotations__ = {"a": 1}
+fn.__dict__ = {"a": 2}
+fn.__module__ = "baz"
+fn.__defaults__ = (1, 2, 3)
+fn.__kwdefaults__ = {"a": 1, "b": 2}

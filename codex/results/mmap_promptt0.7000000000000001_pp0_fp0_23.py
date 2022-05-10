@@ -1,0 +1,32 @@
+import mmap
+# Test mmap.mmap(0, 1, "w+t", mmap.MAP_PRIVATE, 0)
+
+import os
+# Test os.abort()
+# Test os.access()
+# Test os.chdir()
+# Test os.chmod()
+# Test os.chown()
+# Test os.chroot()
+# Test os.close()
+# Test os.closerange()
+# Test os.dup()
+# Test os.dup2()
+# Test os.execl()
+# Test os.execle()
+# Test os.execlp()
+# Test os.execv()
+# Test os.execve()
+# Test os.execvp()
+# Test os.extsep
+# Test os.fdopen()
+# Test os.fchdir()
+# Test os.fchmod()
+# Test os.fchown()
+# Test os.fdatasync()
+# Test os.fdopen()
+# Test os.fork()
+# Test os.forkpty()
+# Test os.fstat()
+# Test os.fstatvfs()
+# Test os.fsync

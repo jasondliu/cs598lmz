@@ -1,0 +1,26 @@
+gi = (i for i in ())
+# Test gi.gi_code
+code = gi.gi_code
+# Test code.co_name
+co_name = code.co_name
+# Test code.co_names
+co_names = code.co_names
+# Test code.co_filename
+co_filename = code.co_filename
+# Test code.co_firstlineno
+co_firstlineno = code.co_firstlineno
+# Test code.co_flags
+co_flags = code.co_flags
+# Test code.co_lnotab
+co_lnotab = code.co_lnotab
+# Test code.co_consts
+co_consts = code.co_consts
+# Test code.co_cellvars
+co_cellvars = code.co_cellvars
+# Test code.co_nlocals
+co_nlocals = code.co_nlocals
+# Test code.co_varnames
+co_varnames = code.co_varnames
+# Test code.co_freevars
+co_freevars = code.co_freevars
+# Test code.co_stackdepth

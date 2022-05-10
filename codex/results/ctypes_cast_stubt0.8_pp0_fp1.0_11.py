@@ -1,0 +1,16 @@
+import ctypes
+ctypes.cast(p, ctypes.c_void_p)
+ctypes.cast(p, ctypes.c_int32)
+ctypes.cast(p, ctypes.c_char)
+ctypes.cast(p, ctypes.c_char_p)
+ctypes.cast(p, ctypes.c_wchar_p)
+ctypes.cast(p, ctypes.c_float)
+ctypes.cast(p, ctypes.c_double)
+ctypes.cast(p, ctypes.c_uint32)
+ctypes.cast(p, ctypes.c_uint64)
+ctypes.cast(p, ctypes.c_void_p)
+ctypes.cast(p, ctypes.c_char_p).contents
+ctypes.addressof(ctypes.cast(p, ctypes.c_char_p).contents)
+ctypes.cast(p, ctypes.c_char_p).value
+ctypes.addressof(ctypes.cast(p, ctypes.c_char_p).value)
+ctypes.cast(p, c

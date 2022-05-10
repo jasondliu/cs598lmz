@@ -1,0 +1,24 @@
+import bz2
+# Test BZ2Decompressor
+
+decompressor = bz2.BZ2Decompressor()
+
+with open('data/enwik8', 'rb') as input, open('data/enwik8.out', 'wb') as output:
+    for block in iter(lambda: input.read(100 * 1024), b''):
+        output.write(decompressor.decompress(block))
+
+print(open('data/enwik8.out', 'rb').read(100))
+
+# Test BZ2File
+
+with bz2.BZ2File('data/enwik8', 'rb') as input, open('data/enwik8.out', 'wb') as output:
+    for block in iter(lambda: input.read(100 * 1024), b''):
+        output.write(block)
+
+print(open('data/enwik8.out', 'rb').read(100))
+
+# Test BZ2Compressor
+
+compressor = bz2.BZ2Compressor()
+
+with open('data/enwik8', 'rb') as input, open('data/enwik8.out', '

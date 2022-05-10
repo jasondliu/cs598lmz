@@ -1,0 +1,22 @@
+from types import FunctionType
+a = (x for x in [1])
+b = [x for x in [1]]
+c = {x for x in [1]}
+d = {1: x for x in [1]}
+e = {x: 1 for x in [1]}
+f = (1 for x in [1])
+g = {1 for x in [1]}
+h = FunctionType(lambda x: x, globals())
+i = type(lambda x: x, (), {})
+j = type('', (), {})
+j.__metaclass__ = type
+k = type('', (), {})
+k.__metaclass__ = lambda x, y, z: z
+l = type('', (), {})
+l.__metaclass__ = type('', (), {})
+l.__metaclass__.__new__ = lambda x, y, z: z
+m = type('', (), {})
+m.__metaclass__ = type('', (), {})
+m.__metaclass__.__call__ = lambda x, y, z: z
+n = type('', (), {})
+n.__metaclass__ = type('', (), {}

@@ -1,0 +1,20 @@
+from bz2 import BZ2Decompressor
+BZ2Decompressor().decompress(bz2.compress(b"hello world"))
+
+# bz2.BZ2Compressor
+# bz2.BZ2Decompressor
+
+# bz2.BZ2Compressor.compress(data)
+# bz2.BZ2Compressor.flush()
+# bz2.BZ2Decompressor.decompress(data)
+
+# bz2.compress(data, compresslevel=9)
+# bz2.decompress(data)
+# bz2.open(filename, mode='r', compresslevel=9, encoding=None, errors=None, newline=None)
+
+# bz2.BZ2File
+# bz2.BZ2File.read(size=-1)
+# bz2.BZ2File.readline(size=-1)
+# bz2.BZ2File.readlines(sizehint=-1)
+# bz2.BZ2File.write(data)
+# bz2.BZ2File.writelines(lines)

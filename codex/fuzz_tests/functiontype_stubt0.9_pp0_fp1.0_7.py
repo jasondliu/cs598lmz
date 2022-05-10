@@ -1,0 +1,43 @@
+from types import FunctionType
+a = (x for x in [1])
+isinstance(a, GeneratorType)
+a=[1,2,3,]
+a.count(2)
+a=[1,2,3,]
+a.pop()
+a=[1,2,3,]
+a.pop(0)
+L=[1,2,3,]
+#
+#
+#
+L.pop?
+L.insert?
+L.append?
+L=[1,2,3,]
+L.insert(0,'a')
+L=[1,2,3,]
+#
+#
+#
+L.insert?
+L=[1,2,3,]
+L.remove(1)
+L=[1,2,3,]
+L.extend
+a=[1,2,3,]
+a+=a
+a=[1,2,3,]
+#
+#
+L.append?
+L=[1,2,3,]
+L.append(L)
+L=[1,2,3,]
+L+L
+L=[1,2,3,]
+#
+#
+#
+L.sort?
+L.sort(key=???,

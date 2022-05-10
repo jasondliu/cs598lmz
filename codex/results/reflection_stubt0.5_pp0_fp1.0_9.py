@@ -1,0 +1,20 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__code__.co_name = '__code__'
+fn.__code__.co_code = b'\x01'
+fn.__code__.co_consts = (fn,)
+fn.__code__.co_lnotab = b'\x01\x01'
+fn.__code__.co_filename = '__code__'
+fn.__code__.co_firstlineno = 1
+fn.__code__.co_stacksize = 1
+fn.__code__.co_flags = 1
+fn.__code__.co_freevars = ()
+fn.__code__.co_varnames = ()
+fn.__code__.co_cellvars = ()
+fn.__code__.co_names = ()
+fn.__code__.co_argcount = 0
+fn.__code__.co_posonlyargcount = 0
+fn.__code__.co_kwonlyargcount = 0
+fn.__code__.co_nlocals = 0
+fn.__code__.co_zombief

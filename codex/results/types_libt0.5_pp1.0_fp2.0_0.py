@@ -1,0 +1,8 @@
+import types
+types.MethodType(lambda self: None, None, object)
+# TypeError: unbound method <lambda>() must be called with object instance as first argument (got nothing instead)
+
+# 但是，如果我们想要限制实例的属性怎么办？比如，只允许对Student实例添加name和age属性。
+# 为了达到限制的目的，Python允许在定义class的时候，定义一个特殊的__slots__变量，来限制该class实例能添加的属性：
+class Student(object):
+    __slots__ = ('name', 'age') # 用tuple定义

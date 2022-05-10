@@ -1,0 +1,14 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+wr=weakref.ref(a,callback)
+print keepalive
+keepalive=[]
+del a
+print "cycle deleted"
+print keepalive
+print lst

@@ -1,0 +1,20 @@
+fn = lambda: None
+# Test fn.__code__.co_flags
+fn.__code__.co_flags = 1
+# Test fn.__code__.co_code
+fn.__code__.co_code = b'\x00\x00'
+# Test fn.__code__.co_consts
+fn.__code__.co_consts = (1,)
+# Test fn.__code__.co_names
+fn.__code__.co_names = ('x',)
+# Test fn.__code__.co_varnames
+fn.__code__.co_varnames = ('x',)
+# Test fn.__code__.co_freevars
+fn.__code__.co_freevars = ('x',)
+# Test fn.__code__.co_cellvars
+fn.__code__.co_cellvars = ('x',)
+# Test fn.__code__.co_filename
+fn.__code__.co_filename = 'test.py'
+# Test fn.__code__.co_name
+fn.__code__.co_name = 'test'
+# Test fn.

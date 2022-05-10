@@ -1,0 +1,11 @@
+import io.reactivex.schedulers.Schedulers
+import jp.co.soramitsu.common.base.BaseViewModel
+import jp.co.soramitsu.common.utils.Event
+import jp.co.soramitsu.feature_wallet_api.domain.model.Asset
+import jp.co.soramitsu.feature_wallet_api.domain.model.AssetDescription
+import jp.co.soramitsu.feature_wallet_api.domain.model.TransferType
+import jp.co.soramitsu.feature_wallet_api.domain.model.TransferTypes
+import jp.co.soramitsu.feature_wallet_api.domain.model.WithdrawalMeta
+import jp.co.soramitsu.feature_wallet_impl.data.mappers.model.AssetDescriptionMapper
+import jp.co.soramitsu.feature_wallet_impl.data.mappers.model.WithdrawalMetaMapper
+import jp.co.soramitsu.feature_wallet_impl.data.mappers.network

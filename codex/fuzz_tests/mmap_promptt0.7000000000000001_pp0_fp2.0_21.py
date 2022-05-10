@@ -1,0 +1,20 @@
+import mmap
+# Test mmap.mmap.tell
+with open("foo.txt") as f:
+  m = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
+  print m.tell()
+  m.seek(0, 0)
+  print m.tell()
+  m.seek(0, 1)
+  print m.tell()
+  m.seek(0, 2)
+  print m.tell()
+  m.seek(-20, 2)
+  print m.tell()
+  m.seek(-5, 1)
+  print m.tell()
+  m.seek(3)
+  print m.tell()
+  m.seek(3, 0)
+  print m.tell()
+  m.close()

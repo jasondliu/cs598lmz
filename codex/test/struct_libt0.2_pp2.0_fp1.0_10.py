@@ -1,0 +1,12 @@
+import _struct
+import _thread
+import _threading_local
+import _tracemalloc
+import _tracemalloc_test
+import _tracemodule
+import _tracemalloc_tracemalloc
+import _tracemalloc_tracemalloc_test
+import _tracemalloc_tracemalloc_tracemalloc
+import _tracemalloc_tracemalloc_tracemalloc_test
+import _tracemalloc_tracemalloc_tracemalloc_tracemalloc
+import _tracemalloc_tracemalloc_tracemalloc_tracemalloc_test

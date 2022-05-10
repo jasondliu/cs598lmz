@@ -1,0 +1,15 @@
+import mmap
+# Test mmap.mmap(mmapsize)
+map = mmap.mmap(0, 2)
+map = mmap.mmap(1 << 29, 2)
+# Test mmap.mmap(fp, filesize)
+map = mmap.mmap(open(map.name, 'r'), 2)
+# Test mmap.mmap(fileno, size[, flags[, prot[, access[, offset]]]]])
+map = mmap.mmap(map.fileno(), 2)
+map = mmap.mmap(map.fileno(), 2, 1)
+map = mmap.mmap(map.fileno(), 2, 1, 1)
+map = mmap.mmap(map.fileno(), 2, 1, 1, 1)
+# Test mmap.mmap(fileno, size[, flags, offse])
+map = mmap.mmap(map.fileno(), 2, 1, 1 << 34)
+# Test mmap.mmap(fileno, size[, flags[, prot[, access]]])
+map = mmap.mmap(map.fileno(), 2, mmap

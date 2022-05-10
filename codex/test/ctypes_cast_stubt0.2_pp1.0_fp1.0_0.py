@@ -1,0 +1,40 @@
+import ctypes
+ctypes.cast(0, ctypes.py_object)
+
+# SOURCE LINE 2
+
+import sys
+import os
+import time
+import threading
+import traceback
+import ctypes
+import ctypes.util
+import subprocess
+import signal
+import socket
+import struct
+import errno
+import platform
+import warnings
+import weakref
+import atexit
+import logging
+import re
+import tempfile
+import shutil
+import stat
+import functools
+import itertools
+import collections
+import contextlib
+import io
+import json
+import hashlib
+import base64
+import zlib
+import gzip
+import bz2
+import lzma
+import tarfile
+import zipfile

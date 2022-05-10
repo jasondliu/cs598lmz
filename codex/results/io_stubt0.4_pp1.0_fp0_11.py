@@ -1,0 +1,19 @@
+import io
+
+class File(io.RawIOBase):
+    def readinto(self, buf):
+        global view
+        view = buf
+    def readable(self):
+        return True
+
+f = io.BufferedReader(File())
+f.read(1)
+del f
+
+import gc
+gc.collect()
+
+print(view)
+
+# vim: tabstop=4 shiftwidth=4 expandtab softtabstop=4

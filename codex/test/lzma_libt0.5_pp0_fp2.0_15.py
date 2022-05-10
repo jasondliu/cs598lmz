@@ -1,0 +1,27 @@
+import lzma
+lzma.LZMAFile
+lzma.LZMAError
+lzma.CHECK_CRC32
+lzma.CHECK_CRC64
+lzma.CHECK_ID_MAX
+lzma.CHECK_NONE
+lzma.CHECK_SHA256
+lzma.FILTER_ARM
+lzma.FILTER_ARMTHUMB
+lzma.FILTER_DELTA
+lzma.FILTER_IA64
+lzma.FILTER_LZMA1
+lzma.FILTER_LZMA2
+lzma.FILTER_POWERPC
+lzma.FILTER_SPARC
+lzma.FORMAT_ALONE
+lzma.FORMAT_AUTO
+lzma.FORMAT_RAW
+lzma.FORMAT_XZ
+lzma.MODE_FAST
+lzma.MODE_NORMAL
+lzma.PRESET_DEFAULT
+lzma.PRESET_EXTREME
+lzma.open
+lzma.decompress
+lzma.compress

@@ -1,0 +1,44 @@
+import _struct
+import _thread
+import _threading
+import _time
+import _traceback
+import _types
+import _warnings
+import _weakref
+
+# These modules are not built by default, but we still want to make sure
+# they are importable.
+import _bisect
+import _codecs_cn
+import _codecs_hk
+import _codecs_iso2022
+import _codecs_jp
+import _codecs_kr
+import _codecs_tw
+import _collections
+import _csv
+import _ctypes
+import _ctypes_test
+import _elementtree
+import _functools
+import _hashlib
+import _heapq
+import _hotshot
+import _json
+import _lsprof
+import _multibytecodec
+import _multiprocessing
+import _random
+import _socket
+import _sqlite3
+import _ssl
+import _testcapi
+import _tkinter
+import _winreg
+import array
+import audioop
+import binascii
+import bz2
+import cPickle
+import cStringIO

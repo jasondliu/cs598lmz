@@ -1,0 +1,44 @@
+import select
+
+# socket options
+TCP_NODELAY = 1
+
+# send flags
+MSG_OOB = 1
+MSG_PEEK = 2
+MSG_DONTROUTE = 4
+
+# recv flags
+MSG_PEEK = 2
+MSG_WAITALL = 8
+MSG_OOB = 1
+
+# address families
+AF_UNIX = 1
+AF_INET = 2
+
+# socket types
+SOCK_STREAM = 1
+SOCK_DGRAM = 2
+SOCK_RAW = 3
+
+# shutdown codes
+SHUT_RD = 0
+SHUT_WR = 1
+SHUT_RDWR = 2
+
+# error codes
+EACCES = 13
+EAGAIN = 11
+EALREADY = 114
+ECONNABORTED = 112
+ECONNREFUSED = 111
+ECONNRESET = 104
+EDESTADDRREQ = 89
+EHOSTUNREACH = 113
+EINPROGRESS = 115
+EINVAL = 22
+EISCONN = 106
+EMSGSIZE = 90
+ENETUNREACH = 101
+

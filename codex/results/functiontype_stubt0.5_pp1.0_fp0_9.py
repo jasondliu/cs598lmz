@@ -1,0 +1,18 @@
+from types import FunctionType
+a = (x for x in [1])
+print(type(a))
+print(type(a.__next__))
+print(isinstance(a.__next__, FunctionType))
+print(isinstance(a.__next__, MethodType))
+print(isinstance(a.__next__, Callable))
+print(isinstance(a.__next__, CoroutineType))
+print(isinstance(a.__next__, GeneratorType))
+print(isinstance(a.__next__, object))
+print(isinstance(a.__next__, type))
+print(isinstance(a.__next__, type(None)))
+print(isinstance(a.__next__, type(a)))
+print(isinstance(a.__next__, type(a.__next__)))
+print(isinstance(a.__next__, type(a.__next__.__name__)))
+print(isinstance(a.__next__, type(a.__next__.__class__)))
+print(isinstance(a.__next__, type(a.__next__.__class__.__name__)))
+print(isinstance

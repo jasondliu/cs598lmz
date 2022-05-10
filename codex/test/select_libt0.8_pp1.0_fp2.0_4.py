@@ -1,0 +1,17 @@
+import select
+
+from dbus import glib
+from dbus.mainloop import glib as dbus_glib
+
+from telepathy.constants import (
+    CONNECTION_STATUS_DISCONNECTED, CONNECTION_STATUS_CONNECTED,
+    CONNECTION_STATUS_CONNECTING)
+from telepathy.interfaces import (
+    CHANNEL_INTERFACE, CHANNEL_TYPE_CONTACT_LIST,
+    CHANNEL_TYPE_TEXT, CONNECTION_INTERFACE_ALIASING, CONN_INTERFACE,
+    CONNECTION_INTERFACE_AVATARS, CONNECTION_INTERFACE_CONTACT_BLOCKING,
+    CONNECTION_INTERFACE_CONTACT_GROUPS, CONNECTION_INTERFACE_REQUESTS,
+    CONNECTION_INTERFACE_SIMPLE_PRESENCE, CONNECTION_INTERFACE_PRESENCE)
+from telepathy.server import (
+    Connection, ConnectionInterfaceRequests,
+    ConnectionInterfaceContactInfo, Protocol)

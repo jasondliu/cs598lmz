@@ -1,0 +1,46 @@
+import gc, weakref
+gc.set_debug(gc.DEBUG_COLLECTABLE)
+# Test gc.collect()
+a = weakref.ref(1)
+print(a)
+print(type(a))
+gc.collect()
+print(a)
+
+# Test gc.collect()
+b = weakref.ref(2)
+print(b)
+print(type(b))
+gc.collect()
+print(b)
+
+# Test gc.collect()
+c = weakref.ref(3)
+print(c)
+print(type(c))
+gc.collect()
+print(c)
+
+# Test gc.collect()
+d = weakref.ref(4)
+print(d)
+print(type(d))
+gc.collect()
+print(d)
+
+# Test gc.collect()
+e = weakref.ref(5)
+print(e)
+print(type(e))
+gc.collect()
+print(e)
+
+# Test gc.collect()
+f = weakref.ref(6)
+print(f)
+print(type(f))
+gc.collect()
+print(f)
+
+# Test gc.collect()
+g = weakref.ref(

@@ -1,0 +1,26 @@
+import _struct
+# Test _struct.Struct(format)
+print(_struct.Struct("i"))
+print(_struct.Struct("ii"))
+print(_struct.Struct("ffff"))
+print(_struct.Struct("dd"))
+print(_struct.Struct("c"))
+print(_struct.Struct("s"))
+print(_struct.Struct("p"))
+# Test _struct.Struct(format).format
+print(_struct.Struct("i").format)
+print(_struct.Struct("ii").format)
+print(_struct.Struct("ffff").format)
+print(_struct.Struct("dd").format)
+print(_struct.Struct("c").format)
+print(_struct.Struct("s").format)
+print(_struct.Struct("p").format)
+# Test _struct.Struct(format).size
+print(_struct.Struct("i").size)
+print(_struct.Struct("ii").size)
+print(_struct.Struct("ffff").size)
+print(_struct.Struct("dd").size)
+print(_struct.Struct("c").size)
+print(_struct.Struct("s").size)
+print(_struct.Struct("p").size)
+# Test _struct.Struct(format).pack(v1

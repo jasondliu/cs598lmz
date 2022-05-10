@@ -1,0 +1,52 @@
+import select
+
+def test_select_mutated():
+    a = []
+
+    class F:
+        def fileno(self):
+            test_select_mutated()
+            return len(a)
+
+    select.select([F()], [], [])
+    a.append(1)
+
+def test_select_mutated_2():
+    a = []
+
+    def f():
+        test_select_mutated_2()
+        return len(a)
+
+    select.select([f], [], [])
+    a.append(1)
+
+def test_select_mutated_3():
+    a = []
+
+    class F:
+        def fileno(self):
+            a.append(1)
+            return len(a)
+
+    select.select([F()], [], [])
+
+def test_select_mutated_4():
+    a = []
+
+    def f():
+        a.append(1)
+        return len(a)
+
+    select.select([f], [], [])
+
+def test_select_mutated_5():
+    a = []
+    b = []
+
+    class F:
+        def fileno(self):
+            a.append(1)
+            return len(a)
+
+    select.select([F()], [

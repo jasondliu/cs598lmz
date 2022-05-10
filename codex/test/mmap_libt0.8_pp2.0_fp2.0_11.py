@@ -1,0 +1,5 @@
+import mmap
+
+TELNET_PORT = 79
+TELNET_TIMEOUT = 5
+

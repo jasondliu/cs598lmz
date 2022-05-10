@@ -1,0 +1,26 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = 'fn'
+fn.__qualname__ = 'fn'
+fn.__module__ = 'test_exec'
+fn.__annotations__ = {}
+fn.__kwdefaults__ = None
+fn.__defaults__ = None
+fn.__globals__ = {}
+fn.__closure__ = None
+fn.__dict__ = {}
+fn.__doc__ = None
+fn.__text_signature__ = None
+fn.__get__ = lambda x, y: None
+fn.__set__ = lambda x, y: None
+fn.__delete__ = lambda x: None
+fn.__init__ = lambda x, y: None
+fn.__new__ = lambda x, y: None
+fn.__prepare__ = lambda x, y: None
+fn.__instancecheck__ = lambda x, y: False
+fn.__subclasscheck__ = lambda x, y: False
+fn.__class__ = type
+fn.__init_subclass__ = lambda x: None
+fn.__delattr__ = lambda x, y: None
+

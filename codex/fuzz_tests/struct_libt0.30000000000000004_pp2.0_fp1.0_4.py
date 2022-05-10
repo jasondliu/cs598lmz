@@ -1,0 +1,46 @@
+import _struct
+import _thread
+import _threading
+import _time
+import _timeit
+import _token
+import _tokenize
+import _traceback
+import _tracemalloc
+import _turtle
+import _turtledemo
+import _types
+import _typing
+import _unicodedata
+import _unittest
+import _urllib
+import _uu
+import _uuid
+import _venv
+import _warnings
+import _wave
+import _weakref
+import _webbrowser
+import _websocket
+import _winreg
+import _winsound
+import _wsgiref
+import _xdrlib
+import _xml
+import _xmlrpc
+import _zipapp
+import _zipfile
+import _zlib
+
+# Modules that should not be imported.
+import _testbuffer
+import _testcapi
+import _testimportmultiple
+import _testmultiphase
+import _testpackage
+import _testcapimodule
+import _testinternalcapi
+import _testwindows
+
+# Modules that should not be imported when -X faulthandler is used.
+import _testfaul

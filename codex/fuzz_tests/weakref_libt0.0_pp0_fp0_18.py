@@ -1,0 +1,43 @@
+import weakref
+
+from . import _core
+from . import _util
+from . import _widget
+from . import _window
+
+__all__ = ['App']
+
+
+class App(_core.Object):
+    """
+    The App class represents the application itself.
+    """
+
+    def __init__(self, *args, **kwargs):
+        """
+        Create a new App object.
+        """
+        super(App, self).__init__(*args, **kwargs)
+        self._windows = []
+
+    def run(self):
+        """
+        Run the application.
+        """
+        _core.App_run(self._ptr())
+
+    def quit(self):
+        """
+        Quit the application.
+        """
+        _core.App_quit(self._ptr())
+
+    def window(self, title=None, rect=None, flags=0):
+        """
+        Create a new window.
+
+        :param title: The title of the window.
+        :param rect: The rect of the window.
+        :param flags: The flags of the window.
+        :return: The new window.
+        """

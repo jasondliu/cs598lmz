@@ -1,0 +1,3 @@
+import _struct
+from _testcapi import INT_MAX, INT_MIN, UINT_MAX, LONG_MAX, LONG_MIN, ULONG_MAX, LLONG_MAX, LLONG_MIN, ULLONG_MAX
+

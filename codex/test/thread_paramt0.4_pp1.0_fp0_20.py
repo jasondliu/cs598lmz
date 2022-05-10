@@ -1,0 +1,4 @@
+import sys, threading
+threading.Thread(target=lambda: sys.stdout.write('\x1b[2J\x1b[H')).start()
+
+# Import the necessary packages

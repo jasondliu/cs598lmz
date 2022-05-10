@@ -1,0 +1,10 @@
+from types import FunctionType
+a = (x for x in [1])
+b = sum(a)
+print(b)
+c = isinstance(str, object)
+print(c)
+d = isinstance(str, FunctionType)
+print(d)
+e = isinstance(str, type)
+print(e)

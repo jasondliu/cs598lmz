@@ -1,0 +1,14 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__closure__ = gi.gi_frame.f_locals['__closure__']
+fn.__globals__ = gi.gi_frame.f_globals
+fn.__name__ = gi.gi_code.co_name
+fn.__defaults__ = gi.gi_frame.f_locals['__defaults__']
+fn.__dict__ = gi.gi_frame.f_locals['__dict__']
+fn.__annotations__ = gi.gi_frame.f_locals['__annotations__']
+fn.__kwdefaults__ = gi.gi_frame.f_locals['__kwdefaults__']
+fn.__module__ = gi.gi_frame.f_globals['__name__']
+fn.__doc__ = gi.gi_code.co_consts[0] if gi.gi_code.co_consts else None
+fn.__qualname__ = gi.gi_code.co_name
+fn.__text_signature__ = str

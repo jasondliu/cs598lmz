@@ -1,0 +1,15 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__closure__ = gi.gi_frame.f_locals.get('__closure__', None)
+fn.__dict__ = f.__dict__
+fn.__defaults__ = gi.gi_frame.f_locals.get('__defaults__', None)
+fn.func_annotations = gi.gi_frame.f_locals.get('__annotations__', None)
+fn.func_closure = gi.gi_frame.f_locals.get('__closure__', None)
+fn.func_code = gi.gi_code
+fn.func_defaults = gi.gi_frame.f_locals.get('__defaults__', None)
+fn.func_dict = f.__dict__
+fn.func_doc = f.__doc__
+fn.func_globals = f.__globals__
+fn.func_name = f.__name__
+fn.__kwdefaults__ = gi.gi_frame.f_locals.get('__kwdefaults__', None)

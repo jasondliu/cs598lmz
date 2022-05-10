@@ -1,0 +1,25 @@
+from types import FunctionType
+a = (x for x in [1])
+print(type(a))
+print(type(a.__iter__))
+print(type(a.__next__))
+print(type(a.send))
+print(type(a.close))
+print(type(a.throw))
+print(type(a.__next__))
+print(isinstance(a, GeneratorType))
+print(isinstance(a.__iter__, FunctionType))
+print(isinstance(a.__next__, FunctionType))
+print(isinstance(a.send, FunctionType))
+print(isinstance(a.close, FunctionType))
+print(isinstance(a.throw, FunctionType))
+print(isinstance(a.__next__, FunctionType))
+print(type(a.__iter__) == FunctionType)
+print(type(a.__next__) == FunctionType)
+print(type(a.send) == FunctionType)
+print(type(a.close) == FunctionType)
+print(type(a.throw) == FunctionType)
+print(type(a.__next__) == FunctionType)
+
+#==============================================================================
+#  

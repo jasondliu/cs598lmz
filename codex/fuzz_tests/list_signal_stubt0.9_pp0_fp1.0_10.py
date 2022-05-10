@@ -1,0 +1,21 @@
+import random
+import signal
+
+N = 10000
+delays = [1e-6 + random.random() * 2e-5 for i in range(N)]
+
+def handler(signum=None, frame=None):
+    if delays:
+        signal.setitimer(signal.ITIMER_REAL, delays.pop())
+    else:
+        signal.setitimer(signal.ITIMER_REAL, 0)
+        print("Times up")
+
+signal.signal(signal.SIGALRM, handler)
+signal.setitimer(signal.ITIMER_REAL, delays.pop())
+
+while delays:
+    signal.pause()
+</code>
+I don't have OS X to test on; let me know if it works.
+

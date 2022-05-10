@@ -1,0 +1,29 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = 'foo'
+fn.__qualname__ = 'foo'
+fn.__module__ = 'foo'
+fn.__annotations__ = {}
+fn.__kwdefaults__ = None
+fn.__defaults__ = None
+fn.__closure__ = None
+fn.__dict__ = {}
+fn.__doc__ = None
+fn.__globals__ = None
+fn.__get__ = lambda *args: None
+fn.__set__ = lambda *args: None
+fn.__delete__ = lambda *args: None
+fn.__text_signature__ = None
+fn.__self__ = None
+fn.__func__ = None
+fn.__class__ = type(lambda: None)
+fn.__bases__ = (object,)
+fn.__mro__ = (object,)
+fn.__subclasshook__ = lambda *args: None
+
+# classmethod
+cm = classmethod(lambda: None)
+cm.__func__ = lambda: None
+cm.__self__ = None
+cm.__class__ = type(classmethod

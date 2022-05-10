@@ -1,0 +1,21 @@
+import _struct
+# Test _struct.Struct
+_struct.Struct('i')
+_struct.Struct('i', b'')
+_struct.Struct('i', b'a')
+_struct.Struct('i', b'ab')
+_struct.Struct('i', b'abc')
+_struct.Struct('i', b'abcd')
+_struct.Struct('i', b'abcde')
+_struct.Struct('i', b'abcdef')
+_struct.Struct('i', b'abcdefg')
+_struct.Struct('i', b'abcdefgh')
+_struct.Struct('i', b'abcdefghi')
+_struct.Struct('i', b'abcdefghij')
+_struct.Struct('i', b'abcdefghijk')
+_struct.Struct('i', b'abcdefghijkl')
+_struct.Struct('i', b'abcdefghijklm')
+_struct.Struct('i', b'abcdefghijklmn')
+_struct.Struct('i', b'abcdefghijklmno')
+_struct.Struct('i', b'abcdefghijklmnop')
+_struct

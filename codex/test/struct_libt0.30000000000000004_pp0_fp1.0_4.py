@@ -1,0 +1,47 @@
+import _struct
+import _thread
+import _threading
+import _time
+import _traceback
+import _types
+import _warnings
+import _weakref
+
+import _abc
+import _codecs
+import _collections
+import _functools
+import _io
+import _locale
+import _operator
+import _signal
+import _stat
+import _string
+import _symtable
+import _tracemalloc
+import _weakref
+
+import _bisect
+import _bytesio
+import _collections_abc
+import _fileio
+import _heapq
+import _random
+import _sha1
+import _sha256
+import _sha512
+import _socket
+import _sre
+import _stringprep
+import _struct
+import _symtable
+import _threading_local
+import _weakrefset
+
+import _blake2
+import _codecs_cn
+import _codecs_hk
+import _codecs_iso2022
+import _codecs_jp
+import _codecs_kr
+import _codecs_tw

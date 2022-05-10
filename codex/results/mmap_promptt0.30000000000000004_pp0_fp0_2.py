@@ -1,0 +1,28 @@
+import mmap
+# Test mmap.mmap()
+# f = open("test.txt", "r+")
+# m = mmap.mmap(f.fileno(), 0)
+# print m.readline()
+# print m.readline()
+# m.seek(0)
+# m.write("hello")
+# m.close()
+# f.close()
+
+# Test mmap.mmap(fileno, length)
+# f = open("test.txt", "r+")
+# m = mmap.mmap(f.fileno(), 1024)
+# print m.readline()
+# print m.readline()
+# m.seek(0)
+# m.write("hello")
+# m.close()
+# f.close()
+
+# Test mmap.mmap(fileno, length, access=ACCESS_READ)
+# f = open("test.txt", "r+")
+# m = mmap.mmap(f.fileno(), 1024, mmap.ACCESS_READ)
+# print m.readline()
+# print m.readline()
+# m.seek(0)
+# m.

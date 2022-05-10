@@ -1,0 +1,43 @@
+from types import FunctionType
+a = (x for x in [1])
+print(type(a))
+
+f = lambda x:x+1
+print(type(f))
+print(FunctionType)
+print(type(f) == FunctionType)
+
+print(type(abs))
+
+print(type(123))
+print(type('str'))
+print(type(None))
+print(type(abs))
+
+import types
+def fn():
+    pass
+
+print(type(fn) == types.FunctionType)
+print(type(abs) == types.BuiltinFunctionType)
+print(type(lambda x:x) == types.LambdaType)
+print(type((x for x in range(10))) == types.GeneratorType)
+
+print(dir('ABC'))
+
+print(len('ABC'))
+print('ABC'.__len__())
+
+class MyDog(object):
+    def __len__(self):
+        return 100
+
+dog = MyDog()
+print(len(dog))
+
+print('ABC'.lower())
+
+class MyObject(object):
+    def __init__(self):
+        self.x = 9
+    def power

@@ -1,0 +1,30 @@
+import signal
+# Test signal.setitimer()
+def handler(signum, frame):
+    print("Received signal:", signum)
+
+signal.signal(signal.SIGALRM, handler)
+signal.setitimer(signal.ITIMER_REAL, 0.1, 0.1)
+
+while True:
+    print("Waiting...")
+    time.sleep(1)
+
+#-------------------------------------------------------------------------------
+# Test signal.setitimer()
+def handler(signum, frame):
+    print("Received signal:", signum)
+
+signal.signal(signal.SIGALRM, handler)
+signal.setitimer(signal.ITIMER_REAL, 0.1, 0.1)
+
+while True:
+    print("Waiting...")
+    time.sleep(1)
+
+#-------------------------------------------------------------------------------
+def handler(signum, frame):
+    print("Received signal:", signum)
+
+signal.signal(signal.SIGALRM, handler)
+signal.setitimer(signal.ITIMER_REAL, 0.1, 0.1

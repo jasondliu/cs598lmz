@@ -1,0 +1,27 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [2])
+print(a)
+print(b)
+print(type(a))
+print(type(b))
+print(a==b)
+print(type(lambda x: x))
+print(type(FunctionType))
+print(type(FunctionType))
+print(type(print))
+print(type(FunctionType) == type(print))
+
+# print(type(FunctionType) == type(lambda x: x))
+print(type(FunctionType.__call__))
+print(type(FunctionType.__call__) == type(lambda x: x))
+print(FunctionType.__call__ == type(lambda x: x))
+print(FunctionType.__call__ == type(print))
+print(FunctionType.__call__ == type(FunctionType))
+
+print(type(print) == type(FunctionType))
+print(type(print) == FunctionType)
+
+print(type(FunctionType) is FunctionType)
+print(type(FunctionType) is type)
+print(type is FunctionType)

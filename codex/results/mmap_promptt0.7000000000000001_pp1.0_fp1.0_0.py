@@ -1,0 +1,15 @@
+import mmap
+# Test mmap.mmap(-1, 1)
+m = mmap.mmap(-1, 1)
+# Test mmap.mmap(-1, 1, "")
+m = mmap.mmap(-1, 1, "")
+# Test mmap.mmap(0, 1)
+m = mmap.mmap(0, 1)
+# Test mmap.mmap(0, 1, "")
+m = mmap.mmap(0, 1, "")
+# Test mmap.mmap(0, 1, "", mmap.ACCESS_DEFAULT, 0)
+m = mmap.mmap(0, 1, "", mmap.ACCESS_DEFAULT, 0)
+# Test mmap.mmap(0, 1, "", mmap.ACCESS_DEFAULT, 0)
+m = mmap.mmap(0, 1, "", mmap.ACCESS_DEFAULT, 0)
+# Test mmap.mmap(0, 1, "", mmap.ACCESS_DEFAULT, 0, 1)
+m = mmap.mmap(0, 1, "", mmap.ACC

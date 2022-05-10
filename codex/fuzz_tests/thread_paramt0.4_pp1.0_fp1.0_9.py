@@ -1,0 +1,13 @@
+import sys, threading
+threading.Thread(target=lambda: sys.stdout.write('\n'.join([''.join(['*' if abs((lambda a: lambda z, c, n: a(a, z, c, n))(lambda s, z, c, n: z if n == 0 else s(s, z*z+c, c, n-1))(0, 0.02*x+0.05j*y, 40)) < 2 else ' ' for x in range(-80, 20)]) for y in range(-20, 20)]))).start()
+
+# from http://www.python-course.eu/python3_lambda.php
+# lambda x: x**2
+# lambda x, y: x*y
+# lambda x: x + 42
+# lambda x: (x**2 for x in range(1, 11))
+# lambda x: (x**3 for x in range(1, 11))
+# lambda x: (x**4 for x in range(1, 11))
+
+# from http://www.python-course.eu/python3_lambda.php
+# def make_incrementor(n): return lambda x:

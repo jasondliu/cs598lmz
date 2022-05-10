@@ -1,0 +1,8 @@
+import _struct
+# Test _struct.Struct
+struct_test_cases = [
+    (b'hhl', (1, 2, 3), '=hhl', b'\x01\x00\x02\x00\x00\x00\x00\x00\x03\x00\x00\x00'),
+    (b'hhl', (256, 512, 1024), '=hhl', b'\x00\x01\x02\x00\x00\x04\x00\x00\x00\x00\x00\x10'),
+    (b'hhl', (-1, -2, -3), '=hhl', b'\xff\xff\xfe\xff\xff\xfc\xff\xff\xfb\xff\xff\xf8'),
+    (b'hhl', (-256, -512, -1024), '=hhl', b'\x00\xff\xfe\xff\x00\xfc\xff\x00\x00\x00\xf8\xff'),
+    (b'hhl', (32767, 2147483647, 922

@@ -1,0 +1,19 @@
+import socket
+# Test socket.if_indextoname
+print("socket.if_indextoname(1):", socket.if_indextoname(1))
+# Test socket.if_nametoindex
+print("socket.if_nametoindex('lo'):", socket.if_nametoindex('lo'))
+# Test socket.getaddrinfo
+print("socket.getaddrinfo('google.com', 80):\n",
+      socket.getaddrinfo('google.com', 80))
+# Test socket.gethostbyaddr
+print("socket.gethostbyaddr('127.0.0.1'):\n",
+      socket.gethostbyaddr('127.0.0.1'))
+# Test socket.gethostbyname
+print("socket.gethostbyname('localhost'):\n",
+      socket.gethostbyname('localhost'))
+# Test socket.gethostbyname_ex
+print("socket.gethostbyname_ex('localhost'):\n",
+      socket.gethostbyname_ex('localhost'))
+# Test socket.gethostname
+print("socket.gethostname():", socket.gethostname())

@@ -1,0 +1,15 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepali0e.append(weakref.ref(a,callback))
+del a
+while lst:keepali0e.append(lst[:])
+
+#import gc;import weakref;lst=[str()];a=A();a.c=a;keepalive=[weakref.ref(a,lambda _:del lst[0])];del a;while lst:keepalive.append(lst[:])
+#import gc,weakref;lst=[str()];a=A();a.c=a;keepalive=[weakref.ref(a,lambda _:del lst[0])];del a;while lst:keepalive.append(lst[:])
+#import gc;import weakref;lst=[str()];a=A();a.c=a;keepalive=[weakref.ref(a,lambda _:del lst[0])];del a;while lst:keepalive.append(lst[:])
+#import gc;import weakref;lst=[str()];a=A();a.c=a;keepalive=[weakref.ref(a,lambda _:del lst[0])];del a;while lst:keepalive.append(

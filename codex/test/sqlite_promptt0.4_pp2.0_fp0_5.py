@@ -1,0 +1,30 @@
+import ctypes
+import ctypes.util
+import threading
+import sqlite3
+# Test sqlite3.connect("/home/pi/Desktop/data.db")
+import time
+import datetime
+import os
+import sys
+
+# Define global variables
+global db
+global cursor
+global conn
+global time_stamp
+global time_stamp_str
+global time_stamp_str_old
+global time_stamp_old
+global time_stamp_str_old_old
+global time_stamp_old_old
+global time_stamp_str_old_old_old
+global time_stamp_old_old_old
+global time_stamp_str_old_old_old_old
+global time_stamp_old_old_old_old
+global time_stamp_str_old_old_old_old_old
+global time_stamp_old_old_old_old_old
+global time_stamp_str_old_old_old_old_old_old
+global time_stamp_old_old_old_old_old_old
+global time_stamp_str_old_old_old_old_old_old_old
+global time_stamp_old_old

@@ -1,0 +1,29 @@
+import codecs
+# Test codecs.register_error()
+import encodings.ascii
+import encodings.utf_16
+import encodings.utf_32
+import encodings.utf_8
+import encodings.iso8859_1
+import encodings.iso8859_15
+import encodings.latin_1
+import encodings.utf_16_le
+import encodings.utf_16_be
+import encodings.utf_32_le
+import encodings.utf_32_be
+import encodings.utf_8_sig
+import encodings.unicode_internal
+import encodings.raw_unicode_escape
+import encodings.unicode_escape
+import encodings.string_escape
+import encodings.escape_decode
+import encodings.escape_encode
+import encodings.idna
+import encodings.mbcs
+import encodings.cp437
+import encodings.cp858
+import encodings.cp850
+import encodings.cp1252
+import encodings.cp1251
+import encodings.cp65001
+

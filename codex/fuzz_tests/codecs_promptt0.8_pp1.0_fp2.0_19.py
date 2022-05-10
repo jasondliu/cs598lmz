@@ -1,0 +1,18 @@
+import codecs
+# Test codecs.register_error('fallback', codecs.replace_errors)
+# codecs.lookup_error('fallback')
+# codecs.register_error('fallback', codecs.ignore_errors)
+# codecs.lookup_error('fallback')
+# codecs.register_error('fallback', codecs.strict_errors)
+# codecs.lookup_error('fallback')
+# codecs.register_error('fallback', codecs.replace_errors)
+# codecs.lookup_error('fallback')
+# codecs.register_error('fallback', codecs.replace_errors)
+# codecs.lookup_error('fallback')
+# codecs.register_error('fallback', codecs.ignore_errors)
+# codecs.lookup_error('fallback')
+# codecs.register_error('fallback', codecs.strict_errors)
+# codecs.lookup_error('fallback')
+# codecs.register_error('fallback', codecs.xmlcharrefreplace_errors)
+# codecs.lookup_error('fallback')
+#

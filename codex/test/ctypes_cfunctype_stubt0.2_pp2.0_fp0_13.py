@@ -1,0 +1,34 @@
+import ctypes
+FUNTYPE = ctypes.CFUNCTYPE(ctypes.py_object)
+@FUNTYPE
+def fun():
+    return "hello"
+
+def test_fun():
+    assert fun() == "hello"
+
+def test_fun_with_arg():
+    @FUNTYPE
+    def fun(arg):
+        return arg
+    assert fun(42) == 42
+
+def test_fun_with_kwargs():
+    @FUNTYPE
+    def fun(**kwargs):
+        return kwargs
+    assert fun(a=1, b=2) == {'a': 1, 'b': 2}
+
+def test_fun_with_args_and_kwargs():
+    @FUNTYPE
+    def fun(*args, **kwargs):
+        return args, kwargs
+    assert fun(1, 2, a=3, b=4) == ((1, 2), {'a': 3, 'b': 4})
+
+def test_fun_with_defaults():
+    @FUNTYPE
+    def fun(a, b=1):
+        return a, b
+    assert fun(1) == (1, 1)
+    assert fun(1, 2) == (1, 2)
+

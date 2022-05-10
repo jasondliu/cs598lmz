@@ -1,0 +1,23 @@
+import lzma
+lzma.LZMAFile()
+lzma.LZMAFile.__init__()
+lzma.LZMAFile.__enter__()
+lzma.LZMAFile.__exit__()
+lzma.LZMAFile.close()
+lzma.LZMAFile.fileno()
+lzma.LZMAFile.flush()
+lzma.LZMAFile.isatty()
+lzma.LZMAFile.read()
+lzma.LZMAFile.readinto()
+lzma.LZMAFile.readline()
+lzma.LZMAFile.readlines()
+lzma.LZMAFile.seek()
+lzma.LZMAFile.tell()
+lzma.LZMAFile.write()
+lzma.LZMAFile.xreadlines()
+lzma.open()
+lzma.open.__doc__
+lzma.open.__init__()
+lzma.open.__module__
+lzma.open.__name__
+lzma.open

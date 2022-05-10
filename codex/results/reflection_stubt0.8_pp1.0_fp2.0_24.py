@@ -1,0 +1,9 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = lambda: None
+fn.__code__ = CodeType(1, 0, 1, 1, "", "", 0, "", (), (), (), "", "", 0, b"", ()).__new__(CodeType)
+fn.__code__ = CodeType(1, 0, 1, 1, "", "", 0, "", (), (), (), "", "", 0, b"", (), ())
+fn.__code__ = CodeType(1, 0, 1, 1, "", "", 0, "", (), (), (), "", "", 0, b"", (), (), object()).__new__(CodeType)
+fn.__code__ = CodeType(1, 0, 1, 1, "", "", 0, "", (), (), (), "", "", 0, b"", (), (), ()).__new__(CodeType)
+fn.__code__ = CodeType(1, 0, 1, 1, "", "", 0, "", (), (), (), "", "", 0, b"", (), (), (), object()).__new__(CodeType)
+fn.__code__ = CodeType(1, 0, 1

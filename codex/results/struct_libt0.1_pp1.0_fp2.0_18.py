@@ -1,0 +1,47 @@
+import _struct
+import _thread
+import _threading
+import _time
+import _timeit
+import _traceback
+import _tracemalloc
+import _turtle
+import _turtledemo
+import _types
+import _typing
+import _unicodedata
+import _unittest
+import _urllib
+import _uu
+import _uuid
+import _venv
+import _warnings
+import _wave
+import _weakref
+import _webbrowser
+import _winreg
+import _winsound
+import _wsgiref
+import _xdrlib
+import _xml
+import _xmlrpc
+import _zipapp
+import _zipfile
+import _zlib
+
+# These modules are not built by default, but are included in the
+# standard library.
+import _ctypes_test
+import _testcapi
+import _tkinter
+import _asyncio
+import _testbuffer
+import _testimportmultiple
+import _testmultiphase
+import _locale
+import _lsprof
+import _multibytecodec
+import _opcode
+import _pyio
+import _py_abc
+import _site

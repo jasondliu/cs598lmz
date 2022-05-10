@@ -1,0 +1,20 @@
+from types import FunctionType
+a = (x for x in [1])
+b = (x for x in [1])
+print(type(a))
+print(type(b))
+print(a.gi_frame.f_code)
+print(b.gi_frame.f_code)
+print(a.gi_frame.f_code is b.gi_frame.f_code)
+print(a.gi_frame is b.gi_frame)
+print(a.gi_frame.f_code.co_consts)
+print(b.gi_frame.f_code.co_consts)
+print(a.gi_frame.f_code.co_consts is b.gi_frame.f_code.co_consts)
+print(a.gi_frame.f_code.co_consts[2])
+print(b.gi_frame.f_code.co_consts[2])
+print()
+c = lambda x: a.gi_frame.f_code.co_consts[2]
+print(type(c))
+print(isinstance(c, tuple))
+print(isinstance(c, FunctionType))
+print(

@@ -1,0 +1,21 @@
+from types import FunctionType
+a = (x for x in [1])
+b = [x for x in [1]]
+c = {x for x in [1]}
+d = {x: x for x in [1]}
+e = FunctionType(lambda: None, globals())
+f = type(lambda: None)
+g = type(type(lambda: None))
+h = type(x for x in [1])
+i = type([x for x in [1]])
+j = type({x for x in [1]})
+k = type({x: x for x in [1]})
+l = type(FunctionType(lambda: None, globals()))
+m = type(type(lambda: None))
+n = type(type(x for x in [1]))
+o = type(type([x for x in [1]]))
+p = type(type({x for x in [1]}))
+q = type(type({x: x for x in [1]}))
+r = type(type(FunctionType(lambda: None, globals())))
+s = type(type(type(lambda: None)))
+t = type(type(type(x for x in [

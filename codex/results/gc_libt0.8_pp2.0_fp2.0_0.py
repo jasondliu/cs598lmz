@@ -1,0 +1,21 @@
+import gc, weakref
+
+from .conditions import (
+	Conditions, _Condition,
+	FlagCondition, FlagConditionAll, FlagConditionAny, FlagConditionRange,
+		FlagConditionMin, FlagConditionMax,
+	FlagConditionSort, FlagConditionSortMin, FlagConditionSortMax,
+	FlagConditionSortRange,
+	FlagConditionLT, FlagConditionLTE, FlagConditionEQ, FlagConditionGTE,
+	FlagConditionGT, FlagConditionNEQ, FlagConditionSET, FlagConditionUNSET,
+	FlagConditionAnySET, FlagConditionAllUNSET,
+	FlagConditionUNSETOnly, FlagConditionSETOnly,
+	FlagConditionSETRange, FlagConditionUNSETRange,
+	FlagConditionSETMin, FlagConditionSETMax,
+	FlagConditionUNSETMin, FlagConditionUNSETMax,
+	NodeCondition, NodeConditionAll, NodeConditionAny, NodeConditionRange,
+	NodeConditionMin, NodeConditionMax,
+	NodeConditionSort, NodeConditionSortMin, NodeConditionSortMax,
+	NodeConditionSortRange,
+	NodeConditionLT, NodeConditionLTE, NodeConditionEQ, NodeConditionGTE,
+	NodeConditionGT, NodeConditionNEQ,

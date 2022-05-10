@@ -1,0 +1,23 @@
+fn = lambda: None
+gi = (i for i in ())
+fn.__code__ = gi.gi_code
+fn.__name__ = "fn"
+fn.__qualname__ = "fn"
+fn.__dict__ = {}
+fn.__doc__ = None
+fn.__annotations__ = {}
+fn.__globals__ = {'__builtins__': __builtins__}
+fn.__closure__ = None
+fn.__module__ = '__main__'
+fn.__defaults__ = ()
+fn.__kwdefaults__ = None
+fn.__closure__ = None
+fn.__code__ = CodeType(0, 0, 0, 0, 0, b'', (), (), (), '', '', 0, b'')
+fn.__get__ = MethodWrapperType(fn, fn.__class__, fn.__class__)
+fn.__self__ = fn
+fn.__func__ = fn
+fn.__dict__ = {}
+fn.__weakref__ = None
+fn.__class__ = function
+fn.__delattr__ = MethodWrapperType(fn, fn.__class__, fn.__class__)
+fn.__dir__

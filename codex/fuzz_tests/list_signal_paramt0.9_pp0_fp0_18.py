@@ -1,0 +1,19 @@
+import random
+import signal
+
+N = 10000
+delays = [1e-6 + random.random() * 2e-5 for i in range(N)]
+
+def handler(signum=None, frame=None):
+    if delays:
+        signal.setitimer(signal.ITIMER_REAL, 0.0)
+        d = delays.pop(0)
+        signal.setitimer(signal.ITIMER_REAL, 0.0)
+        signal.setitimer(signal.ITIMER_REAL, d)
+        print('delaying %f' % d)
+
+signal.signal(signal.SIGALRM, handler)
+handler()
+
+while True:
+    pass

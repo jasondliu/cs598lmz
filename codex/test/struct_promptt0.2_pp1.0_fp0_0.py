@@ -1,0 +1,33 @@
+import _struct
+# Test _struct.Struct.format_size()
+
+def test(fmt, expected):
+    s = _struct.Struct(fmt)
+    actual = s.format_size()
+    if actual != expected:
+        print('Error in format %r: expected %d, got %d' % (fmt, expected, actual))
+
+test('', 0)
+test('x', 1)
+test('xx', 2)
+test('b', 1)
+test('bx', 2)
+test('bxx', 3)
+test('bb', 2)
+test('bbx', 3)
+test('bbxx', 4)
+test('h', 2)
+test('hx', 3)
+test('hxx', 4)
+test('hh', 4)
+test('hhx', 5)
+test('hhxx', 6)
+test('i', 4)
+test('ix', 5)
+test('ixx', 6)
+test('ii', 8)
+test('iix', 9)
+test('iixx', 10)
+test('l', 4)
+test('lx', 5)
+test('lxx', 6)

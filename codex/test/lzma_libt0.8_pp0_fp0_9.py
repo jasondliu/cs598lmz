@@ -1,0 +1,2 @@
+import lzma
+lzma = lzma

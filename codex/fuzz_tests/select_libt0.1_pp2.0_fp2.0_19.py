@@ -1,0 +1,31 @@
+import select
+import socket
+import sys
+import threading
+import time
+import traceback
+
+from . import config
+from . import log
+from . import util
+from . import version
+from . import xlog
+from . import xlogviewer
+from . import xlogserver
+from . import xlogviewer_pb2
+from . import xlogserver_pb2
+
+_logger = log.get_logger(__name__)
+
+
+class XlogViewerServer(xlogserver.XlogServer):
+    def __init__(self, config_file):
+        super(XlogViewerServer, self).__init__(config_file)
+        self.viewer = xlogviewer.XlogViewer(self.config)
+        self.viewer.start()
+
+    def _handle_request(self, request):
+        if request.type == xlogserver_pb2.XlogRequest.GET_LOG:
+            return self._handle_get_log(request)
+        elif request.type == xlogserver_pb2.XlogRequest.GET_LOG_LIST:
+            return self._handle

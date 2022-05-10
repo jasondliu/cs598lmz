@@ -1,0 +1,11 @@
+import lzma
+lzma.decompress(b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\xcaIU\xce\xd2\x12\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x00')
+
+# Output:
+# b'This is the data to compress.  It will be much larger after compressing it.'
+
+# Compress the data
+compressed = lzma.compress(b'This is the data to compress.  It will be much larger after compressing it.')
+
+# Output:
+# b'\xfd7zXZ\x00\x00\x04\xe6\xd6\xb4F\x02\x00!\x01\x16\x00\x00\x00t/\xcaIU\xce\xd2\x12\x00\x00\x04\x00

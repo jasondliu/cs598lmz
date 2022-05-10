@@ -1,0 +1,15 @@
+import _struct
+
+from pycares.error import ARES_SUCCESS, ARES_ENODATA, ARES_ENOTFOUND, ARES_ECANCELLED
+from pycares import channel
+from pycares import dns_resolver
+from pycares.ares_callbacks import _ares_callback, _ares_host_callback
+from pycares.ares_callbacks import _ares_sock_state_callback
+from pycares.ares_callbacks import _ares_gethostbyaddr_callback
+from pycares.ares_callbacks import _ares_getnameinfo_callback
+from pycares.ares_callbacks import _ares_getaddrinfo_callback
+from pycares.ares_callbacks import _ares_gethostbyname_callback
+from pycares.ares_callbacks import _ares_gethostbyname_file_callback
+from pycares.ares_callbacks import _ares_gethostbyaddr_file_callback
+from pycares.ares_callbacks import _ares_getnameinfo_file_callback
+from pycares.ares_callbacks import _ares_

@@ -1,0 +1,21 @@
+import weakref
+class A(object):pass
+def callback(x):del lst[0]
+keepali0e=[]
+lst=[str()]
+a=A()
+a.c=a
+keepalive.append(a)
+del a
+lst.append(weakref.ref(lst,callback))
+del lst
+print keepalive
+print len(gc.get_referrers(keepalive[0]))
+print len(gc.get_referrers(keepalive[0].c))
+print len(gc.get_referrers(keepalive[0].c.c))
+print len(gc.get_referrers(keepalive[0].c.c.c))
+print len(gc.get_referrers(keepalive[0].c.c.c.c))
+print len(gc.get_referrers(keepalive[0].c.c.c.c.c))
+print len(gc.get_referrers(keepalive[0].c.c.c.c.c.c))
+print len(gc.get_referrers(keepalive[0].c.c.c.c.c.c.c))
+print len(gc.get_referrers(keepalive[0
