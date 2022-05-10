@@ -1,0 +1,6 @@
+[submodule "CodeGPT/CodeGPT-small-py"]
+	path = CodeGPT/CodeGPT-small-py
+	url = https://huggingface.co/microsoft/CodeGPT-small-py
+[submodule "CodeGPT/CodeGPT-small-py-adaptedGPT2"]
+	path = CodeGPT/CodeGPT-small-py-adaptedGPT2
+	url = https://huggingface.co/microsoft/CodeGPT-small-py-adaptedGPT2

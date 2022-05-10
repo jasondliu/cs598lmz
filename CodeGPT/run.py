@@ -119,7 +119,7 @@ def text_generation(tokenizer, model):
     print_alert(f"     max: {np.max(times)} s")
 
 def load_model(adapted=False):
-    ptmodel = "../CodeGPT-small-py"
+    ptmodel = "CodeGPT-small-py"
     if adapted:
         ptmodel += "-adaptedGPT2"
     tokenizer = AutoTokenizer.from_pretrained(ptmodel)
